@@ -188,6 +188,20 @@ ul,ol{list-style:none}
 .ret__imgs img:first-child{grid-column:span 2;aspect-ratio:16/9}
 .ret__imgs img:not(:first-child){aspect-ratio:4/3}
 .ret__body{font-size:.9rem;font-weight:300;color:var(--text-muted);line-height:1.85;margin-bottom:2rem}
+.ret__promo {display: grid;grid-template-columns: 1fr 1fr;gap: 3.5rem;align-items: center;
+  margin-top: 2.5rem;}
+.ret__promo-img {border-radius: 10px;overflow: hidden;aspect-ratio: 16/9;}
+.ret__promo-img img {width: 100%; height: 100%;object-fit: cover;filter: saturate(.85);
+  transition: transform .6s var(--ease-out);}
+.ret__promo-img:hover img { transform: scale(1.03); }
+.ret__pills {display: flex;flex-wrap: wrap;gap: .5rem;margin: 1.5rem 0 2rem;  list-style: none;}
+.ret__pills li {  font-size: .72rem;  font-weight: 500;  letter-spacing: .1em;  text-transform: uppercase;  color: var(--sage-dark);  background: var(--sage-pale);  border: 1px solid var(--sage-light);  padding: .35rem .85rem;  border-radius: 2px;}
+.ret__promo-ctas {  display: flex;  gap: 1rem;  flex-wrap: wrap;}
+.ret__promo-note {  font-size: .75rem;  color: var(--text-light);  margin-top: 1.25rem;}
+.ret__promo-note strong { color: var(--terracota); }
+.ret__promo-note a {  color: var(--terracota);  text-decoration: underline;  text-underline-offset: 3px;  transition: color .25s ease;}
+.ret__promo-note a:hover { color: var(--terra-deep); }
+@media (max-width: 768px) {  .ret__promo { grid-template-columns: 1fr; gap: 2rem; }  .ret__promo-ctas { flex-direction: column; }  .ret__promo-ctas .btn { width: 100%; justify-content: center; }}
 .ejes{display:flex;flex-direction:column;gap:1.75rem;margin:2.5rem 0}
 .eje{display:flex;gap:1.25rem}
 .eje__m{flex-shrink:0;width:36px;height:36px;border:1px solid var(--terracota);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--ff-display);font-size:.9rem;color:var(--terracota);margin-top:2px}
@@ -246,7 +260,7 @@ ul,ol{list-style:none}
 .testi__card{background:rgba(253,248,244,.07);border:1px solid rgba(253,248,244,.1);padding:2.25rem 2rem;border-radius:10px;transition:background .3s ease,border-color .3s ease}
 .testi__card:hover{background:rgba(253,248,244,.11);border-color:rgba(193,127,94,.3)}
 .testi__q{font-family:var(--ff-display);font-size:1.05rem;font-style:italic;color:rgba(253,248,244,.88);line-height:1.65;margin-bottom:1.75rem}
-.testi__q::before{content:"C";font-size:3rem;line-height:0;vertical-align:-1rem;color:var(--terracota);margin-right:.1rem}
+.testi__q::before{content:"\201C";font-size:3rem;line-height:0;vertical-align:-1rem;color:var(--terracota);margin-right:.1rem}
 .testi__f{display:flex;align-items:center;gap:.85rem;margin-top:1.75rem}
 .testi__av{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--terracota),var(--terra-deep));display:flex;align-items:center;justify-content:center;font-family:var(--ff-display);font-size:.95rem;color:#fff;flex-shrink:0}
 .testi__name{font-size:.82rem;font-weight:500;color:rgba(253,248,244,.9)}
@@ -335,10 +349,10 @@ footer{background:var(--charcoal);color:var(--cream);padding:4rem 0 2.5rem}
     <div class="nav__inner">
       <a href="#" class="nav__logo" aria-label="Jenifer Tejedor Inicio">Jenifer Tejedor<span>.</span></a>
       <ul class="nav__links" role="list">
-        <li><a href="#pq">Para quien</a></li>
-        <li><a href="#mentoria">Mentoria</a></li>
+        <li><a href="#pq">Para quién</a></li>
+        <li><a href="#mentoria">Mentoría</a></li>
         <li><a href="#retiro">Retiro</a></li>
-        <li><a href="#sobre">Sobre mi</a></li>
+        <li><a href="#sobre">Sobre mí</a></li>
         <li><a href="https://calendly.com/jenifertejedor" target="_blank" rel="noopener" class="nav__cta" onclick="trackCal('nav')">Reservar llamada</a></li>
       </ul>
       <button class="nav__hbg" id="hbg" aria-label="Abrir menu" aria-expanded="false">
@@ -350,10 +364,10 @@ footer{background:var(--charcoal);color:var(--cream);padding:4rem 0 2.5rem}
 
 <div class="nav__mob" id="mobNav" role="dialog" aria-label="Menu movil">
   <button class="nav__mob-x" id="mobX" aria-label="Cerrar menu">x</button>
-  <a href="#pq" onclick="closeMob()">Para quien</a>
-  <a href="#mentoria" onclick="closeMob()">Mentoria</a>
+  <a href="#pq" onclick="closeMob()">Para quién</a>
+  <a href="#mentoria" onclick="closeMob()">Mentoría</a>
   <a href="#retiro" onclick="closeMob()">Retiro</a>
-  <a href="#sobre" onclick="closeMob()">Sobre mi</a>
+  <a href="#sobre" onclick="closeMob()">Sobre mí</a>
   <a href="https://calendly.com/jenifertejedor" target="_blank" rel="noopener" onclick="trackCal('mob');closeMob()">Reservar llamada</a>
 </div>
 
@@ -363,17 +377,17 @@ footer{background:var(--charcoal);color:var(--cream);padding:4rem 0 2.5rem}
   <div class="hero__leaf hero__leaf--1" aria-hidden="true">~</div>
   <div class="hero__leaf hero__leaf--2" aria-hidden="true">~</div>
   <div class="hero__content">
-    <div class="hero__badge">Acompanamiento sistemico - Barcelona</div>
+    <div class="hero__badge">Acompañamiento sistémico - Barcelona</div>
     <p class="hero__eyebrow">No es que no lo veas.</p>
     <h1 class="hero__title">Hay una forma de vivir<br>en la que ya no<br><em>te reconoces.</em></h1>
-    <p class="hero__text">No es falta de claridad.<br>Es el sistema desde el que estas intentando sostener trabajo, relaciones y decisiones <strong>sin incluirte a ti.</strong><br>Ahi es donde trabajamos.</p>
+    <p class="hero__text">No es falta de claridad.<br>Es el sistema desde el que estás intentando sostener trabajo, relaciones y decisiones <strong>sin incluirte a ti.</strong><br>Ahí es donde trabajamos.</p>
     <div class="hero__actions">
-      <a href="https://calendly.com/jenifertejedor" target="_blank" rel="noopener" class="btn btn--p" onclick="trackCal('hero')">Reservar primera conexion</a>
+      <a href="https://calendly.com/jenifertejedor" target="_blank" rel="noopener" class="btn btn--p" onclick="trackCal('hero')">Reservar primera conexión</a>
       <a href="#retiro" class="btn btn--ghost" onclick="trackRet()">Ver retiro SERENZA</a>
     </div>
     <div class="hero__stats">
-      <div><span class="hero__sv">+5</span><span class="hero__sl">años de practica</span></div>
-      <div><span class="hero__sv">+100</span><span class="hero__sl">mujeres acompanadas</span></div>
+      <div><span class="hero__sv">+5</span><span class="hero__sl">años de práctica</span></div>
+      <div><span class="hero__sv">+100</span><span class="hero__sl">mujeres acompañadas</span></div>
       <div><span class="hero__sv">1</span><span class="hero__sl">retiro propio</span></div>
     </div>
   </div>
@@ -382,7 +396,7 @@ footer{background:var(--charcoal);color:var(--cream);padding:4rem 0 2.5rem}
       <img src="/img-hero.png" alt="Oceano profundo sistema" loading="eager" fetchpriority="high" width="960" height="1280" class="hero__photo"/>
     </div>
     <div class="hero__card">
-      <p class="hero__cq">"No estas desbordada.<br>Estas funcionando desde el mismo sistema."</p>
+      <p class="hero__cq">"No estás desbordada.<br>Estás funcionando desde el mismo sistema."</p>
       <p class="hero__ca">Jenifer Tejedor</p>
     </div>
   </div>
@@ -392,8 +406,8 @@ footer{background:var(--charcoal);color:var(--cream);padding:4rem 0 2.5rem}
   <div class="container">
     <ul class="trust__inner" role="list">
       <li class="trust__item"><span class="trust__dot">&#10022;</span> +5 años acompanando procesos</li>
-      <li class="trust__item"><span class="trust__dot">&#10022;</span> +100 mujeres acompanadas</li>
-      <li class="trust__item"><span class="trust__dot">&#10022;</span> Respiracion funcional certificada</li>
+      <li class="trust__item"><span class="trust__dot">&#10022;</span> +100 mujeres acompañadas</li>
+      <li class="trust__item"><span class="trust__dot">&#10022;</span> Respiración funcional certificada</li>
       <li class="trust__item"><span class="trust__dot">&#10022;</span> Thetahealing - Terapeuta emocional</li>
       <li class="trust__item"><span class="trust__dot">&#10022;</span> Facilitadora de cacao ancestral</li>
     </ul>
@@ -404,19 +418,19 @@ footer{background:var(--charcoal);color:var(--cream);padding:4rem 0 2.5rem}
   <div class="container">
     <div class="container--n" style="padding:0">
       <p class="lbl fu">Reconocimiento</p>
-      <h2 id="pq-h" class="fu d1" style="font-family:var(--ff-display);font-size:clamp(2rem,4vw,3.2rem);font-weight:300;line-height:1.15;color:var(--charcoal);">Si algo aqui te resuena,<br>es porque ya lo estas viendo.</h2>
+      <h2 id="pq-h" class="fu d1" style="font-family:var(--ff-display);font-size:clamp(2rem,4vw,3.2rem);font-weight:300;line-height:1.15;color:var(--charcoal);">Si algo aquí te resuena,<br>es porque ya lo estás viendo.</h2>
       <p class="fu d2" style="font-size:1rem;font-weight:300;color:var(--text-muted);line-height:1.8;max-width:540px;margin-top:1.25rem;">No trabajo con quien empieza. Trabajo con quien ya ha hecho camino y sigue sosteniendo lo mismo.</p>
     </div>
     <div class="pq__grid fu d3" role="list">
       <div class="pq__card" role="listitem">
         <p class="pq__num" aria-hidden="true">01</p>
-        <h3 class="pq__title">Sabes que no es por ahi</h3>
-        <p class="pq__body">Estas en una conversacion, en tu trabajo, en una decision y hay algo dentro que te dice: esto no es. Lo ves. Lo sientes. Pero no dices nada. Sigues. Te adaptas. Y luego te vas con esa sensacion de haberte fallado otra vez.</p>
+        <h3 class="pq__title">Sabes que no es por ahí</h3>
+        <p class="pq__body">Estás en una conversacion, en tu trabajo, en una decisión y hay algo dentro que te dice: esto no es. Lo ves. Lo sientes. Pero no dices nada. Sigues. Te adaptas. Y luego te vas con esa sensacion de haberte fallado otra vez.</p>
       </div>
       <div class="pq__card" role="listitem">
         <p class="pq__num" aria-hidden="true">02</p>
         <h3 class="pq__title">Te priorizas a ratos</h3>
-        <p class="pq__body">Hay dias en los que lo haces distinto. Te eliges. Pones un limite. Paras. Y lo notas. Pero no se sostiene. A los pocos dias vuelves a ceder, a decir si cuando es no, a colocarte despues de todo lo demas. Y no entiendes por que, si lo ves tan claro.</p>
+        <p class="pq__body">Hay días en los que lo haces distinto. Te eliges. Pones un limite. Paras. Y lo notas. Pero no se sostiene. A los pocos días vuelves a ceder, a decir si cuando es no, a colocarte después de todo lo demas. Y no entiendes por que, si lo ves tan claro.</p>
       </div>
       <div class="pq__card" role="listitem">
         <p class="pq__num" aria-hidden="true">03</p>
@@ -430,26 +444,26 @@ footer{background:var(--charcoal);color:var(--cream);padding:4rem 0 2.5rem}
 <section id="metodo" aria-labelledby="met-h">
   <div class="container">
     <div class="container--n" style="padding:0">
-      <p class="lbl lbl--light fu">El metodo</p>
-      <h2 id="met-h" class="met__title fu d1">No va de soltar.<br>Va de entender que pasa<br>cuando intentas sostener.</h2>
+      <p class="lbl lbl--light fu">El método</p>
+      <h2 id="met-h" class="met__title fu d1">No va de soltar.<br>Va de entender qué pasa<br>cuando intentas sostener.</h2>
       <p class="met__sub fu d2">Hay un momento muy concreto: sabes lo que tienes que hacer, vas a hacerlo, y algo en ti cambia. Lo notas en el cuerpo. Dudas. Lo pospones. Vuelves a lo mismo. No es falta de capacidad. Es lo que se activa en ti, de forma inconsciente, en ese punto.</p>
       <div class="met__div fu d2"></div>
     </div>
     <div class="pillars fu d3" role="list">
       <div class="pillar" role="listitem">
         <div class="pillar__g" aria-hidden="true">&#8767;</div>
-        <h3 class="pillar__n">Regulacion</h3>
-        <p class="pillar__t">En ese momento, tu sistema se activa. Se acelera, se cierra o se pone en alerta. Trabajamos sobre esa respuesta: respiracion, activacion y regulacion. Porque si eso no cambia, vas a seguir saboteandote en el mismo punto.</p>
+        <h3 class="pillar__n">Regulación</h3>
+        <p class="pillar__t">En ese momento, tu sistema se activa. Se acelera, se cierra o se pone en alerta. Trabajamos sobre esa respuesta: respiración, activacion y regulación. Porque si eso no cambia, vas a seguir saboteandote en el mismo punto.</p>
       </div>
       <div class="pillar" role="listitem">
         <div class="pillar__g" aria-hidden="true">&#9632;</div>
         <h3 class="pillar__n">Orden</h3>
-        <p class="pillar__t">No es lo que haces. Es el lugar que le das a cada cosa en tu vida. Cuando todo ocupa mas espacio que tu, acabas sosteniendo una vida en la que tu no estas. Reordenamos prioridades para que dejes de ponerte despues de todo lo demas.</p>
+        <p class="pillar__t">No es lo que haces. Es el lugar que le das a cada cosa en tu vida. Cuando todo ocupa mas espacio que tu, acabas sosteniendo una vida en la que tu no estás. Reordenamos prioridades para que dejes de ponerte después de todo lo demas.</p>
       </div>
       <div class="pillar" role="listitem">
         <div class="pillar__g" aria-hidden="true">&#9675;</div>
         <h3 class="pillar__n">Coherencia</h3>
-        <p class="pillar__t">No se trata de hacerlo perfecto. Se trata de que, hagas lo que hagas, no sientas que te estas traicionando. Hay decisiones y formas de actuar que por dentro sabes que no van contigo. Y aun asi, las sigues sosteniendo.</p>
+        <p class="pillar__t">No se trata de hacerlo perfecto. Se trata de que, hagas lo que hagas, no sientas que te estás traicionando. Hay decisiones y formas de actuar que por dentro sabes que no van contigo. Y aun asi, las sigues sosteniendo.</p>
       </div>
     </div>
   </div>
@@ -457,11 +471,11 @@ footer{background:var(--charcoal);color:var(--cream);padding:4rem 0 2.5rem}
 
 <div class="cta-band" role="complementary">
   <div class="container">
-    <p class="lbl lbl--light">Primera conexion sin coste</p>
-    <h2 class="cta-band__t">Antes de empezar, veo contigo<br>en que punto estas.</h2>
+    <p class="lbl lbl--light">Primera conexión sin coste</p>
+    <h2 class="cta-band__t">Antes de empezar, veo contigo<br>en que punto estás.</h2>
     <p class="cta-band__s">Sin estructura de sesion. Sin compromiso. Solo claridad de si esto es para ti.</p>
     <div class="cta-band__a">
-      <a href="https://calendly.com/jenifertejedor" target="_blank" rel="noopener" class="btn btn--light" onclick="trackCal('band')">Reservar primera conexion</a>
+      <a href="https://calendly.com/jenifertejedor" target="_blank" rel="noopener" class="btn btn--light" onclick="trackCal('band')">Reservar primera conexión</a>
       <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20quiero%20saber%20mas%20sobre%20la%20mentoria" target="_blank" rel="noopener" class="btn btn--wa" onclick="trackWA('band')">Escribir por WhatsApp</a>
     </div>
   </div>
@@ -476,17 +490,17 @@ footer{background:var(--charcoal);color:var(--cream);padding:4rem 0 2.5rem}
         <p class="ment__sub fu d2">Dejar de sostener tu vida desde el mismo lugar. Ocupar tu lugar en ella.</p>
         <div class="ment__div"></div>
         <div class="ment__body fu">
-          <p>El orden de tu vida ahora mismo habla por ti. En que ocupa tu tiempo. En que ocupa tu energia. Y en el lugar en el que te estas colocando.</p>
+          <p>El orden de tu vida ahora mismo habla por ti. En que ocupa tu tiempo. En que ocupa tu energia. Y en el lugar en el que te estás colocando.</p>
           <p>Cuando sabes que tendrias que parar y respondes otro mensaje. Cuando quieres poner un limite y vuelves a adaptarte. Cuando notas que el trabajo esta ocupando un lugar que no le corresponde pero sigues colocandolo por delante de ti.</p>
           <p><strong>Eso es lo que trabajamos.</strong></p>
         </div>
         <ul class="inc__list fu" aria-label="Que incluye la mentoria">
           <li>12 sesiones 1:1 (1 por semana durante 3 meses)</li>
-          <li>Primera conexion inicial &mdash; analizo tu momento, patrones y estructuro el proceso</li>
-          <li>Acompanamiento entre sesiones &mdash; cuando algo importante este pasando, puedes escribirme</li>
-          <li>Trabajo directo sobre patrones &mdash; no solo los ves, los cambias</li>
+          <li>Primera conexión inicial - analizo tu momento, patrones y estructuro el proceso</li>
+          <li>Acompañamiento entre sesiones - cuando algo importante este pasando, puedes escribirme</li>
+          <li>Trabajo directo sobre patrones - no solo los ves, los cambias</li>
           <li>Reordenamiento de prioridades aplicado a tu vida real</li>
-          <li>Regulacion aplicada &mdash; herramientas para que tu cuerpo no te saque del punto</li>
+          <li>Regulación aplicada - herramientas para que tu cuerpo no te saque del punto</li>
           <li>Integracion en trabajo, relaciones, decisiones, limites</li>
           <li>Cacao como puente en momentos concretos (cuando aplica)</li>
         </ul>
@@ -495,12 +509,12 @@ footer{background:var(--charcoal);color:var(--cream);padding:4rem 0 2.5rem}
           <p class="price__cur">1200&euro;</p>
           <span class="price__badge">Precio de lanzamiento - Tiempo limitado</span>
           <p class="price__opts">Pago completo o en 2, 3 o 4 cuotas.<br>Primera cuota antes de iniciar. Ultima antes de finalizar.<br>Con firma de acuerdo de compromiso.</p>
-          <a href="https://calendly.com/jenifertejedor" target="_blank" rel="noopener" class="btn btn--p" style="width:100%;justify-content:center" onclick="trackCal('price')">Reservar primera conexion gratuita</a>
+          <a href="https://calendly.com/jenifertejedor" target="_blank" rel="noopener" class="btn btn--p" style="width:100%;justify-content:center" onclick="trackCal('price')">Reservar primera conexión gratuita</a>
         </div>
         <div class="faq__list fu" aria-label="Preguntas frecuentes">
           <div class="faq__item">
-            <div class="faq__q" role="button" tabindex="0" aria-expanded="false"><span>Que pasa en la primera conexion?</span><div class="faq__icon" aria-hidden="true">+</div></div>
-            <div class="faq__a" role="region">Antes de empezar, tenemos una primera conexion, no una sesion. Ahi veo contigo en que punto estas, tu historia y lo que se repite. A partir de eso estructuro el proceso de forma personalizada.</div>
+            <div class="faq__q" role="button" tabindex="0" aria-expanded="false"><span>Qué pasa en la primera conexión?</span><div class="faq__icon" aria-hidden="true">+</div></div>
+            <div class="faq__a" role="region">Antes de empezar, tenemos una primera conexión, no una sesion. Ahí veo contigo en qué punto estás, tu historia y lo que se repite. A partir de eso estructuro el proceso de forma personalizada.</div>
           </div>
           <div class="faq__item">
             <div class="faq__q" role="button" tabindex="0" aria-expanded="false"><span>Este proceso es para mi?</span><div class="faq__icon" aria-hidden="true">+</div></div>
@@ -514,7 +528,7 @@ footer{background:var(--charcoal);color:var(--cream);padding:4rem 0 2.5rem}
       </div>
       <div class="ment__vis fu d1">
         <div class="ment__iw">
-          <img src="/jenifer-tejedor.png" alt="Jenifer Tejedor sesion acompanamiento" loading="lazy" width="800" height="1000"/>
+          <img src="/jenifer-tejedor.png" alt="Jenifer Tejedor sesion acompañamiento" loading="lazy" width="800" height="1000"/>
           <div class="ment__ic"><p>"No necesitas mas herramientas. Necesitas dejar de sostener tu vida desde el mismo sistema."</p></div>
         </div>
         <div class="signals">
@@ -533,89 +547,55 @@ footer{background:var(--charcoal);color:var(--cream);padding:4rem 0 2.5rem}
 
 <section id="retiro" aria-labelledby="ret-h">
   <div class="container">
-    <div class="ret__tag"><span class="ret__dot" aria-hidden="true"></span>Plazas limitadas - Primera edicion - 12 plazas</div>
-    <p class="ret__dates">22 &ndash; 24 Mayo 2026 &middot; Cardedeu, Barcelona</p>
-    <h2 id="ret-h" class="ret__h">SERENZA</h2>
-    <p class="ret__sub">Tres dias donde el orden que sostienes fuera se detiene<br>para que dentro todo encuentre su lugar.</p>
-    <div class="ret__grid fu">
-      <div>
-        <div class="ret__imgs">
-          <img src="/retiro-1.png" alt="Casa retiro Cardedeu Barcelona" loading="lazy" width="900" height="506"/>
-          <img src="/retiro-2.webp" alt="Practica de respiracion guiada" loading="lazy" width="450" height="338"/>
-          <img src="/retiro-3.png" alt="Cacao ceremonial ancestral" loading="lazy" width="450" height="338"/>
-        </div>
-      </div>
-      <div>
-        <p class="ret__body">Tu vida no se desordena de un dia para otro. Se mueve en momentos muy concretos. Cuando sabes que tendrias que parar y respondes otro mensaje. Cuando estas en una conversacion y no dices lo que realmente piensas.<br><br><strong>Eso no pasa aqui. Aqui vamos mas profundo.</strong></p>
-        <div class="ejes">
-          <div class="eje"><div class="eje__m" aria-hidden="true">R</div><div><p class="eje__n">Regulacion</p><p class="eje__t">Un sistema en alerta no elige. Responde. Aqui bajas el ritmo para dejar de reaccionar y empezar a percibir con claridad.</p></div></div>
-          <div class="eje"><div class="eje__m" aria-hidden="true">O</div><div><p class="eje__n">Orden</p><p class="eje__t">Tu vida esta sostenida desde un orden donde tu no estas en tu lugar. Aqui eso se hace evidente. Y empieza a recolocarse sin forzarlo.</p></div></div>
-          <div class="eje"><div class="eje__m" aria-hidden="true">C</div><div><p class="eje__n">Coherencia</p><p class="eje__t">No es falta de claridad. Es repeticion. Formas de actuar que ya no van contigo pero sigues sosteniendo. Aqui las ves. Y cuando las ves de verdad, dejas de sostenerte igual.</p></div></div>
-        </div>
-        <div class="ret__inc">
-          <h4>Que incluye</h4>
-          <div class="ret__inc-g">
-            <div class="ret__inc-i">Alojamiento 3 dias / 2 noches</div>
-            <div class="ret__inc-i">Alimentacion completa</div>
-            <div class="ret__inc-i">Respiracion guiada</div>
-            <div class="ret__inc-i">Movimiento corporal</div>
-            <div class="ret__inc-i">Taller de cacao ceremonial</div>
-            <div class="ret__inc-i">Trabajo de creencias y patrones</div>
-            <div class="ret__inc-i">Caminatas en naturaleza</div>
-            <div class="ret__inc-i">Circulos de palabra</div>
-            <div class="ret__inc-i">Espacios de silencio</div>
-            <div class="ret__inc-i">Cierre integrativo</div>
-          </div>
-        </div>
-        <div class="ret__price">
-          <p class="ret__pl">Inversion - Primera edicion</p>
-          <p class="ret__pn">A consultar</p>
-          <p class="ret__pnote">Este precio no se repetira en proximas ediciones</p>
-          <p class="ret__spots">Solo <strong>12 plazas</strong> disponibles</p>
-          <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20quiero%20informacion%20sobre%20el%20retiro%20SERENZA" target="_blank" rel="noopener" class="btn btn--wa" style="width:100%;justify-content:center" onclick="trackWA('retiro');trackRet()">Reservar plaza por WhatsApp</a>
-          <p style="font-size:.7rem;color:rgba(253,248,244,.3);margin-top:.85rem">O escribeme para recibir toda la informacion</p>
-        </div>
-      </div>
+    <div class="ret__tag">
+      <span class="ret__dot" aria-hidden="true"></span>
+      Plazas limitadas - 12 mujeres - Primera edición
     </div>
-  </div>
-</section>
+    <p class="ret__dates">22 - 24 Mayo 2026 - Cardedeu, Barcelona</p>
+    <h2 id="ret-h" class="ret__h">SERENZA</h2>
+    <p class="ret__sub">
+      Tres días donde el orden que sostienes fuera se detiene<br>
+      para que dentro... todo encuentre su lugar.
+    </p>
 
-<section id="programa" aria-labelledby="prog-h">
-  <div class="container">
-    <p class="lbl fu">Programa detallado</p>
-    <h2 id="prog-h" class="fu d1" style="font-family:var(--ff-display);font-size:clamp(2rem,4vw,3rem);font-weight:300;line-height:1.15;color:var(--charcoal);margin-bottom:.5rem">Tres dias.<br>Un reordenamiento.</h2>
-    <div class="prog fu d2">
-      <div class="dia">
-        <div class="dia__h"><p class="dia__n">Dia 1</p><p class="dia__d">Viernes - Llegada</p></div>
-        <div class="dia__b">
-          <div class="hora"><span class="hora__t">18:00</span><span class="hora__d">Llegada y bienvenida. Infusion natural caliente. Espacio intimo de presentacion.</span></div>
-          <div class="hora"><span class="hora__t">19:00</span><span class="hora__d">Conexion grupal y primeras palabras</span></div>
-          <div class="hora"><span class="hora__t">20:00</span><span class="hora__d">Cena consciente</span></div>
-          <div class="hora"><span class="hora__t">21:30</span><span class="hora__d">Sesion de respiracion guiada nocturna para cambiar el sueno y bajar el ritmo</span></div>
-        </div>
+    <div class="ret__promo fu">
+      <div class="ret__promo-img">
+        <img src="/retiro-1.png"
+             alt="Retiro SERENZA Cardedeu Barcelona"
+             loading="lazy" width="900" height="506"/>
       </div>
-      <div class="dia">
-        <div class="dia__h"><p class="dia__n">Dia 2</p><p class="dia__d">Sabado - El trabajo</p></div>
-        <div class="dia__b">
-          <div class="hora"><span class="hora__t">7:00</span><span class="hora__d">Amanecer opcional - salida al sol, gratitud, conexion</span></div>
-          <div class="hora"><span class="hora__t">8:00</span><span class="hora__d">Movimiento corporal + caminata en naturaleza en silencio, conectadas a la respiracion</span></div>
-          <div class="hora"><span class="hora__t">9:30</span><span class="hora__d">Desayuno proteico sin azucar, sin prisa</span></div>
-          <div class="hora"><span class="hora__t">11:00</span><span class="hora__d">Taller de cacao ceremonial - pintura en lienzo colectivo con ojos tapados</span></div>
-          <div class="hora"><span class="hora__t">13:30</span><span class="hora__d">Comida lenta al exterior (si hay sol)</span></div>
-          <div class="hora"><span class="hora__t">15:30</span><span class="hora__d">Taller de patrones y creencias - baile, visualizacion dinamica en movimiento, circulo de compartir</span></div>
-          <div class="hora"><span class="hora__t">21:30</span><span class="hora__d">Respiracion + visualizacion con musica handpan. Cierre para descanso profundo.</span></div>
+      <div class="ret__promo-body">
+        <p class="ret__body">
+          No es un retiro de descanso.<br>
+          Es una parada real donde el sistema baja,<br>
+          la percepción cambia<br>
+          y lo que llevas tiempo sin ver... aparece.
+        </p>
+        <ul class="ret__pills" aria-label="Incluye">
+          <li>Alojamiento completo</li>
+          <li>Alimentación</li>
+          <li>Cacao ceremonial</li>
+          <li>Respiración guiada</li>
+          <li>Trabajo de patrones</li>
+          <li>Círculos de palabra</li>
+        </ul>
+        <div class="ret__promo-ctas">
+          <a href="/serenza.html"
+             class="btn btn--p"
+             onclick="trackRet()">
+            Ver el programa completo
+          </a>
+          <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20retiro%20SERENZA"
+             target="_blank" rel="noopener"
+             class="btn btn--wa"
+             onclick="trackWA('retiro');trackRet()">
+            Reservar plaza
+          </a>
         </div>
-      </div>
-      <div class="dia">
-        <div class="dia__h"><p class="dia__n">Dia 3</p><p class="dia__d">Domingo - Cierre</p></div>
-        <div class="dia__b">
-          <div class="hora"><span class="hora__t">7:00</span><span class="hora__d">Amanecer + caminata de integracion en silencio</span></div>
-          <div class="hora"><span class="hora__t">8:00</span><span class="hora__d">Desayuno con cacao ceremonial. Tiempo libre de integracion.</span></div>
-          <div class="hora"><span class="hora__t">11:00</span><span class="hora__d">Actividad en agua / colchonetas - integracion corporal</span></div>
-          <div class="hora"><span class="hora__t">13:00</span><span class="hora__d">Comida final compartida</span></div>
-          <div class="hora"><span class="hora__t">16:00</span><span class="hora__d">Cierre integrativo - respiracion, baile, fuego y circulo de palabra final</span></div>
-          <div class="hora"><span class="hora__t">18:00</span><span class="hora__d">Salida</span></div>
-        </div>
+        <p class="ret__promo-note">
+          Sólo <strong>12 plazas</strong> -
+          <a href="/serenza.html" onclick="trackRet()">Ver todo el detalle</a>
+        </p>
       </div>
     </div>
   </div>
@@ -630,7 +610,7 @@ footer{background:var(--charcoal);color:var(--cream);padding:4rem 0 2.5rem}
           <div class="sobre__badge"><strong>+100</strong><span>mujeres<br>acompanadas</span></div>
         </div>
         <div class="sobre__stats">
-          <div class="sobre__sv"><strong>+5</strong><span>años<br>practica</span></div>
+          <div class="sobre__sv"><strong>+5</strong><span>años<br>práctica</span></div>
           <div class="sobre__sv"><strong>1</strong><span>retiro<br>propio</span></div>
           <div class="sobre__sv"><strong>5</strong><span>titulaciones<br>especializadas</span></div>
         </div>
@@ -640,14 +620,14 @@ footer{background:var(--charcoal);color:var(--cream);padding:4rem 0 2.5rem}
         <h2 id="sm-h" style="font-family:var(--ff-display);font-size:clamp(1.8rem,3vw,2.5rem);font-weight:300;line-height:1.2;color:var(--charcoal);margin-bottom:1.5rem">No trabajo con lo que dices que te pasa. Trabajo con lo que lo esta sosteniendo.</h2>
         <p class="sobre__op">"Hay un punto en el que ya no falta informacion.<br>Falta estructura interna para sostenerla."</p>
         <div class="sobre__body">
-          <p>Mi trabajo nace ahi. No en la teoria. No en el desarrollo personal. En el momento en el que ves lo que tienes que hacer y aun asi no lo haces.</p>
-          <p>Yo estuve ahi. Una ruptura me desordenó por completo. No era solo la relacion. Era todo lo que se sostenia desde ese lugar. Identidad. Direccion. Forma de vivir. Y en ese punto entendi algo que no se ensena: <strong>no es falta de claridad. Es falta de regulacion para sostenerla.</strong></p>
+          <p>Mi trabajo nace ahí. No en la teoría. No en el desarrollo personal. En el momento en el que ves lo que tienes que hacer y aun así no lo haces.</p>
+          <p>Yo estuve ahí. Una ruptura me desordenó por completo. No era solo la relacion. Era todo lo que se sostenia desde ese lugar. Identidad. Direccion. Forma de vivir. Y en ese punto entendi algo que no se ensena: <strong>no es falta de claridad. Es falta de regulación para sostenerla.</strong></p>
           <p>Desde entonces, todo mi trabajo se construye sobre eso. Acompano a mujeres que ya han hecho trabajo interno. Que entienden. Que han ido a terapia. Que han probado distintas herramientas. Y que, aun asi, siguen repitiendo lo mismo. No por falta de capacidad. Sino porque <strong>su sistema sigue funcionando igual.</strong></p>
-          <p>El mar no es un recurso visual en mi vida. Es estructura. El surf me enfrenta constantemente a lo que no controlo. A sostenerme sin rigidez. A leer el sistema en tiempo real. No puedo bajar en profundidad desde pequena. Y aun asi, es ahi donde mas conecto. Desde la superficie entendiendo lo que hay debajo. <strong>Eso define tambien como acompano.</strong></p>
+          <p>El mar no es un recurso visual en mi vida. Es estructura. El surf me enfrenta constantemente a lo que no controlo. A sostenerme sin rigidez. A leer el sistema en tiempo real. No puedo bajar en profundidad desde pequena. Y aun asi, es ahí donde mas conecto. Desde la superficie entendiendo lo que hay debajo. <strong>Eso define tambien como acompano.</strong></p>
         </div>
-        <p class="lbl lbl--sage" style="margin-top:2.5rem">Formacion</p>
+        <p class="lbl lbl--sage" style="margin-top:2.5rem">Formación</p>
         <div class="form__g">
-          <div class="form__i">Instructora de respiracion funcional</div>
+          <div class="form__i">Instructora de respiración funcional</div>
           <div class="form__i">Thetahealer</div>
           <div class="form__i">Terapeuta emocional</div>
           <div class="form__i">Herbolaria espiritual</div>
@@ -664,16 +644,16 @@ footer{background:var(--charcoal);color:var(--cream);padding:4rem 0 2.5rem}
     <h2 id="testi-h" class="testi__title fu d1">Mujeres que ya <em>decidieron</em></h2>
     <div class="testi__grid fu d2" role="list">
       <blockquote class="testi__card" role="listitem">
-        <p class="testi__q">Llegue creyendo que necesitaba mas estrategia. Sali entendiendo que lo que necesitaba era claridad. Son cosas completamente distintas. Jenifer me ayudo a ver esa diferencia.</p>
-        <div class="testi__f"><div class="testi__av" aria-hidden="true">A</div><div><cite class="testi__name" style="font-style:normal">Ana M.</cite><p class="testi__role">Directora de empresa &middot; Madrid</p></div></div>
+        <p class="testi__q">Llegué creyendo que necesitaba mas estrategia. Salí entendiendo que lo que necesitaba era claridad. Son cosas completamente distintas. Jenifer me ayudo a ver esa diferencia.</p>
+        <div class="testi__f"><div class="testi__av" aria-hidden="true">A</div><div><cite class="testi__name" style="font-style:normal">Ana M.</cite><p class="testi__role">Directora de empresa - Madrid</p></div></div>
       </blockquote>
       <blockquote class="testi__card" role="listitem">
-        <p class="testi__q">El proceso con Jenifer fue el antes y el despues. No es coaching, no es terapia. Es algo que no tenia nombre hasta que lo vivi y que cambio como tomo decisiones todos los dias.</p>
-        <div class="testi__f"><div class="testi__av" aria-hidden="true">L</div><div><cite class="testi__name" style="font-style:normal">Laura G.</cite><p class="testi__role">Emprendedora &middot; Barcelona</p></div></div>
+        <p class="testi__q">El proceso con Jenifer fue el antes y el después. No es coaching, no es terapia. Es algo que no tenia nombre hasta que lo vivi y que cambio como tomo decisiones todos los días.</p>
+        <div class="testi__f"><div class="testi__av" aria-hidden="true">L</div><div><cite class="testi__name" style="font-style:normal">Laura G.</cite><p class="testi__role">Emprendedora - Barcelona</p></div></div>
       </blockquote>
       <blockquote class="testi__card" role="listitem">
-        <p class="testi__q">Fui al retiro con una decision que llevaba dos años postergando. La tome el segundo dia. Tres meses despues sigo sosteniendo esa decision y estoy mas tranquila que en años.</p>
-        <div class="testi__f"><div class="testi__av" aria-hidden="true">S</div><div><cite class="testi__name" style="font-style:normal">Sandra P.</cite><p class="testi__role">Lider de equipo &middot; Valencia</p></div>
+        <p class="testi__q">Fui al retiro con una decisión que llevaba dos años postergando. La tome el segundo dia. Tres meses despues sigo sosteniendo esa decisión y estoy mas tranquila que en años.</p>
+        <div class="testi__f"><div class="testi__av" aria-hidden="true">S</div><div><cite class="testi__name" style="font-style:normal">Sandra P.</cite><p class="testi__role">Lider de equipo - Valencia</p></div>
       </blockquote>
     </div>
   </div>
@@ -682,10 +662,10 @@ footer{background:var(--charcoal);color:var(--cream);padding:4rem 0 2.5rem}
 <section id="cierre" aria-labelledby="cierre-h">
   <div class="container">
     <p class="lbl">El siguiente paso</p>
-    <h2 id="cierre-h" class="cierre__t">No es que no sepas que hacer.<br>Es que tu sistema no esta<br>preparado para <em>sostenerlo.</em></h2>
-    <p class="cierre__s">Ahi es donde trabajo. Una primera conexion sin estructura de sesion, sin compromiso, para ver si esto es para ti.</p>
+    <h2 id="cierre-h" class="cierre__t">No es que no sepas qué hacer.<br>Es que tu sistema no esta<br>preparado para <em>sostenerlo.</em></h2>
+    <p class="cierre__s">Ahí es donde trabajo. Una primera conexión sin estructura de sesion, sin compromiso, para ver si esto es para ti.</p>
     <div class="cierre__a">
-      <a href="https://calendly.com/jenifertejedor" target="_blank" rel="noopener" class="btn btn--p" onclick="trackCal('cierre')">Reservar primera conexion</a>
+      <a href="https://calendly.com/jenifertejedor" target="_blank" rel="noopener" class="btn btn--p" onclick="trackCal('cierre')">Reservar primera conexión</a>
       <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20me%20gustaria%20saber%20mas%20sobre%20el%20proceso" target="_blank" rel="noopener" class="btn btn--wa" onclick="trackWA('cierre')">Escribir por WhatsApp</a>
       <a href="#retiro" class="btn btn--ghost" onclick="trackRet()">Ver retiro SERENZA</a>
     </div>
@@ -700,16 +680,16 @@ footer{background:var(--charcoal);color:var(--cream);padding:4rem 0 2.5rem}
     <div class="foot__g">
       <div>
         <p class="foot__logo">Jenifer Tejedor<span>.</span></p>
-        <p class="foot__tag">Acompanamiento sistemico para mujeres que ya saben lo que tienen que cambiar y no consiguen sostenerlo.</p>
+        <p class="foot__tag">Acompañamiento sistémico para mujeres que ya saben lo que tienen que cambiar y no consiguen sostenerlo.</p>
       </div>
       <div class="foot__col">
         <h4>Navegacion</h4>
         <nav class="foot__links" aria-label="Pie de pagina">
-          <a href="#pq">Para quien</a>
-          <a href="#metodo">El metodo</a>
-          <a href="#mentoria">Mentoria 1:1</a>
+          <a href="#pq">Para quién</a>
+          <a href="#metodo">El método</a>
+          <a href="#mentoria">Mentoría 1:1</a>
           <a href="#retiro">Retiro SERENZA</a>
-          <a href="#sobre">Sobre mi</a>
+          <a href="#sobre">Sobre mí</a>
         </nav>
       </div>
       <div class="foot__col">
@@ -730,7 +710,7 @@ footer{background:var(--charcoal);color:var(--cream);padding:4rem 0 2.5rem}
         <a href="/cookies">Cookies</a>
       </nav>
     </div>
-    <p class="foot__built">Sitio desarrollado por <a href="https://cirujanadigital.com" target="_blank" rel="noopener">Cirujana Digital</a></p>
+    <p class="foot__built">Sitio diseñado y desarrollado por <a href="https://cirujanadigital.com" target="_blank" rel="noopener">Cirujana Digital</a></p>
   </div>
 </footer>
 

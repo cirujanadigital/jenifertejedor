@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Retiro SERENZA — 22 al 24 de Mayo 2026, Cardedeu Barcelona. 12 plazas. Una experiencia inmersiva donde dejas de sostenerte como siempre y algo dentro empieza a ordenarse."/>
+<meta name="keywords" content="retiro SERENZA, Jenifer Tejedor, retiro mujeres Barcelona, Cardedeu, cacao ceremonial, reordenamiento interior"/>
+<meta property="og:title" content="Retiro SERENZA — Jenifer Tejedor"/>
+<meta property="og:description" content="Tres dias donde el orden que sostienes fuera se detiene para que dentro todo encuentre su lugar."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://jenifertejedor.com/serenza"/>
+<meta property="og:image" content="https://jenifertejedor.com/serenza-og.jpg"/>
+<link rel="canonical" href="https://jenifertejedor.com/serenza"/>
+<title>Retiro SERENZA — 22-24 Mayo 2026 &middot; Jenifer Tejedor</title>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Event","name":"Retiro SERENZA","startDate":"2026-05-22","endDate":"2026-05-24","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","location":{"@type":"Place","name":"Casa SEON Meditacion","address":{"@type":"PostalAddress","addressLocality":"Cardedeu","addressRegion":"Barcelona","addressCountry":"ES"}},"organizer":{"@type":"Person","name":"Jenifer Tejedor","url":"https://jenifertejedor.com"},"description":"Tres dias inmersivos de reordenamiento interior. Regulacion, orden y coherencia.","maximumAttendeeCapacity":12}</script>
+
+<script>
+function loadGA(){if(window._gaLoaded)return;window._gaLoaded=true;var s=document.createElement("script");s.async=true;s.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX";document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag("js",new Date());gtag("config","G-XXXXXXXXXX")}
+["scroll","click","touchstart","keydown"].forEach(function(e){window.addEventListener(e,loadGA,{once:true,passive:true})});
+function trackWA(l){if(window.gtag)gtag("event","whatsapp_click",{event_category:"retiro",event_label:l||"wa"})}
+function trackStripe(){if(window.gtag)gtag("event","stripe_click",{event_category:"retiro",event_label:"pago_online"})}
+</script>
+
+<style>
+:root{
+  --cream:#fdf8f4;--cream-deep:#f5ede4;--blush:#f0e0d6;--nude:#e8d5c4;--mist:#f8f4f0;
+  --terracota:#c17f5e;--terra-deep:#9e5e3d;--terra-light:#d9a088;--terra-pale:#f0d8cc;
+  --sage:#7a8c78;--sage-light:#a4b5a2;--sage-dark:#4a6650;--sage-pale:#dce8da;
+  --tide:#7a9eaa;--tide-light:#a8c4cc;--tide-pale:#daeaee;--tide-deep:#3d6e7a;
+  --gold:#b8936a;--gold-light:#e8cdb0;
+  --charcoal:#2e2420;--ink:#3a2f2a;
+  --text-main:#2e2420;--text-muted:#6a5e58;--text-light:#9a8e88;
+  --ff-display:"Palatino Linotype","Book Antiqua",Palatino,"Times New Roman",Georgia,serif;
+  --ff-body:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  --pad-x:clamp(1.25rem,5vw,3rem);
+  --ease-out:cubic-bezier(0.16,1,0.3,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--ff-body);background:var(--charcoal);color:var(--cream);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+
+/* ── TOPBAR ── */
+.topbar{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:.9rem clamp(1.25rem,5vw,3rem);
+  transition:background .4s var(--ease-out),backdrop-filter .4s;
+}
+.topbar.scrolled{
+  background:rgba(46,36,32,.92);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(253,248,244,.06);
+}
+.topbar__back{
+  display:inline-flex;align-items:center;gap:.5rem;
+  font-size:.72rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;
+  color:rgba(253,248,244,.5);
+  transition:color .25s ease;
+}
+.topbar__back:hover{color:var(--cream)}
+.topbar__back svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.5}
+.topbar__logo{
+  font-family:var(--ff-display);font-size:1rem;font-weight:400;
+  letter-spacing:.06em;color:rgba(253,248,244,.7);
+}
+.topbar__cta{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:.55rem 1.25rem;
+  background:var(--terracota);color:#fff;
+  font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;
+  border-radius:2px;transition:all .25s var(--ease-out);
+}
+.topbar__cta:hover{background:var(--terra-deep);transform:translateY(-1px)}
+
+/* ── HERO FULLSCREEN ── */
+.hero{
+  position:relative;
+  min-height:100dvh;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  overflow:hidden;
+}
+.hero__media{
+  position:absolute;inset:0;
+}
+.hero__img{
+  width:100%;height:100%;
+  object-fit:cover;object-position:center 20%;
+  filter:brightness(.55) saturate(.75);
+}
+/* Gradient overlay — dark bottom for text legibility */
+.hero__overlay{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(to bottom,
+      rgba(46,36,32,.1) 0%,
+      rgba(46,36,32,.05) 35%,
+      rgba(46,36,32,.65) 70%,
+      rgba(46,36,32,.92) 100%
+    );
+}
+.hero__content{
+  position:relative;z-index:10;
+  padding:clamp(5rem,10vw,8rem) var(--pad-x) clamp(3rem,6vw,5rem);
+  max-width:900px;
+}
+.hero__badge{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1px solid rgba(193,127,94,.4);
+  padding:5px 12px;border-radius:2px;
+  font-size:.66rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;
+  color:rgba(253,248,244,.65);
+  margin-bottom:2rem;
+}
+.hero__badge-dot{
+  width:6px;height:6px;border-radius:50%;
+  background:#ff6b4a;animation:pulse 2.2s infinite;
+}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+.hero__dates{
+  font-family:var(--ff-display);
+  font-size:clamp(.9rem,1.5vw,1rem);
+  font-weight:300;font-style:italic;
+  color:var(--terra-light);
+  letter-spacing:.1em;margin-bottom:1rem;
+}
+.hero__title{
+  font-family:var(--ff-display);
+  font-size:clamp(4.5rem,13vw,11rem);
+  font-weight:300;line-height:.92;
+  letter-spacing:.04em;
+  color:var(--cream);
+  margin-bottom:1.5rem;
+}
+/* The Z in gold like the flyer */
+.hero__title .z{
+  color:var(--gold);
+  font-style:italic;
+}
+.hero__sub{
+  font-size:clamp(.95rem,1.6vw,1.15rem);
+  font-weight:300;
+  color:rgba(253,248,244,.72);
+  line-height:1.75;
+  max-width:520px;
+  margin-bottom:2.5rem;
+}
+.hero__actions{
+  display:flex;gap:1rem;flex-wrap:wrap;align-items:center;
+}
+.hero__scroll{
+  position:absolute;bottom:2rem;right:var(--pad-x);
+  display:flex;flex-direction:column;align-items:center;gap:.5rem;
+  font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(253,248,244,.35);z-index:10;
+}
+.hero__scroll-line{
+  width:1px;height:48px;
+  background:linear-gradient(to bottom,rgba(253,248,244,.3),transparent);
+  animation:scrollpulse 2s ease infinite;
+}
+@keyframes scrollpulse{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ── SPOTS BAND ── */
+.spots-band{
+  background:var(--terracota);
+  padding:.9rem var(--pad-x);
+  display:flex;align-items:center;justify-content:center;gap:2rem;
+  flex-wrap:wrap;
+}
+.spots-band__item{
+  display:flex;align-items:center;gap:.5rem;
+  font-size:.72rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;
+  color:rgba(255,255,255,.85);white-space:nowrap;
+}
+.spots-band__dot{color:rgba(255,255,255,.5);font-size:.8rem}
+.spots-counter{
+  display:inline-flex;align-items:center;gap:.4rem;
+}
+.spots-num{
+  font-family:var(--ff-display);font-size:1.3rem;font-weight:300;
+  color:#fff;line-height:1;
+}
+
+/* ── BUTTONS ── */
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:.95rem 2.25rem;
+  font-family:var(--ff-body);
+  font-size:.78rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;
+  border-radius:2px;transition:all .25s var(--ease-out);
+  cursor:pointer;border:none;white-space:nowrap;
+}
+.btn--p{background:var(--terracota);color:#fff;box-shadow:0 4px 20px rgba(193,127,94,.35)}
+.btn--p:hover{background:var(--terra-deep);transform:translateY(-2px);box-shadow:0 8px 28px rgba(193,127,94,.4)}
+.btn--o{background:transparent;color:var(--cream);border:1px solid rgba(253,248,244,.25)}
+.btn--o:hover{border-color:rgba(253,248,244,.55);background:rgba(253,248,244,.06)}
+.btn--sage{background:var(--sage-dark);color:#fff}
+.btn--sage:hover{background:#3a5240;transform:translateY(-2px)}
+.btn--wa{background:#4a7c59;color:#fff}
+.btn--wa:hover{background:#3a6247;transform:translateY(-2px)}
+.btn--gold{background:var(--gold);color:var(--charcoal)}
+.btn--gold:hover{background:var(--gold-light);transform:translateY(-2px)}
+.btn--stripe{
+  background:#635bff;color:#fff;
+  box-shadow:0 4px 20px rgba(99,91,255,.3);
+}
+.btn--stripe:hover{background:#4f46e5;transform:translateY(-2px);box-shadow:0 8px 28px rgba(99,91,255,.4)}
+
+/* ── SECTION BASE ── */
+.section{padding:clamp(4.5rem,8vw,7rem) 0}
+.section--cream{background:var(--cream);color:var(--text-main)}
+.section--mist{background:var(--mist);color:var(--text-main)}
+.section--blush{background:linear-gradient(180deg,var(--blush) 0%,var(--mist) 100%);color:var(--text-main)}
+.section--dark{background:var(--charcoal)}
+.section--sage{background:linear-gradient(135deg,var(--sage-dark) 0%,#3a5240 100%)}
+.section--terra{background:linear-gradient(135deg,var(--terracota) 0%,var(--terra-deep) 100%)}
+.container{max-width:1100px;margin:0 auto;padding:0 var(--pad-x)}
+.container--n{max-width:720px;margin:0 auto;padding:0 var(--pad-x)}
+.lbl{display:inline-block;font-size:.66rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--terracota);margin-bottom:1rem}
+.lbl--gold{color:var(--gold)}
+.lbl--sage{color:var(--sage-dark)}
+.lbl--light{color:var(--terra-light)}
+.lbl--on-dark{color:var(--terra-light)}
+.sec-title{font-family:var(--ff-display);font-size:clamp(2rem,4vw,3.2rem);font-weight:300;line-height:1.15;letter-spacing:-.01em}
+.sec-title em{font-style:italic;color:var(--terracota)}
+.sec-sub{font-size:1rem;font-weight:300;line-height:1.8;color:var(--text-muted);max-width:540px;margin-top:1.1rem}
+.divider{width:48px;height:1px;background:var(--terracota);margin:1.75rem 0}
+
+/* ── MANIFIESTO (para que, para quien) ── */
+.manifest{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:1.5px;background:var(--nude);
+  border:1.5px solid var(--nude);
+  border-radius:4px;overflow:hidden;
+  margin-top:3.5rem;
+}
+.manifest__item{
+  background:var(--cream);
+  padding:2.5rem 2.25rem;
+  position:relative;
+  transition:background .3s ease;
+}
+.manifest__item:hover{background:var(--blush)}
+.manifest__item::before{
+  content:"";position:absolute;
+  top:0;left:0;width:3px;height:0;
+  background:linear-gradient(to bottom,var(--terracota),var(--terra-light));
+  transition:height .4s var(--ease-out);
+}
+.manifest__item:hover::before{height:100%}
+.manifest__n{
+  font-family:var(--ff-display);font-size:3rem;font-weight:300;
+  color:var(--terra-pale);line-height:1;margin-bottom:1rem;
+  transition:color .3s ease;
+}
+.manifest__item:hover .manifest__n{color:var(--nude)}
+.manifest__t{font-family:var(--ff-display);font-size:1.3rem;font-weight:400;color:var(--charcoal);margin-bottom:.85rem;line-height:1.25}
+.manifest__p{font-size:.875rem;font-weight:300;color:var(--text-muted);line-height:1.8}
+
+/* ── EJES ── */
+.ejes-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1.5rem;margin-top:3.5rem;
+}
+.eje-card{
+  background:rgba(253,248,244,.05);
+  border:1px solid rgba(253,248,244,.08);
+  border-radius:10px;
+  padding:2.5rem 2rem;
+  transition:background .3s ease,border-color .3s ease;
+}
+.eje-card:hover{background:rgba(253,248,244,.09);border-color:rgba(193,127,94,.25)}
+.eje-num{
+  font-family:var(--ff-display);font-size:.75rem;font-weight:400;
+  letter-spacing:.2em;text-transform:uppercase;
+  color:var(--terracota);margin-bottom:1rem;
+}
+.eje-name{font-family:var(--ff-display);font-size:1.6rem;font-weight:300;color:var(--cream);margin-bottom:.75rem}
+.eje-text{font-size:.85rem;font-weight:300;color:rgba(253,248,244,.55);line-height:1.8}
+
+/* ── PROGRAMA ── */
+.prog-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1.5rem;margin-top:3rem;
+}
+.dia{border:1px solid var(--nude);border-radius:10px;overflow:hidden}
+.dia__h{background:linear-gradient(135deg,var(--blush) 0%,var(--cream-deep) 100%);padding:1.25rem 1.5rem;border-bottom:1px solid var(--nude)}
+.dia__n{font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--text-light)}
+.dia__d{font-family:var(--ff-display);font-size:1.3rem;font-weight:400;color:var(--charcoal);margin-top:.1rem}
+.dia__b{padding:1.5rem}
+.hora{display:flex;gap:1rem;padding:.6rem 0;border-bottom:1px solid rgba(0,0,0,.04)}
+.hora:last-child{border-bottom:none}
+.hora__t{flex-shrink:0;font-size:.68rem;font-weight:500;color:var(--terracota);letter-spacing:.05em;min-width:44px;margin-top:1px}
+.hora__d{font-size:.8rem;font-weight:300;color:var(--text-muted);line-height:1.5}
+
+/* ── INCLUYE / NO INCLUYE ── */
+.inc-split{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:2rem;margin-top:3rem;
+}
+.inc-box{background:var(--cream);border:1px solid var(--nude);border-radius:10px;padding:2rem}
+.inc-box--no{background:var(--mist)}
+.inc-box h4{font-family:var(--ff-display);font-size:1.1rem;font-weight:400;color:var(--charcoal);margin-bottom:1.25rem}
+.inc-list{display:flex;flex-direction:column;gap:.6rem}
+.inc-list li{
+  display:flex;align-items:flex-start;gap:.65rem;
+  font-size:.82rem;font-weight:300;color:var(--text-muted);line-height:1.5;
+}
+.inc-list li::before{flex-shrink:0;font-size:.72rem;margin-top:1px}
+.inc-list--yes li::before{content:"✓";color:var(--sage-dark)}
+.inc-list--no li::before{content:"—";color:var(--text-light)}
+
+/* ── EXPERIENCIA (narrative) ── */
+.exp-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:5rem;align-items:center;
+}
+.exp-img-wrap{
+  position:relative;border-radius:12px;overflow:hidden;
+  aspect-ratio:3/4;
+}
+.exp-img-wrap img{
+  width:100%;height:100%;
+  object-fit:cover;object-position:center top;
+  filter:saturate(.82);
+}
+.exp-img-wrap::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(46,36,32,.5) 0%,transparent 50%);
+}
+.exp-quote{
+  position:absolute;bottom:1.75rem;left:1.75rem;right:1.75rem;
+  z-index:2;
+  font-family:var(--ff-display);font-size:1rem;font-style:italic;
+  color:rgba(253,248,244,.88);line-height:1.55;
+}
+.exp-content,
+.exp-narrative{
+  font-family:var(--ff-display);
+  font-size:clamp(1.3rem,2vw,1.7rem);
+  font-weight:300;font-style:italic;
+  color:var(--charcoal);line-height:1.55;
+  margin-bottom:2rem;
+}
+.exp-body{font-size:.9rem;font-weight:300;color:var(--text-muted);line-height:1.85}
+.exp-body p+p{margin-top:1.1rem}
+
+/* ── PRECIO / RESERVA ── */
+.precio-section{
+  position:relative;overflow:hidden;
+}
+.precio-section::before{
+  content:"";position:absolute;
+  top:-20%;right:-10%;
+  width:50%;height:80%;
+  background:radial-gradient(ellipse,rgba(193,127,94,.08) 0%,transparent 70%);
+  pointer-events:none;
+}
+.precio-card{
+  max-width:640px;margin:0 auto;
+  text-align:center;
+  padding:clamp(3rem,6vw,5rem) clamp(2rem,5vw,4rem);
+  background:rgba(253,248,244,.04);
+  border:1px solid rgba(253,248,244,.1);
+  border-radius:16px;
+  position:relative;z-index:1;
+}
+.precio-tag{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--terracota);
+  color:#fff;font-size:.65rem;font-weight:500;
+  letter-spacing:.14em;text-transform:uppercase;
+  padding:4px 12px;border-radius:2px;margin-bottom:1.5rem;
+}
+.precio-num{
+  font-family:var(--ff-display);
+  font-size:clamp(3.5rem,7vw,5.5rem);
+  font-weight:300;line-height:1;color:var(--cream);
+  margin-bottom:.35rem;
+}
+.precio-note{font-size:.8rem;font-weight:300;color:rgba(253,248,244,.45);margin-bottom:.5rem}
+.precio-orig{font-size:.85rem;color:rgba(253,248,244,.3);text-decoration:line-through;margin-bottom:2rem}
+.precio-divider{width:1px;height:40px;background:rgba(253,248,244,.12);margin:2rem auto}
+.precio-spots{font-size:.78rem;color:var(--tide-light);margin-bottom:1.75rem}
+.precio-spots strong{color:#ff6b4a}
+.precio-btns{display:flex;flex-direction:column;gap:1rem;max-width:360px;margin:0 auto}
+.precio-btns .btn{width:100%;justify-content:center}
+.precio-sub{font-size:.72rem;color:rgba(253,248,244,.32);margin-top:1rem}
+.cuotas-note{
+  margin-top:1.5rem;padding:1rem 1.5rem;
+  background:rgba(253,248,244,.04);
+  border:1px solid rgba(253,248,244,.08);
+  border-radius:8px;font-size:.78rem;
+  color:rgba(253,248,244,.5);line-height:1.7;
+  text-align:left;
+}
+
+/* ── LOGISTICA ── */
+.logi-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1.5rem;margin-top:3rem;
+}
+.logi-card{
+  padding:1.75rem;
+  background:var(--cream);border:1px solid var(--nude);
+  border-radius:10px;
+}
+.logi-icon{font-size:1.4rem;margin-bottom:.85rem;opacity:.7}
+.logi-title{font-family:var(--ff-display);font-size:1.1rem;font-weight:400;color:var(--charcoal);margin-bottom:.5rem}
+.logi-text{font-size:.82rem;font-weight:300;color:var(--text-muted);line-height:1.7}
+
+/* ── TESTI ── */
+.testi-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1.5rem;margin-top:3.5rem;
+}
+.testi-card{
+  background:rgba(253,248,244,.07);
+  border:1px solid rgba(253,248,244,.1);
+  padding:2.25rem 2rem;border-radius:10px;
+  transition:background .3s ease,border-color .3s ease;
+}
+.testi-card:hover{background:rgba(253,248,244,.11);border-color:rgba(193,127,94,.3)}
+.testi-q{
+  font-family:var(--ff-display);
+  font-size:1rem;font-style:italic;
+  color:rgba(253,248,244,.85);line-height:1.65;
+  margin-bottom:1.5rem;
+}
+.testi-q::before{
+  content:"\201C";font-size:2.5rem;font-family:Georgia,serif;
+  line-height:0;vertical-align:-.75rem;
+  color:var(--terra-light);margin-right:.1rem;
+}
+.testi-foot{display:flex;align-items:center;gap:.85rem;margin-top:.5rem}
+.testi-av{
+  width:40px;height:40px;border-radius:50%;
+  background:linear-gradient(135deg,var(--terracota),var(--terra-deep));
+  display:flex;align-items:center;justify-content:center;
+  font-family:Georgia,serif;font-size:1rem;font-style:italic;
+  color:#fff;flex-shrink:0;
+}
+.testi-name{font-size:.82rem;font-weight:500;color:rgba(253,248,244,.88);display:block}
+.testi-role{font-size:.7rem;color:rgba(253,248,244,.42);margin-top:2px}
+
+/* ── CTA CIERRE ── */
+.cierre{
+  text-align:center;
+  padding:clamp(5rem,10vw,8rem) 0;
+}
+.cierre__t{
+  font-family:var(--ff-display);
+  font-size:clamp(2.2rem,4.5vw,4rem);
+  font-weight:300;line-height:1.1;
+  color:var(--cream);max-width:700px;margin:1rem auto 1.25rem;
+}
+.cierre__t em{font-style:italic;color:var(--terra-light)}
+.cierre__s{
+  font-size:.95rem;font-weight:300;color:rgba(253,248,244,.55);
+  max-width:480px;margin:0 auto 2.5rem;line-height:1.8;
+}
+.cierre__a{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.cierre__phrase{
+  font-family:var(--ff-display);font-size:1.2rem;font-style:italic;
+  color:rgba(253,248,244,.3);margin-top:4rem;
+}
+
+/* ── FOOTER ── */
+.foot{
+  background:rgba(0,0,0,.35);
+  border-top:1px solid rgba(253,248,244,.06);
+  padding:2rem var(--pad-x);
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:1rem;
+}
+.foot__copy{font-size:.7rem;color:rgba(253,248,244,.25)}
+.foot__links{display:flex;gap:1.5rem}
+.foot__links a{font-size:.7rem;color:rgba(253,248,244,.25);transition:color .25s ease}
+.foot__links a:hover{color:rgba(253,248,244,.6)}
+.foot__built{font-size:.68rem;color:rgba(253,248,244,.18)}
+.foot__built a{color:rgba(253,248,244,.3);transition:color .25s}
+.foot__built a:hover{color:rgba(253,248,244,.55)}
+
+/* ── WA FLOAT ── */
+.wa-f{
+  position:fixed;bottom:2rem;right:2rem;z-index:90;
+  width:52px;height:52px;background:#4a7c59;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 20px rgba(74,124,89,.4);
+  transition:transform .25s var(--ease-out),box-shadow .25s;
+}
+.wa-f:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(74,124,89,.55)}
+.wa-f svg{width:26px;height:26px;fill:#fff}
+
+/* ── ANIMATIONS ── */
+.fu{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease-out),transform .7s var(--ease-out)}
+.fu.vis{opacity:1;transform:translateY(0)}
+.fu.d1{transition-delay:.1s}
+.fu.d2{transition-delay:.2s}
+.fu.d3{transition-delay:.3s}
+.fu.d4{transition-delay:.4s}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .manifest{grid-template-columns:1fr}
+  .ejes-grid,.prog-grid,.logi-grid,.testi-grid{grid-template-columns:1fr}
+  .inc-split{grid-template-columns:1fr}
+  .exp-grid{grid-template-columns:1fr;gap:3rem}
+  .hero__title{font-size:clamp(3.5rem,15vw,6rem)}
+  .topbar__logo{display:none}
+}
+@media(max-width:640px){
+  .hero__actions{flex-direction:column;align-items:flex-start}
+  .hero__actions .btn{width:100%;justify-content:center}
+  .cierre__a{flex-direction:column;align-items:center}
+  .cierre__a .btn{width:100%;max-width:320px;justify-content:center}
+  .spots-band{gap:1rem}
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<header class="topbar" id="topbar" role="banner">
+  <a href="/index.html" class="topbar__back" aria-label="Volver al sitio principal">
+    <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+    Jenifer Tejedor
+  </a>
+  <span class="topbar__logo">SEREN<span style="font-style:italic;color:var(--gold)">Z</span>A</span>
+  <a href="#reserva" class="topbar__cta" onclick="trackStripe()">Reservar plaza</a>
+</header>
+
+<main>
+
+<!-- ── HERO ── -->
+<section class="hero" aria-label="Retiro SERENZA">
+  <div class="hero__media" aria-hidden="true">
+    <img src="/retiro-1.png"
+         alt="Retiro SERENZA Cardedeu Barcelona mujeres"
+         loading="eager" fetchpriority="high"
+         width="960" height="1280"
+         class="hero__img"/>
+    <div class="hero__overlay"></div>
+  </div>
+  <div class="hero__content">
+    <div class="hero__badge">
+      <span class="hero__badge-dot" aria-hidden="true"></span>
+      Plazas limitadas &mdash; 12 mujeres &mdash; Primera edici&oacute;n
+    </div>
+    <p class="hero__dates">22 &ndash; 24 Mayo 2026 &nbsp;&middot;&nbsp; Cardedeu, Barcelona</p>
+    <h1 class="hero__title">
+      SEREN<span class="z">Z</span>A
+    </h1>
+    <p class="hero__sub">
+      Tres d&iacute;as donde el orden que sostienes fuera se detiene<br>
+      para que dentro&hellip; todo encuentre su lugar.
+    </p>
+    <div class="hero__actions">
+      <a href="#reserva" class="btn btn--p" onclick="trackStripe()">Reservar mi plaza</a>
+      <a href="#que-pasa" class="btn btn--o">Ver el programa</a>
+    </div>
+  </div>
+  <div class="hero__scroll" aria-hidden="true">
+    <div class="hero__scroll-line"></div>
+    <span>Seguir</span>
+  </div>
+</section>
+
+<!-- ── SPOTS BAND ── -->
+<div class="spots-band" role="complementary">
+  <div class="spots-band__item">
+    <div class="spots-counter"><span class="spots-num">12</span></div>
+    plazas totales
+  </div>
+  <span class="spots-band__dot">&#10022;</span>
+  <div class="spots-band__item">Casa <a href="https://instagram.com/seon.meditacion" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px">@seon.meditacion</a></div>
+  <span class="spots-band__dot">&#10022;</span>
+  <div class="spots-band__item">Cardedeu, Barcelona</div>
+  <span class="spots-band__dot">&#10022;</span>
+  <div class="spots-band__item">Todo incluido</div>
+</div>
+
+<!-- ── QUE ES ── -->
+<section class="section section--cream" id="que-es" aria-labelledby="qe-h">
+  <div class="container">
+    <div class="exp-grid fu">
+      <div class="exp-img-wrap">
+        <img src="/retiro-2.webp"
+             alt="Mujeres en retiro SERENZA experiencia inmersiva"
+             loading="lazy" width="600" height="800"/>
+        <p class="exp-quote">"Eso no pasa aqui.<br>Aqui vamos mas profundo."</p>
+      </div>
+      <div class="exp-content fu d1">
+        <p class="lbl lbl--sage">Que es SERENZA</p>
+        <p class="exp-narrative">
+          Una experiencia inmersiva donde dejas de sostenerte como siempre y algo dentro empieza a ordenarse.
+        </p>
+        <div class="divider"></div>
+        <div class="exp-body">
+          <p>Tu vida no se desordena de un d&iacute;a para otro. Se mueve en momentos muy concretos. Cuando sabes que tendr&iacute;as que parar y respondes otro mensaje. Cuando est&aacute;s en una conversaci&oacute;n y no dices lo que realmente piensas. Cuando sabes que necesitas espacio y vuelves a adaptarte.</p>
+          <p>Eso no pasa aqu&iacute;.</p>
+          <p>Aqu&iacute; no nos quedamos en la superficie. Aqu&iacute; vamos m&aacute;s profundo. Empiezas a ver qu&eacute; est&aacute;s sosteniendo, desde d&oacute;nde lo haces, y qu&eacute; sigue activo aunque creas que ya no. <strong>Y cuando eso se ve, empieza a cambiar.</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PARA QUIEN ── -->
+<section class="section section--mist" id="para-quien" aria-labelledby="pq-h">
+  <div class="container">
+    <div class="container--n" style="padding:0">
+      <p class="lbl fu">Para quien es</p>
+      <h2 id="pq-h" class="sec-title fu d1">Este retiro es para ti<br>si algo de esto <em>ya te est&aacute; pasando.</em></h2>
+    </div>
+    <div class="manifest fu d2">
+      <div class="manifest__item">
+        <p class="manifest__n" aria-hidden="true">01</p>
+        <h3 class="manifest__t">Te das cuenta de cosas&hellip; y vuelves a lo mismo</h3>
+        <p class="manifest__p">Ves los patrones. Entiendes de d&oacute;nde vienen. Pero en tu d&iacute;a a d&iacute;a sigues repiti&eacute;ndolos. No porque no quieras cambiar. Sino porque no lo est&aacute;s pudiendo sostener.</p>
+      </div>
+      <div class="manifest__item">
+        <p class="manifest__n" aria-hidden="true">02</p>
+        <h3 class="manifest__t">Te escuchas un momento&hellip; y vuelves al ruido</h3>
+        <p class="manifest__p">Hay momentos de claridad. De conexi&oacute;n contigo. Pero no se sostienen. Al d&iacute;a siguiente ya est&aacute;s otra vez dentro del mismo ritmo, del mismo nivel de exigencia, de la misma distancia.</p>
+      </div>
+      <div class="manifest__item">
+        <p class="manifest__n" aria-hidden="true">03</p>
+        <h3 class="manifest__t">Sabes que algo no encaja&hellip; y lo sigues sosteniendo</h3>
+        <p class="manifest__p">No es que no lo veas. Es que en el momento de cambiarlo, algo se activa. El cuerpo. La mente. Y vuelves. No porque no puedas. Sino porque tu sistema sigue igual.</p>
+      </div>
+      <div class="manifest__item">
+        <p class="manifest__n" aria-hidden="true">04</p>
+        <h3 class="manifest__t">Necesitas parar de verdad. No de fondo.</h3>
+        <p class="manifest__p">No un fin de semana de descanso. Una parada real donde el sistema baje. Donde la percepci&oacute;n cambie. Donde lo que llevas tiempo sin ver pueda aparecer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── EJES ── -->
+<section class="section section--dark" id="ejes" aria-labelledby="ej-h">
+  <div class="container">
+    <div class="container--n" style="padding:0">
+      <p class="lbl lbl--on-dark fu">Los tres ejes</p>
+      <h2 id="ej-h" class="sec-title fu d1" style="color:var(--cream)">El trabajo que<br>ocurre en estos tres d&iacute;as.</h2>
+      <p class="fu d2" style="font-size:1rem;font-weight:300;color:rgba(253,248,244,.55);line-height:1.8;max-width:520px;margin-top:1.1rem">No es un programa de actividades. Es un proceso con intenci&oacute;n en cada parte.</p>
+    </div>
+    <div class="ejes-grid fu d3">
+      <div class="eje-card">
+        <p class="eje-num">Eje 01</p>
+        <h3 class="eje-name">Regulaci&oacute;n</h3>
+        <p class="eje-text">Un sistema en alerta no elige. Responde. Aqu&iacute; bajas el ritmo para dejar de reaccionar y empezar a percibir con claridad. La respiraci&oacute;n, el movimiento y el silencio son las herramientas.</p>
+      </div>
+      <div class="eje-card">
+        <p class="eje-num">Eje 02</p>
+        <h3 class="eje-name">Orden</h3>
+        <p class="eje-text">Tu vida est&aacute; sostenida desde un orden donde t&uacute; no est&aacute;s en tu lugar. Aqu&iacute; eso se hace evidente. Y empieza a recolocarse sin forzarlo. Sin que tengas que hacer nada especial para que ocurra.</p>
+      </div>
+      <div class="eje-card">
+        <p class="eje-num">Eje 03</p>
+        <h3 class="eje-name">Coherencia</h3>
+        <p class="eje-text">No es falta de claridad. Es repetici&oacute;n. Formas de actuar que ya no van contigo pero sigues sosteniendo. Aqu&iacute; las ves. Y cuando las ves de verdad, dejas de sostenerte igual.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROGRAMA ── -->
+<section class="section section--blush" id="que-pasa" aria-labelledby="prog-h">
+  <div class="container">
+    <p class="lbl fu">Programa</p>
+    <h2 id="prog-h" class="sec-title fu d1">Tres d&iacute;as.<br>Un reordenamiento.</h2>
+    <div class="prog-grid fu d2">
+      <div class="dia">
+        <div class="dia__h"><p class="dia__n">D&iacute;a 1</p><p class="dia__d">Viernes &mdash; Llegada</p></div>
+        <div class="dia__b">
+          <div class="hora"><span class="hora__t">18:00</span><span class="hora__d">Llegada y bienvenida. Infusi&oacute;n natural. Espacio &iacute;ntimo de presentaci&oacute;n.</span></div>
+          <div class="hora"><span class="hora__t">19:00</span><span class="hora__d">Conexi&oacute;n grupal y primeras palabras</span></div>
+          <div class="hora"><span class="hora__t">20:00</span><span class="hora__d">Cena consciente</span></div>
+          <div class="hora"><span class="hora__t">21:30</span><span class="hora__d">Respiraci&oacute;n guiada nocturna &mdash; para cambiar el sue&ntilde;o y bajar el ritmo</span></div>
+        </div>
+      </div>
+      <div class="dia">
+        <div class="dia__h"><p class="dia__n">D&iacute;a 2</p><p class="dia__d">S&aacute;bado &mdash; El trabajo</p></div>
+        <div class="dia__b">
+          <div class="hora"><span class="hora__t">7:00</span><span class="hora__d">Amanecer opcional &mdash; salida al sol, gratitud, conexi&oacute;n</span></div>
+          <div class="hora"><span class="hora__t">8:00</span><span class="hora__d">Movimiento corporal + caminata en naturaleza en silencio</span></div>
+          <div class="hora"><span class="hora__t">9:30</span><span class="hora__d">Desayuno proteico sin az&uacute;car, sin prisa</span></div>
+          <div class="hora"><span class="hora__t">11:00</span><span class="hora__d">Taller de cacao ceremonial &mdash; pintura en lienzo colectivo con ojos tapados</span></div>
+          <div class="hora"><span class="hora__t">13:30</span><span class="hora__d">Comida lenta al exterior</span></div>
+          <div class="hora"><span class="hora__t">15:30</span><span class="hora__d">Taller de patrones y creencias &mdash; baile, visualizaci&oacute;n, c&iacute;rculo de compartir</span></div>
+          <div class="hora"><span class="hora__t">21:30</span><span class="hora__d">Respiraci&oacute;n + visualizaci&oacute;n con m&uacute;sica handpan. Cierre nocturno.</span></div>
+        </div>
+      </div>
+      <div class="dia">
+        <div class="dia__h"><p class="dia__n">D&iacute;a 3</p><p class="dia__d">Domingo &mdash; Cierre</p></div>
+        <div class="dia__b">
+          <div class="hora"><span class="hora__t">7:00</span><span class="hora__d">Amanecer + caminata de integraci&oacute;n en silencio</span></div>
+          <div class="hora"><span class="hora__t">8:00</span><span class="hora__d">Desayuno con cacao ceremonial. Tiempo libre.</span></div>
+          <div class="hora"><span class="hora__t">11:00</span><span class="hora__d">Actividad en agua &mdash; integraci&oacute;n corporal</span></div>
+          <div class="hora"><span class="hora__t">13:00</span><span class="hora__d">Comida final compartida</span></div>
+          <div class="hora"><span class="hora__t">16:00</span><span class="hora__d">Cierre integrativo &mdash; respiraci&oacute;n, baile, fuego y c&iacute;rculo de palabra</span></div>
+          <div class="hora"><span class="hora__t">18:00</span><span class="hora__d">Salida</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── INCLUYE ── -->
+<section class="section section--cream" aria-label="Que incluye el retiro">
+  <div class="container">
+    <p class="lbl fu">Detalle completo</p>
+    <h2 class="sec-title fu d1">Lo que incluye<br>y lo que no.</h2>
+    <div class="inc-split fu d2">
+      <div class="inc-box">
+        <h4>S&iacute; incluye</h4>
+        <ul class="inc-list inc-list--yes" role="list">
+          <li>Alojamiento 3 d&iacute;as / 2 noches</li>
+          <li>Alimentaci&oacute;n completa (prot&eacute;ica, sin az&uacute;car)</li>
+          <li>Todas las actividades del retiro</li>
+          <li>Respiraci&oacute;n guiada (2 sesiones)</li>
+          <li>Movimiento corporal y caminatas</li>
+          <li>Taller de cacao ceremonial</li>
+          <li>Trabajo de creencias y patrones</li>
+          <li>Espacios de silencio y conexi&oacute;n</li>
+          <li>C&iacute;rculos de palabra</li>
+          <li>Cierre integrativo</li>
+          <li>Acceso a la piscina</li>
+        </ul>
+      </div>
+      <div class="inc-box inc-box--no">
+        <h4>No incluye</h4>
+        <ul class="inc-list inc-list--no" role="list">
+          <li>Transporte hasta la casa</li>
+          <li>Traslados internos (hay coordinaci&oacute;n compartida)</li>
+          <li>Servicios no especificados</li>
+        </ul>
+        <div style="margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--nude)">
+          <p style="font-size:.82rem;font-weight:500;color:var(--charcoal);margin-bottom:.5rem">C&oacute;mo llegar</p>
+          <p style="font-size:.8rem;font-weight:300;color:var(--text-muted);line-height:1.7">En coche propio o tren a Cardedeu. Si no tienes transporte, se coordinan coches compartidos entre participantes. Escr&iacute;benos y te conectamos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIOS ── -->
+<section class="section section--sage" id="testimonios" aria-labelledby="testi-h">
+  <div class="container">
+    <p class="lbl lbl--on-dark fu">Lo que dicen ellas</p>
+    <h2 id="testi-h" class="sec-title fu d1" style="color:var(--cream)">Mujeres que ya <em>decidieron</em></h2>
+    <div class="testi-grid fu d2" role="list">
+      <blockquote class="testi-card" role="listitem">
+        <p class="testi-q">Llegue creyendo que necesitaba mas estrategia. Sali entendiendo que lo que necesitaba era claridad. Son cosas completamente distintas. Jenifer me ayudo a ver esa diferencia.</p>
+        <footer class="testi-foot">
+          <div class="testi-av" aria-hidden="true">A</div>
+          <div><cite class="testi-name" style="font-style:normal">Ana M.</cite><p class="testi-role">Directora de empresa &middot; Madrid</p></div>
+        </footer>
+      </blockquote>
+      <blockquote class="testi-card" role="listitem">
+        <p class="testi-q">Fui al retiro con una decision que llevaba dos años postergando. La tome el segundo dia. Tres meses despues sigo sosteniendo esa decision y estoy mas tranquila que en años.</p>
+        <footer class="testi-foot">
+          <div class="testi-av" aria-hidden="true">S</div>
+          <div><cite class="testi-name" style="font-style:normal">Sandra P.</cite><p class="testi-role">Lider de equipo &middot; Valencia</p></div>
+        </footer>
+      </blockquote>
+      <blockquote class="testi-card" role="listitem">
+        <p class="testi-q">El proceso con Jenifer fue el antes y el despues. No es coaching, no es terapia. Es algo que no tenia nombre hasta que lo vivi y que cambio como tomo decisiones todos los dias.</p>
+        <footer class="testi-foot">
+          <div class="testi-av" aria-hidden="true">L</div>
+          <div><cite class="testi-name" style="font-style:normal">Laura G.</cite><p class="testi-role">Emprendedora &middot; Barcelona</p></div>
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRECIO / RESERVA ── -->
+<section class="section section--dark precio-section" id="reserva" aria-labelledby="res-h">
+  <div class="container">
+    <div class="precio-card fu">
+      <div class="precio-tag">Primera edici&oacute;n &mdash; Precio no repetible</div>
+      <h2 id="res-h" style="font-family:var(--ff-display);font-size:1.1rem;font-weight:300;color:rgba(253,248,244,.55);letter-spacing:.08em;text-transform:uppercase;margin-bottom:1rem">Inversi&oacute;n</h2>
+      <p class="precio-num">540&euro;</p>
+      <p class="precio-note">Todo incluido &middot; Alojamiento + manutenci&oacute;n + programa completo</p>
+      <p class="precio-orig">Valor real estimado: 750&euro;+</p>
+
+      <div class="cuotas-note">
+        <strong style="color:rgba(253,248,244,.7);font-size:.8rem">Opciones de pago</strong><br>
+        Pago completo &mdash; o en 2 cuotas (primera al reservar, segunda 7 d&iacute;as antes del retiro).<br>
+        <span style="color:rgba(253,248,244,.35)">Con acuerdo de compromiso firmado. Plaza confirmada al recibir el primer pago.</span>
+      </div>
+
+      <div class="precio-divider"></div>
+      <p class="precio-spots">Solo <strong>12 plazas</strong> &mdash; grupo reducido e &iacute;ntimo</p>
+
+      <div class="precio-btns">
+        <!-- STRIPE: reemplazar href con tu Payment Link de Stripe -->
+        <a href="https://buy.stripe.com/XXXXXXXXXX"
+           class="btn btn--stripe"
+           target="_blank" rel="noopener"
+           onclick="trackStripe()">
+          &#8594; Reservar y pagar online
+        </a>
+        <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20quiero%20reservar%20mi%20plaza%20en%20el%20retiro%20SERENZA%20(22-24%20mayo)"
+           class="btn btn--wa"
+           target="_blank" rel="noopener"
+           onclick="trackWA('price')">
+          Reservar por WhatsApp
+        </a>
+        <a href="https://calendly.com/jenifertejedor"
+           class="btn btn--o"
+           target="_blank" rel="noopener">
+          Hablar antes de decidir
+        </a>
+      </div>
+      <p class="precio-sub">Pago seguro con Stripe &middot; Visa, Mastercard, transferencia &middot; Datos cifrados</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── LOGISTICA ── -->
+<section class="section section--cream" aria-label="Informacion practica">
+  <div class="container">
+    <p class="lbl fu">Informaci&oacute;n pr&aacute;ctica</p>
+    <h2 class="sec-title fu d1">Todo lo que necesitas<br>saber antes de llegar.</h2>
+    <div class="logi-grid fu d2">
+      <div class="logi-card">
+        <div class="logi-icon" aria-hidden="true">&#x1F3E0;</div>
+        <p class="logi-title">El espacio</p>
+        <p class="logi-text">Casa <a href="https://instagram.com/seon.meditacion" target="_blank" rel="noopener" style="color:var(--terracota)">@seon.meditacion</a> en Cardedeu, Barcelona. Casa con jard&iacute;n, piscina y espacios abiertos. &Iacute;ntimo y contenido.</p>
+      </div>
+      <div class="logi-card">
+        <div class="logi-icon" aria-hidden="true">&#x1F96C;</div>
+        <p class="logi-title">Alimentaci&oacute;n</p>
+        <p class="logi-text">Proteica, sin az&uacute;car refinado, sin avena. Con gluten (aviso si tienes intolerancia). Caf&eacute; s&iacute;. Comida real, densa, que nutre. Sin procesar.</p>
+      </div>
+      <div class="logi-card">
+        <div class="logi-icon" aria-hidden="true">&#x1F9B4;</div>
+        <p class="logi-title">Qu&eacute; traer</p>
+        <p class="logi-text">Ropa c&oacute;moda para movimiento. Algo abrigado para la noche. Zapatillas. Cuaderno si quieres escribir. Nada imprescindible que no tengas ya.</p>
+      </div>
+      <div class="logi-card">
+        <div class="logi-icon" aria-hidden="true">&#x1F697;</div>
+        <p class="logi-title">C&oacute;mo llegar</p>
+        <p class="logi-text">En coche propio (40 min desde Barcelona). O tren a Cardedeu + coordinaci&oacute;n de coche compartido con otras participantes. Te conectamos.</p>
+      </div>
+      <div class="logi-card">
+        <div class="logi-icon" aria-hidden="true">&#x1F9D8;</div>
+        <p class="logi-title">Nivel previo</p>
+        <p class="logi-text">Sin requisitos. No necesitas experiencia en meditaci&oacute;n, retiros ni cacao ceremonial. Solo querer estar.</p>
+      </div>
+      <div class="logi-card">
+        <div class="logi-icon" aria-hidden="true">&#x1F4CB;</div>
+        <p class="logi-title">Plazas y reserva</p>
+        <p class="logi-text">12 plazas m&aacute;ximas. Plaza confirmada al pagar. Cancelaci&oacute;n con devoluci&oacute;n del 80% hasta 14 d&iacute;as antes. Despu&eacute;s sin devoluci&oacute;n salvo causa mayor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CIERRE ── -->
+<section class="section section--dark cierre" aria-label="Llamada a la accion">
+  <div class="container">
+    <p class="lbl lbl--on-dark fu">Si algo se ha movido al leer esto</p>
+    <h2 class="cierre__t fu d1">
+      No es lo que haces.<br>
+      Es lo que sigue <em>activo.</em>
+    </h2>
+    <p class="cierre__s fu d2">
+      Si algo dentro se ha movido al leer esto, es porque ya lo est&aacute;s viendo.<br>
+      Y cuando lo ves, empiezas a colocarte distinto.
+    </p>
+    <div class="cierre__a fu d3">
+      <a href="#reserva" class="btn btn--p" onclick="trackStripe()">Reservar mi plaza</a>
+      <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20tengo%20una%20pregunta%20sobre%20el%20retiro%20SERENZA"
+         target="_blank" rel="noopener"
+         class="btn btn--wa" onclick="trackWA('cierre')">
+        Tengo una pregunta
+      </a>
+    </div>
+    <p class="cierre__phrase fu d4">&ldquo;Cuando esto cambia, todo se reordena.&rdquo;</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot" role="contentinfo">
+  <p class="foot__copy">&copy; 2026 Jenifer Tejedor &middot; Retiro SERENZA</p>
+  <nav class="foot__links" aria-label="Links">
+    <a href="/index.html">Sitio principal</a>
+    <a href="https://instagram.com/jenitejedor" target="_blank" rel="noopener">@jenitejedor</a>
+    <a href="mailto:jenifertejedorrobles@gmail.com">Contacto</a>
+  </nav>
+  <p class="foot__built">Web por <a href="https://cirujanadigital.com" target="_blank" rel="noopener">Cirujana Digital</a></p>
+</footer>
+
+<a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20quiero%20saber%20mas%20sobre%20el%20retiro%20SERENZA"
+   class="wa-f" target="_blank" rel="noopener"
+   aria-label="Contactar por WhatsApp sobre el retiro" onclick="trackWA('float')">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+const tb=document.getElementById("topbar");
+window.addEventListener("scroll",()=>{tb.classList.toggle("scrolled",window.scrollY>60)},{passive:true});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("vis");io.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll(".fu").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

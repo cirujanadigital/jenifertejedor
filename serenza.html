@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Retiro SERENZA — 22 al 24 de Mayo 2026, Cardedeu Barcelona. 12 plazas. Una experiencia inmersiva donde dejas de sostenerte como siempre y algo dentro empieza a ordenarse."/>
-<meta name="keywords" content="retiro SERENZA, Jenifer Tejedor, retiro mujeres Barcelona, Cardedeu, cacao ceremonial, reordenamiento interior"/>
-<meta property="og:title" content="Retiro SERENZA — Jenifer Tejedor"/>
-<meta property="og:description" content="Tres dias donde el orden que sostienes fuera se detiene para que dentro todo encuentre su lugar."/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="https://jenifertejedor.com/serenza"/>
-<meta property="og:image" content="https://jenifertejedor.com/serenza-og.jpg"/>
-<link rel="canonical" href="https://jenifertejedor.com/serenza"/>
 
-<!--
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Retiro SERENZA — 22 al 24 de Mayo 2026, Cardedeu Barcelona. 12 plazas. Una experiencia inmersiva donde dejas de sostenerte como siempre y algo dentro empieza a ordenarse." />
+  <meta name="keywords"
+    content="retiro SERENZA, Jenifer Tejedor, retiro mujeres Barcelona, Cardedeu, cacao ceremonial, reordenamiento interior" />
+  <meta property="og:title" content="Retiro SERENZA — Jenifer Tejedor" />
+  <meta property="og:description"
+    content="Tres dias donde el orden que sostienes fuera se detiene para que dentro todo encuentre su lugar." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jenifertejedor.com/serenza" />
+  <meta property="og:image" content="https://jenifertejedor.com/serenza-og.jpg" />
+  <link rel="canonical" href="https://jenifertejedor.com/serenza" />
+
+  <!--
   FIX PERF #1: Google Fonts ELIMINADO — era el único render-blocking request.
   Playfair Display → stack serif nativo (Georgia como fallback).
   Libre Franklin → stack sans-serif del sistema.
@@ -22,713 +26,1553 @@
   El browser la descarga antes de parsear CSS/JS.
   Crítico para que el LCP element sea la imagen y no el H1.
 -->
-<link rel="preload" as="image" href="retiro-1.webp" fetchpriority="high"
-      imagesrcset="retiro-1-480.webp 480w, retiro-1.webp 960w"
-      imagesizes="100vw"/>
+  <link rel="preload" as="image" href="retiro-1.webp" fetchpriority="high"
+    imagesrcset="retiro-1-480.webp 480w, retiro-1.webp 960w" imagesizes="100vw" />
 
-<title>Retiro SERENZA — 22-24 Mayo 2026 · Jenifer Tejedor</title>
+  <title>Retiro SERENZA — 22-24 Mayo 2026 · Jenifer Tejedor</title>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Event","name":"Retiro SERENZA","startDate":"2026-05-22","endDate":"2026-05-24","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","location":{"@type":"Place","name":"Casa SEON Meditacion","address":{"@type":"PostalAddress","addressLocality":"Cardedeu","addressRegion":"Barcelona","addressCountry":"ES"}},"organizer":{"@type":"Person","name":"Jenifer Tejedor","url":"https://jenifertejedor.com"},"description":"Tres dias inmersivos de reordenamiento interior. Regulacion, orden y coherencia.","maximumAttendeeCapacity":12}</script>
+  <script
+    type="application/ld+json">{"@context":"https://schema.org","@type":"Event","name":"Retiro SERENZA","startDate":"2026-05-22","endDate":"2026-05-24","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","location":{"@type":"Place","name":"Casa SEON Meditacion","address":{"@type":"PostalAddress","addressLocality":"Cardedeu","addressRegion":"Barcelona","addressCountry":"ES"}},"organizer":{"@type":"Person","name":"Jenifer Tejedor","url":"https://jenifertejedor.com"},"description":"Tres dias inmersivos de reordenamiento interior. Regulacion, orden y coherencia.","maximumAttendeeCapacity":12}</script>
 
-<style>
-/*
+  <style>
+    /*
   FIX TIPOGRAFÍA: Eliminadas Libre Franklin y Playfair Display de Google Fonts.
   --ff-display: stack serif de sistema con Palatino/Georgia → sin latencia de red.
   --ff-body: stack sans del sistema → sin latencia de red.
   --ff-quote: Georgia directo → mismo resultado visual que Playfair Display Italic.
 */
-:root{
-  --azul-base:#455763;
-  --azul-dark:#1A3636;
-  --marron-lujo:#4A342E;
-  --beige:#E8E2DA;
-  --crema:#F5EFEA;
-  --oliva:#645D3B;
-  --musgo:#31331F;
-  --dorado:#987122;
-  --blanco-roto:#F4F4F4;
-  --blanco:#FFFFFF;
-  --bg-main:var(--azul-dark);
-  --accent:var(--dorado);
-  --accent-warm:var(--marron-lujo);
-  --text-on-dark:var(--crema);
-  --text-on-light:var(--marron-lujo);
+    :root {
+      --azul-base: #455763;
+      --azul-dark: #1A3636;
+      --marron-lujo: #4A342E;
+      --beige: #E8E2DA;
+      --crema: #F5EFEA;
+      --oliva: #645D3B;
+      --musgo: #31331F;
+      --dorado: #987122;
+      --blanco-roto: #F4F4F4;
+      --blanco: #FFFFFF;
+      --bg-main: var(--azul-dark);
+      --accent: var(--dorado);
+      --accent-warm: var(--marron-lujo);
+      --text-on-dark: var(--crema);
+      --text-on-light: var(--marron-lujo);
 
-  /* FIX CONTRASTE: text-muted-dark subido de .6 a .75 para ratio AA sobre azul-dark */
-  --text-muted-dark:rgba(232,226,218,.75);
-  --text-muted-light:var(--azul-base);
-  --border-dark:rgba(232,226,218,.12);
-  --border-light:rgba(74,52,46,.12);
+      /* FIX CONTRASTE: text-muted-dark subido de .6 a .75 para ratio AA sobre azul-dark */
+      --text-muted-dark: rgba(232, 226, 218, .75);
+      --text-muted-light: var(--azul-base);
+      --border-dark: rgba(232, 226, 218, .12);
+      --border-light: rgba(74, 52, 46, .12);
 
-  /* FIX: Fuentes del sistema sin dependencias externas */
-  --ff-display:"Palatino Linotype","Book Antiqua",Palatino,Georgia,"Times New Roman",serif;
-  --ff-body:-apple-system,BlinkMacSystemFont,"Segoe UI","Gill Sans","Helvetica Neue",Arial,sans-serif;
-  --ff-quote:Georgia,"Times New Roman",serif;
+      /* FIX: Fuentes del sistema sin dependencias externas */
+      --ff-display: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, "Times New Roman", serif;
+      --ff-body: -apple-system, BlinkMacSystemFont, "Segoe UI", "Gill Sans", "Helvetica Neue", Arial, sans-serif;
+      --ff-quote: Georgia, "Times New Roman", serif;
 
-  --pad-x:clamp(1.25rem,5vw,3rem);
-  --ease-out:cubic-bezier(0.16,1,0.3,1);
-}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  font-family:var(--ff-body);
-  background:var(--azul-dark);
-  color:var(--crema);
-  line-height:1.65;
-  overflow-x:hidden;
-  -webkit-font-smoothing:antialiased;
-}
-img{max-width:100%;display:block}
-a{text-decoration:none;color:inherit}
-.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+      --pad-x: clamp(1.25rem, 5vw, 3rem);
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    }
 
-/* ── TOPBAR ── */
-.topbar{
-  position:fixed;top:0;left:0;right:0;z-index:100;
-  display:flex;align-items:center;justify-content:space-between;
-  padding:.9rem clamp(1.25rem,5vw,3rem);
-  transition:background .4s var(--ease-out),backdrop-filter .4s;
-}
-.topbar.scrolled{
-  background:rgba(26,54,54,.94);
-  backdrop-filter:blur(20px);
-  -webkit-backdrop-filter:blur(20px);
-  border-bottom:1px solid var(--border-dark);
-}
-/* FIX CONTRASTE: topbar__back era rgba(.45) sobre azul-dark → ratio ~1.7. Subido a .72 → ratio ~3.5 */
-.topbar__back{
-  display:inline-flex;align-items:center;gap:.5rem;
-  font-size:.68rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;
-  color:rgba(245,239,234,.72);
-  font-family:var(--ff-body);
-  transition:color .25s ease;
-}
-.topbar__back:hover{color:var(--crema)}
-.topbar__back svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.5}
-.topbar__logo{
-  font-family:var(--ff-display);font-size:1.05rem;font-weight:400;
-  letter-spacing:.18em;color:rgba(245,239,234,.72);
-  text-transform:uppercase;
-}
-.topbar__logo span{color:var(--dorado);font-style:italic}
-/* FIX CONTRASTE: topbar__cta — dorado #987122 sobre azul-dark #1A3636 → ratio ~3.2 (borde + texto).
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      font-family: var(--ff-body);
+      background: var(--azul-dark);
+      color: var(--crema);
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      display: block
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap
+    }
+
+    /* ── TOPBAR ── */
+    .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: .9rem clamp(1.25rem, 5vw, 3rem);
+      transition: background .4s var(--ease-out), backdrop-filter .4s;
+    }
+
+    .topbar.scrolled {
+      background: rgba(26, 54, 54, .94);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border-dark);
+    }
+
+    /* FIX CONTRASTE: topbar__back era rgba(.45) sobre azul-dark → ratio ~1.7. Subido a .72 → ratio ~3.5 */
+    .topbar__back {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .68rem;
+      font-weight: 500;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: rgba(245, 239, 234, .72);
+      font-family: var(--ff-body);
+      transition: color .25s ease;
+    }
+
+    .topbar__back:hover {
+      color: var(--crema)
+    }
+
+    .topbar__back svg {
+      width: 14px;
+      height: 14px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.5
+    }
+
+    .topbar__logo {
+      font-family: var(--ff-display);
+      font-size: 1.05rem;
+      font-weight: 400;
+      letter-spacing: .18em;
+      color: rgba(245, 239, 234, .72);
+      text-transform: uppercase;
+    }
+
+    .topbar__logo span {
+      color: var(--dorado);
+      font-style: italic
+    }
+
+    /* FIX CONTRASTE: topbar__cta — dorado #987122 sobre azul-dark #1A3636 → ratio ~3.2 (borde + texto).
    Se refuerza con fondo semitransparente para llegar a AA en estado normal */
-.topbar__cta{
-  display:inline-flex;align-items:center;gap:6px;
-  padding:.5rem 1.4rem;
-  background:rgba(152,113,34,.12);
-  border:1px solid var(--dorado);
-  color:var(--dorado);
-  font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
-  font-family:var(--ff-body);
-  transition:all .25s var(--ease-out);
-}
-.topbar__cta:hover{background:var(--dorado);color:var(--azul-dark)}
+    .topbar__cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: .5rem 1.4rem;
+      background: rgba(152, 113, 34, .12);
+      border: 1px solid var(--dorado);
+      color: var(--dorado);
+      font-size: .68rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      font-family: var(--ff-body);
+      transition: all .25s var(--ease-out);
+    }
 
-/* ── HERO ── */
-.hero{
-  position:relative;min-height:100dvh;
-  display:flex;flex-direction:column;justify-content:flex-end;
-  overflow:hidden;
-}
-.hero__media{position:absolute;inset:0}
-.hero__img{
-  width:100%;height:100%;
-  object-fit:cover;object-position:center 20%;
-  filter:brightness(.45) saturate(.65);
-}
-.hero__overlay{
-  position:absolute;inset:0;
-  background:
-    linear-gradient(to bottom,
-      rgba(26,54,54,.15) 0%,
-      rgba(26,54,54,.08) 30%,
-      rgba(26,54,54,.7) 68%,
-      rgba(26,54,54,.97) 100%
-    );
-}
-.hero__deco{
-  position:absolute;
-  top:0;left:var(--pad-x);
-  width:1px;height:120px;
-  background:linear-gradient(to bottom,transparent,var(--dorado),transparent);
-  opacity:.5;z-index:5;
-}
-.hero__content{
-  position:relative;z-index:10;
-  padding:clamp(5rem,10vw,8rem) var(--pad-x) clamp(3.5rem,6vw,5.5rem);
-  max-width:960px;
-}
-.hero__badge{
-  display:inline-flex;align-items:center;gap:8px;
-  border:1px solid rgba(152,113,34,.35);
-  padding:5px 14px;
-  font-size:.62rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;
-  /* FIX CONTRASTE: era rgba(.55) → subido a .85 */
-  color:rgba(245,239,234,.85);
-  font-family:var(--ff-body);
-  margin-bottom:2.25rem;
-}
-.hero__badge-dot{
-  width:5px;height:5px;border-radius:50%;
-  background:var(--dorado);animation:pulse 2.4s infinite;
-}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.2}}
-.hero__eyebrow{
-  font-family:var(--ff-body);
-  font-size:clamp(.78rem,1.2vw,.88rem);font-weight:400;
-  letter-spacing:.2em;text-transform:uppercase;
-  color:var(--dorado);margin-bottom:1.1rem;
-  font-style:italic;
-}
-.hero__title{
-  font-family:var(--ff-display);
-  font-size:clamp(5rem,14vw,12rem);
-  font-weight:400;line-height:.88;
-  letter-spacing:.06em;
-  color:var(--crema);
-  margin-bottom:1.75rem;
-  text-transform:uppercase;
-}
-.hero__title .accent{
-  color:var(--dorado);
-  font-style:italic;
-}
-.hero__rule{
-  width:48px;height:1px;
-  background:var(--dorado);
-  margin-bottom:1.5rem;
-  opacity:.7;
-}
-.hero__sub{
-  font-family:var(--ff-quote);
-  font-size:clamp(1rem,1.8vw,1.25rem);
-  font-style:italic;
-  /* FIX CONTRASTE: era rgba(.68) → subido a .88 */
-  color:rgba(245,239,234,.88);
-  line-height:1.7;max-width:500px;
-  margin-bottom:2.75rem;
-}
-.hero__actions{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
-.hero__scroll{
-  position:absolute;bottom:2.25rem;right:var(--pad-x);
-  display:flex;flex-direction:column;align-items:center;gap:.5rem;
-  font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;
-  color:rgba(245,239,234,.45);z-index:10;font-family:var(--ff-body);
-}
-.hero__scroll-line{
-  width:1px;height:52px;
-  background:linear-gradient(to bottom,rgba(152,113,34,.5),transparent);
-  animation:scrollpulse 2.2s ease infinite;
-}
-@keyframes scrollpulse{
-  0%{transform:scaleY(0);transform-origin:top}
-  50%{transform:scaleY(1);transform-origin:top}
-  51%{transform:scaleY(1);transform-origin:bottom}
-  100%{transform:scaleY(0);transform-origin:bottom}
-}
+    .topbar__cta:hover {
+      background: var(--dorado);
+      color: var(--azul-dark)
+    }
 
-/* ── SPOTS BAND ── */
-.spots-band{
-  background:var(--marron-lujo);
-  padding:1rem var(--pad-x);
-  display:flex;align-items:center;justify-content:center;gap:2rem;flex-wrap:wrap;
-}
-.spots-band__item{
-  display:flex;align-items:center;gap:.5rem;
-  font-size:.65rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;
-  /* FIX CONTRASTE: era rgba(.75) → subido a .92 */
-  color:rgba(245,239,234,.92);
-  white-space:nowrap;font-family:var(--ff-body);
-}
-.spots-band__dot{color:var(--dorado);font-size:.7rem}
-.spots-num{
-  font-family:var(--ff-display);font-size:1.4rem;font-weight:400;
-  color:var(--crema);line-height:1;
-}
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+    }
 
-/* ── BUTTONS ── */
-.btn{
-  display:inline-flex;align-items:center;gap:8px;
-  padding:.9rem 2.2rem;
-  font-family:var(--ff-body);
-  font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
-  transition:all .28s var(--ease-out);
-  cursor:pointer;border:none;white-space:nowrap;
-}
-.btn--primary{
-  background:var(--dorado);color:var(--azul-dark);
-  box-shadow:0 4px 24px rgba(152,113,34,.3);
-}
-.btn--primary:hover{background:var(--oliva);color:var(--crema);transform:translateY(-2px);box-shadow:0 8px 32px rgba(152,113,34,.4)}
-.btn--outline{
-  background:transparent;color:var(--crema);
-  border:1px solid rgba(245,239,234,.35);
-}
-.btn--outline:hover{border-color:var(--dorado);color:var(--dorado)}
-.btn--outline-dark{
-  background:transparent;color:var(--marron-lujo);
-  border:1px solid rgba(74,52,46,.3);
-}
-.btn--outline-dark:hover{border-color:var(--dorado);color:var(--dorado)}
-.btn--wa{background:var(--musgo);color:var(--crema)}
-.btn--wa:hover{background:#222414;transform:translateY(-2px)}
-.btn--stripe{
-  background:var(--azul-base);color:var(--crema);
-  box-shadow:0 4px 20px rgba(69,87,99,.3);
-}
-.btn--stripe:hover{background:var(--azul-dark);transform:translateY(-2px)}
-.btn--dorado-outline{
-  background:transparent;color:var(--dorado);
-  border:1px solid var(--dorado);
-}
-.btn--dorado-outline:hover{background:var(--dorado);color:var(--azul-dark)}
+    .hero__media {
+      position: absolute;
+      inset: 0
+    }
 
-/* ── SECTIONS ── */
-.section{padding:clamp(5rem,9vw,8rem) 0}
-.section--cream{background:var(--crema);color:var(--marron-lujo)}
-.section--beige{background:var(--beige);color:var(--marron-lujo)}
-.section--blanco{background:var(--blanco-roto);color:var(--marron-lujo)}
-.section--dark{background:var(--azul-dark)}
-.section--marron{background:var(--marron-lujo)}
-.section--musgo{background:var(--musgo)}
-.container{max-width:1100px;margin:0 auto;padding:0 var(--pad-x)}
-.container--n{max-width:720px;margin:0 auto;padding:0 var(--pad-x)}
-.lbl{
-  display:inline-block;
-  font-size:.62rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;
-  font-family:var(--ff-body);
-  color:var(--dorado);margin-bottom:1.1rem;
-}
-/* FIX CONTRASTE: lbl--light era rgba(.45) sobre azul-dark → ratio ~1.9. Subido a .72 → ratio ~3.5 */
-.lbl--light{color:rgba(245,239,234,.72)}
-.lbl--marron{color:var(--marron-lujo)}
-.sec-title{
-  font-family:var(--ff-display);
-  font-size:clamp(2.2rem,4.5vw,3.6rem);
-  font-weight:400;line-height:1.1;
-  letter-spacing:.01em;
-}
-.sec-title em{font-style:italic;color:var(--dorado)}
-.sec-title--light{color:var(--crema)}
-.sec-title--dark{color:var(--marron-lujo)}
-.divider-gold{
-  width:40px;height:1px;
-  background:var(--dorado);
-  margin:1.75rem 0;opacity:.7;
-}
-.body-text{
-  font-family:var(--ff-body);
-  font-size:.9rem;font-weight:300;
-  line-height:1.9;color:var(--text-muted-light);
-}
-.body-text p+p{margin-top:1.1rem}
-.body-text--light{color:var(--text-muted-dark)}
+    .hero__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+      filter: brightness(.45) saturate(.65);
+    }
 
-/* ── MANIFIESTO ── */
-.manifest{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:1px;background:var(--beige);
-  margin-top:3.5rem;
-  border:1px solid var(--beige);
-}
-.manifest__item{
-  background:var(--blanco-roto);
-  padding:2.75rem 2.5rem;
-  position:relative;
-  transition:background .3s ease;
-}
-.manifest__item:hover{background:var(--crema)}
-.manifest__item::before{
-  content:"";position:absolute;
-  top:0;left:0;width:2px;height:0;
-  background:var(--dorado);
-  transition:height .45s var(--ease-out);
-}
-.manifest__item:hover::before{height:100%}
-/* FIX CONTRASTE: manifest__n era rgba(74,52,46,.1) — puramente decorativo, no afecta A11Y */
-.manifest__n{
-  font-family:var(--ff-display);font-size:2.8rem;font-weight:400;
-  color:rgba(74,52,46,.1);line-height:1;margin-bottom:.9rem;
-  transition:color .3s ease;
-}
-.manifest__item:hover .manifest__n{color:rgba(152,113,34,.15)}
-.manifest__t{
-  font-family:var(--ff-display);font-size:1.2rem;font-weight:400;
-  color:var(--marron-lujo);margin-bottom:.85rem;line-height:1.3;
-}
-/* FIX CONTRASTE: manifest__p era azul-base #455763 sobre blanco-roto #F4F4F4 → ratio ~4.6. OK. */
-.manifest__p{font-family:var(--ff-body);font-size:.85rem;font-weight:300;color:var(--azul-base);line-height:1.85}
+    .hero__overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to bottom,
+          rgba(26, 54, 54, .15) 0%,
+          rgba(26, 54, 54, .08) 30%,
+          rgba(26, 54, 54, .7) 68%,
+          rgba(26, 54, 54, .97) 100%);
+    }
 
-/* ── EJES ── */
-.ejes-grid{
-  display:grid;grid-template-columns:repeat(3,1fr);
-  gap:1.5rem;margin-top:3.5rem;
-}
-.eje-card{
-  border:1px solid var(--border-dark);
-  padding:2.75rem 2.25rem;
-  position:relative;overflow:hidden;
-  transition:border-color .3s ease,background .3s ease;
-}
-.eje-card::before{
-  content:"";position:absolute;inset:0;
-  background:linear-gradient(135deg,rgba(152,113,34,.06) 0%,transparent 60%);
-  opacity:0;transition:opacity .4s ease;
-}
-.eje-card:hover::before{opacity:1}
-.eje-card:hover{border-color:rgba(152,113,34,.3)}
-.eje-num{
-  font-family:var(--ff-body);font-size:.6rem;font-weight:500;
-  letter-spacing:.22em;text-transform:uppercase;
-  color:var(--dorado);margin-bottom:1.1rem;
-}
-.eje-name{
-  font-family:var(--ff-display);font-size:1.7rem;font-weight:400;
-  color:var(--crema);margin-bottom:.85rem;line-height:1.15;
-}
-.eje-rule{width:28px;height:1px;background:var(--dorado);margin-bottom:1rem;opacity:.6}
-/* FIX CONTRASTE: eje-text era rgba(.52) sobre azul-dark → ratio ~2.4. Subido a .75 → ratio ~4.6 */
-.eje-text{font-family:var(--ff-body);font-size:.85rem;font-weight:300;color:rgba(245,239,234,.75);line-height:1.85}
+    .hero__deco {
+      position: absolute;
+      top: 0;
+      left: var(--pad-x);
+      width: 1px;
+      height: 120px;
+      background: linear-gradient(to bottom, transparent, var(--dorado), transparent);
+      opacity: .5;
+      z-index: 5;
+    }
 
-/* ── PROGRAMA ── */
-.prog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
-.dia{border:1px solid var(--border-light);overflow:hidden}
-.dia__h{
-  background:var(--beige);
-  padding:1.4rem 1.75rem;border-bottom:1px solid var(--border-light);
-}
-.dia__n{font-family:var(--ff-body);font-size:.6rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--dorado)}
-.dia__d{font-family:var(--ff-display);font-size:1.2rem;font-weight:400;color:var(--marron-lujo);margin-top:.25rem}
-.dia__b{padding:1.5rem 1.75rem;background:var(--blanco-roto)}
-.hora{display:flex;gap:1rem;padding:.65rem 0;border-bottom:1px solid rgba(74,52,46,.05)}
-.hora:last-child{border-bottom:none}
-/* FIX CONTRASTE: hora__t era dorado #987122 sobre blanco-roto #F4F4F4 → ratio ~2.9. Font-weight subido a 600. */
-.hora__t{flex-shrink:0;font-family:var(--ff-body);font-size:.64rem;font-weight:600;color:var(--oliva);letter-spacing:.06em;min-width:42px;margin-top:2px}
-/* FIX CONTRASTE: hora__d era azul-base sobre blanco-roto → ratio ~4.6. OK. */
-.hora__d{font-family:var(--ff-body);font-size:.8rem;font-weight:300;color:var(--azul-base);line-height:1.55}
+    .hero__content {
+      position: relative;
+      z-index: 10;
+      padding: clamp(5rem, 10vw, 8rem) var(--pad-x) clamp(3.5rem, 6vw, 5.5rem);
+      max-width: 960px;
+    }
 
-/* ── INCLUYE ── */
-.inc-split{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3rem}
-.inc-box{border:1px solid var(--border-light);padding:2.25rem 2rem;background:var(--blanco)}
-.inc-box--no{background:var(--crema)}
-/* FIX A11Y heading order: era h4 directo. Marcado como h3 aquí porque el h2 de sección es padre correcto */
-.inc-box h3{font-family:var(--ff-display);font-size:1.2rem;font-weight:400;color:var(--marron-lujo);margin-bottom:1.5rem;letter-spacing:.02em}
-.inc-list{display:flex;flex-direction:column;gap:.7rem}
-.inc-list li{
-  display:flex;align-items:flex-start;gap:.75rem;
-  font-family:var(--ff-body);font-size:.82rem;font-weight:300;color:var(--azul-base);line-height:1.55;
-}
-.inc-list li::before{flex-shrink:0;font-size:.7rem;margin-top:1px}
-.inc-list--yes li::before{content:"—";color:var(--dorado)}
-.inc-list--no li::before{content:"—";color:rgba(69,87,99,.3)}
+    .hero__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 3px solid rgba(152, 113, 34, .35);
+      padding: 5px 14px;
+      font-size: .62rem;
+      font-weight: 500;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      /* FIX CONTRASTE: era rgba(.55) → subido a .85 */
+      color: rgba(245, 239, 234, .85);
+      font-family: var(--ff-body);
+      margin-bottom: 2.25rem;
+    }
 
-/* ── EXP GRID ── */
-.exp-grid{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:5rem;align-items:center;
-}
-.exp-img-wrap{
-  position:relative;overflow:hidden;
-  aspect-ratio:3/4;
-}
-.exp-img-wrap img{
-  width:100%;height:100%;
-  object-fit:cover;object-position:center top;
-  filter:saturate(.78) brightness(.95);
-  transition:transform .8s var(--ease-out);
-}
-.exp-img-wrap:hover img{transform:scale(1.03)}
-.exp-img-wrap::before,
-.exp-img-wrap::after{
-  content:"";position:absolute;z-index:2;
-}
-.exp-img-wrap::before{
-  top:16px;left:16px;right:16px;bottom:16px;
-  border-top:1px solid rgba(152,113,34,.35);
-  border-left:1px solid rgba(152,113,34,.35);
-  pointer-events:none;
-}
-.exp-img-wrap::after{
-  bottom:0;left:0;right:0;height:55%;
-  background:linear-gradient(to top,rgba(26,54,54,.7) 0%,transparent 100%);
-}
-.exp-quote{
-  position:absolute;bottom:2rem;left:2rem;right:2rem;
-  z-index:3;
-  font-family:var(--ff-quote);
-  font-size:1.05rem;font-style:italic;
-  color:rgba(245,239,234,.88);line-height:1.6;
-}
-.exp-narrative{
-  font-family:var(--ff-quote);
-  font-size:clamp(1.3rem,2vw,1.65rem);
-  font-style:italic;font-weight:400;
-  color:var(--marron-lujo);line-height:1.55;
-  margin-bottom:1.75rem;
-}
+    .hero__badge-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--dorado);
+      animation: pulse 2.4s infinite;
+    }
 
-/* ── PRECIO / RESERVA ── */
-.precio-section{position:relative;overflow:hidden}
-.precio-section::before{
-  content:"";position:absolute;
-  top:-20%;right:-5%;width:45%;height:80%;
-  background:radial-gradient(ellipse,rgba(152,113,34,.06) 0%,transparent 70%);
-  pointer-events:none;
-}
-.rooms-grid{
-  display:grid;grid-template-columns:repeat(2,1fr);
-  gap:1px;background:var(--border-dark);
-  border:1px solid var(--border-dark);
-  margin-bottom:2.5rem;
-}
-.room-card{
-  background:rgba(245,239,234,.03);
-  padding:2rem 1.75rem;
-  transition:background .3s ease;
-  position:relative;
-  border:2px solid transparent;
-  cursor:pointer;
-}
-.room-card:hover{background:rgba(152,113,34,.06)}
-.room-card.selected{
-  background:rgba(152,113,34,.1);
-  border-color:var(--dorado);
-  z-index:1;
-}
-.room-card__price{
-  font-family:var(--ff-display);
-  font-size:2.5rem;font-weight:400;
-  color:var(--dorado);line-height:1;
-  margin-bottom:.5rem;
-}
-.room-card__name{
-  font-family:var(--ff-display);font-size:1rem;font-weight:400;
-  color:var(--crema);margin-bottom:.35rem;letter-spacing:.04em;
-}
-/* FIX CONTRASTE: room-card__desc era rgba(.45) → subido a .72 */
-.room-card__desc{
-  font-family:var(--ff-body);font-size:.78rem;font-weight:300;
-  color:rgba(245,239,234,.72);line-height:1.6;
-  margin-bottom:1rem;
-}
-.room-card__badge{
-  font-family:var(--ff-body);font-size:.62rem;font-weight:500;
-  letter-spacing:.16em;text-transform:uppercase;
-  color:var(--dorado);border:1px solid rgba(152,113,34,.3);
-  display:inline-block;padding:3px 8px;
-}
-.precio-note-box{
-  background:rgba(245,239,234,.04);
-  border:1px solid var(--border-dark);
-  padding:1.5rem 2rem;margin-bottom:2rem;
-  font-family:var(--ff-body);font-size:.8rem;font-weight:300;
-  /* FIX CONTRASTE: era rgba(.48) → subido a .72 */
-  color:rgba(245,239,234,.72);
-  line-height:1.75;
-}
-.precio-note-box strong{color:rgba(245,239,234,.9);font-weight:500}
-.precio-btns-main{
-  display:flex;flex-direction:column;gap:.85rem;max-width:420px;margin:0 auto;
-}
-.precio-btns-main .btn{width:100%;justify-content:center}
-.room-link{display:none}
-.room-link.active{display:flex}
-.precio-sub{
-  font-family:var(--ff-body);font-size:.68rem;
-  /* FIX CONTRASTE: era rgba(.25) → subido a .55 */
-  color:rgba(245,239,234,.55);
-  margin-top:1.1rem;text-align:center;
-}
-.spots-counter-main{
-  text-align:center;margin:2rem 0;
-  font-family:var(--ff-body);font-size:.75rem;font-weight:400;
-  letter-spacing:.1em;text-transform:uppercase;
-  /* FIX CONTRASTE: era rgba(.4) → subido a .65 */
-  color:rgba(245,239,234,.65);
-}
-.spots-counter-main strong{color:var(--dorado)}
+    @keyframes pulse {
 
-/* ── LOGISTICA ── */
-.logi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
-.logi-card{
-  padding:2rem 1.75rem;
-  background:var(--blanco);
-  border-left:2px solid var(--beige);
-  transition:border-color .3s ease;
-}
-.logi-card:hover{border-color:var(--dorado)}
-.logi-icon{font-size:1.3rem;margin-bottom:.85rem;opacity:.6}
-.logi-title{
-  font-family:var(--ff-display);font-size:1.05rem;font-weight:400;
-  color:var(--marron-lujo);margin-bottom:.6rem;letter-spacing:.02em;
-}
-.logi-text{font-family:var(--ff-body);font-size:.8rem;font-weight:300;color:var(--azul-base);line-height:1.75}
+      0%,
+      100% {
+        opacity: 1
+      }
 
-/* ── TESTIMONIOS ── */
-.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3.5rem}
-.testi-card{
-  border:1px solid var(--border-dark);
-  padding:2.5rem 2rem;
-  position:relative;
-  transition:border-color .3s ease;
-}
-.testi-card:hover{border-color:rgba(152,113,34,.3)}
-.testi-rule{width:24px;height:1px;background:var(--dorado);margin-bottom:1.5rem;opacity:.6}
-/* FIX CONTRASTE: testi-q era rgba(.8) sobre azul-dark → ratio ~4.8. OK. */
-.testi-q{
-  font-family:var(--ff-quote);
-  font-size:.98rem;font-style:italic;
-  color:rgba(245,239,234,.88);
-  line-height:1.75;
-  margin-bottom:1.75rem;
-}
+      50% {
+        opacity: .2
+      }
+    }
 
-.testi-foot{display:flex;align-items:center;gap:.85rem}
-.testi-av{
-  width:38px;height:38px;
-  border:1px solid rgba(152,113,34,.3);
-  display:flex;align-items:center;justify-content:center;
-  font-family:var(--ff-display);font-size:1rem;font-style:italic;
-  color:var(--dorado);flex-shrink:0;
-}
-/* FIX CONTRASTE: testi-name era rgba(.8) → ratio OK. */
-.testi-name{font-family:var(--ff-body);font-size:.78rem;font-weight:500;color:rgba(245,239,234,.9);display:block;letter-spacing:.04em}
-/* FIX CONTRASTE: testi-role era rgba(.35) sobre azul-dark → ratio ~1.5. Subido a .65 → ratio ~3.5 */
-.testi-role{font-family:var(--ff-body);font-size:.68rem;color:rgba(245,239,234,.65);margin-top:2px;font-weight:300}
+    .hero__eyebrow {
+      font-family: var(--ff-body);
+      font-size: clamp(.78rem, 1.2vw, .88rem);
+      font-weight: 400;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--dorado);
+      margin-bottom: 1.1rem;
+      font-style: italic;
+    }
 
-/* ── JENIFER BIO ── */
-.bio-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:5rem;align-items:start}
-.bio-img-wrap{
-  position:relative;overflow:hidden;aspect-ratio:3/4;
-}
-.bio-img-wrap img{
-  width:100%;height:100%;object-fit:cover;object-position:center top;
-  filter:sepia(.1) saturate(.85);
-}
-.bio-img-wrap::before{
-  content:"";position:absolute;
-  top:12px;left:12px;right:12px;bottom:12px;
-  border-bottom:1px solid rgba(152,113,34,.4);
-  border-right:1px solid rgba(152,113,34,.4);
-  z-index:2;pointer-events:none;
-}
-.bio-title{
-  font-family:var(--ff-display);font-size:2.2rem;font-weight:400;
-  color:var(--crema);margin-bottom:.35rem;letter-spacing:.02em;
-}
-.bio-role{
-  font-family:var(--ff-quote);font-size:1rem;font-style:italic;
-  color:var(--dorado);margin-bottom:2rem;
-}
-/* FIX CONTRASTE: bio-body era rgba(.58) sobre azul-dark → ratio ~2.9. Subido a .78 → ratio ~4.7 */
-.bio-body{font-family:var(--ff-body);font-size:.88rem;font-weight:300;color:rgba(245,239,234,.78);line-height:1.9}
-.bio-body p+p{margin-top:1rem}
+    .hero__title {
+      font-family: var(--ff-display);
+      font-size: clamp(5rem, 14vw, 12rem);
+      font-weight: 400;
+      line-height: .88;
+      letter-spacing: .06em;
+      color: var(--crema);
+      margin-bottom: 1.75rem;
+      text-transform: uppercase;
+    }
 
-/* ── CIERRE ── */
-.cierre{text-align:center;padding:clamp(5rem,10vw,9rem) 0}
-.cierre__eyebrow{
-  font-family:var(--ff-body);font-size:.65rem;font-weight:500;
-  letter-spacing:.22em;text-transform:uppercase;color:var(--dorado);
-  margin-bottom:1.5rem;display:block;
-}
-.cierre__t{
-  font-family:var(--ff-display);
-  font-size:clamp(2.5rem,5vw,4.5rem);
-  font-weight:400;line-height:1.05;
-  color:var(--crema);max-width:720px;margin:0 auto 1.5rem;
-}
-.cierre__t em{font-style:italic;color:var(--dorado)}
-/* FIX CONTRASTE: cierre__s era rgba(.48) → subido a .75 */
-.cierre__s{
-  font-family:var(--ff-quote);
-  font-size:1.05rem;font-style:italic;
-  color:rgba(245,239,234,.75);
-  max-width:460px;margin:0 auto 3rem;line-height:1.75;
-}
-.cierre__a{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
-/* FIX CONTRASTE: cierre__phrase era rgba(.2) → subido a .45 */
-.cierre__phrase{
-  font-family:var(--ff-quote);font-size:1rem;font-style:italic;
-  color:rgba(245,239,234,.45);margin-top:4.5rem;letter-spacing:.04em;
-}
+    .hero__title .accent {
+      color: var(--dorado);
+      font-style: italic;
+    }
 
-/* ── FOOTER ── */
-.foot{
-  background:rgba(0,0,0,.4);
-  border-top:1px solid var(--border-dark);
-  padding:2rem var(--pad-x);
-  display:flex;align-items:center;justify-content:space-between;
-  flex-wrap:wrap;gap:1rem;
-}
-/* FIX CONTRASTE: foot__copy era rgba(.22) → subido a .55 */
-.foot__copy{font-family:var(--ff-body);font-size:.68rem;color:rgba(245,239,234,.55)}
-.foot__links{display:flex;gap:1.5rem}
-/* FIX CONTRASTE: foot__links a era rgba(.22) → subido a .55 */
-.foot__links a{font-family:var(--ff-body);font-size:.68rem;color:rgba(245,239,234,.55);transition:color .25s}
-.foot__links a:hover{color:rgba(245,239,234,.85)}
-/* FIX CONTRASTE: foot__built era rgba(.16) → subido a .45 */
-.foot__built{font-family:var(--ff-body);font-size:.65rem;color:rgba(245,239,234,.45)}
-.foot__built a{color:rgba(245,239,234,.55);transition:color .25s}
-.foot__built a:hover{color:rgba(245,239,234,.8)}
+    .hero__rule {
+      width: 48px;
+      height: 1px;
+      background: var(--dorado);
+      margin-bottom: 1.5rem;
+      opacity: .7;
+    }
 
-/* ── WA FLOAT ── */
-.wa-f{
-  position:fixed;bottom:2rem;right:2rem;z-index:90;
-  width:50px;height:50px;
-  background:var(--musgo);
-  display:flex;align-items:center;justify-content:center;
-  box-shadow:0 4px 20px rgba(49,51,31,.4);
-  transition:transform .25s var(--ease-out),box-shadow .25s;
-}
-.wa-f:hover{transform:scale(1.08);box-shadow:0 6px 28px rgba(49,51,31,.55)}
-.wa-f svg{width:24px;height:24px;fill:var(--crema)}
+    .hero__sub {
+      font-family: var(--ff-quote);
+      font-size: clamp(1rem, 1.8vw, 1.25rem);
+      font-style: italic;
+      /* FIX CONTRASTE: era rgba(.68) → subido a .88 */
+      color: rgba(245, 239, 234, .88);
+      line-height: 1.7;
+      max-width: 500px;
+      margin-bottom: 2.75rem;
+    }
 
-/* ── ANIMATIONS ── */
-.fu{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease-out),transform .8s var(--ease-out)}
-.fu.vis{opacity:1;transform:translateY(0)}
-.fu.d1{transition-delay:.1s}
-.fu.d2{transition-delay:.2s}
-.fu.d3{transition-delay:.3s}
-.fu.d4{transition-delay:.45s}
+    .hero__actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center
+    }
 
-/* ── RESPONSIVE ── */
-@media(max-width:900px){
-  .manifest{grid-template-columns:1fr}
-  .ejes-grid,.prog-grid,.logi-grid,.testi-grid{grid-template-columns:1fr}
-  .inc-split{grid-template-columns:1fr}
-  .exp-grid,.bio-grid{grid-template-columns:1fr;gap:3rem}
-  .hero__title{font-size:clamp(4rem,18vw,7rem)}
-  .topbar__logo{display:none}
-  .rooms-grid{grid-template-columns:1fr}
-}
-@media(max-width:640px){
-  .hero__actions{flex-direction:column;align-items:flex-start}
-  .hero__actions .btn{width:100%;justify-content:center}
-  .cierre__a{flex-direction:column;align-items:center}
-  .cierre__a .btn{width:100%;max-width:320px;justify-content:center}
-  .spots-band{gap:1rem}
-}
-</style>
+    .hero__scroll {
+      position: absolute;
+      bottom: 2.25rem;
+      right: var(--pad-x);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .5rem;
+      font-size: .6rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: rgba(245, 239, 234, .45);
+      z-index: 10;
+      font-family: var(--ff-body);
+    }
+
+    .hero__scroll-line {
+      width: 1px;
+      height: 52px;
+      background: linear-gradient(to bottom, rgba(152, 113, 34, .5), transparent);
+      animation: scrollpulse 2.2s ease infinite;
+    }
+
+    @keyframes scrollpulse {
+      0% {
+        transform: scaleY(0);
+        transform-origin: top
+      }
+
+      50% {
+        transform: scaleY(1);
+        transform-origin: top
+      }
+
+      51% {
+        transform: scaleY(1);
+        transform-origin: bottom
+      }
+
+      100% {
+        transform: scaleY(0);
+        transform-origin: bottom
+      }
+    }
+
+    /* ── SPOTS BAND ── */
+    .spots-band {
+      background: var(--marron-lujo);
+      padding: 1rem var(--pad-x);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .spots-band__item {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .65rem;
+      font-weight: 500;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      /* FIX CONTRASTE: era rgba(.75) → subido a .92 */
+      color: rgba(245, 239, 234, .92);
+      white-space: nowrap;
+      font-family: var(--ff-body);
+    }
+
+    .spots-band__dot {
+      color: var(--dorado);
+      font-size: .7rem
+    }
+
+    .spots-num {
+      font-family: var(--ff-display);
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--crema);
+      line-height: 1;
+    }
+
+    /* ── BUTTONS ── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: .9rem 2.2rem;
+      font-family: var(--ff-body);
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      transition: all .28s var(--ease-out);
+      cursor: pointer;
+      border: none;
+      white-space: nowrap;
+    }
+
+    .btn--primary {
+      background: var(--dorado);
+      color: var(--azul-dark);
+      box-shadow: 0 4px 24px rgba(152, 113, 34, .3);
+    }
+
+    .btn--primary:hover {
+      background: var(--oliva);
+      color: var(--crema);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(152, 113, 34, .4)
+    }
+
+    .btn--outline {
+      background: transparent;
+      color: var(--crema);
+      border: 1px solid rgba(245, 239, 234, .35);
+    }
+
+    .btn--outline:hover {
+      border-color: var(--dorado);
+      color: var(--dorado)
+    }
+
+    .btn--outline-dark {
+      background: transparent;
+      color: var(--marron-lujo);
+      border: 1px solid rgba(74, 52, 46, .3);
+    }
+
+    .btn--outline-dark:hover {
+      border-color: var(--dorado);
+      color: var(--dorado)
+    }
+
+    .btn--wa {
+      background: var(--musgo);
+      color: var(--crema)
+    }
+
+    .btn--wa:hover {
+      background: #222414;
+      transform: translateY(-2px)
+    }
+
+    .btn--stripe {
+      background: var(--azul-base);
+      color: var(--crema);
+      box-shadow: 0 4px 20px rgba(69, 87, 99, .3);
+    }
+
+    .btn--stripe:hover {
+      background: var(--azul-dark);
+      transform: translateY(-2px)
+    }
+
+    .btn--dorado-outline {
+      background: transparent;
+      color: var(--dorado);
+      border: 1px solid var(--dorado);
+    }
+
+    .btn--dorado-outline:hover {
+      background: var(--dorado);
+      color: var(--azul-dark)
+    }
+
+    /* ── SECTIONS ── */
+    .section {
+      padding: clamp(5rem, 9vw, 8rem) 0
+    }
+
+    .section--cream {
+      background: var(--crema);
+      color: var(--marron-lujo)
+    }
+
+    .section--beige {
+      background: var(--beige);
+      color: var(--marron-lujo)
+    }
+
+    .section--blanco {
+      background: var(--blanco-roto);
+      color: var(--marron-lujo)
+    }
+
+    .section--dark {
+      background: var(--azul-dark)
+    }
+
+    .section--marron {
+      background: var(--marron-lujo)
+    }
+
+    .section--musgo {
+      background: var(--musgo)
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 var(--pad-x)
+    }
+
+    .container--n {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 var(--pad-x)
+    }
+
+    .lbl {
+      display: inline-block;
+      font-size: .62rem;
+      font-weight: 500;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      font-family: var(--ff-body);
+      color: var(--dorado);
+      margin-bottom: 1.1rem;
+    }
+
+    /* FIX CONTRASTE: lbl--light era rgba(.45) sobre azul-dark → ratio ~1.9. Subido a .72 → ratio ~3.5 */
+    .lbl--light {
+      color: rgba(245, 239, 234, .72)
+    }
+
+    .lbl--marron {
+      color: var(--marron-lujo)
+    }
+
+    .sec-title {
+      font-family: var(--ff-display);
+      font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: .01em;
+    }
+
+    .sec-title em {
+      font-style: italic;
+      color: var(--dorado)
+    }
+
+    .sec-title--light {
+      color: var(--crema)
+    }
+
+    .sec-title--dark {
+      color: var(--marron-lujo)
+    }
+
+    .divider-gold {
+      width: 40px;
+      height: 1px;
+      background: var(--dorado);
+      margin: 1.75rem 0;
+      opacity: .7;
+    }
+
+    .body-text {
+      font-family: var(--ff-body);
+      font-size: .9rem;
+      font-weight: 300;
+      line-height: 1.9;
+      color: var(--text-muted-light);
+    }
+
+    .body-text p+p {
+      margin-top: 1.1rem
+    }
+
+    .body-text--light {
+      color: var(--text-muted-dark)
+    }
+
+    /* ── MANIFIESTO ── */
+    .manifest {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--beige);
+      margin-top: 3.5rem;
+      border: 1px solid var(--beige);
+    }
+
+    .manifest__item {
+      background: var(--blanco-roto);
+      padding: 2.75rem 2.5rem;
+      position: relative;
+      transition: background .3s ease;
+    }
+
+    .manifest__item:hover {
+      background: var(--crema)
+    }
+
+    .manifest__item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2px;
+      height: 0;
+      background: var(--dorado);
+      transition: height .45s var(--ease-out);
+    }
+
+    .manifest__item:hover::before {
+      height: 100%
+    }
+
+    /* FIX CONTRASTE: manifest__n era rgba(74,52,46,.1) — puramente decorativo, no afecta A11Y */
+    .manifest__n {
+      font-family: var(--ff-display);
+      font-size: 2.8rem;
+      font-weight: 400;
+      color: rgba(74, 52, 46, .1);
+      line-height: 1;
+      margin-bottom: .9rem;
+      transition: color .3s ease;
+    }
+
+    .manifest__item:hover .manifest__n {
+      color: rgba(152, 113, 34, .15)
+    }
+
+    .manifest__t {
+      font-family: var(--ff-display);
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--marron-lujo);
+      margin-bottom: .85rem;
+      line-height: 1.3;
+    }
+
+    /* FIX CONTRASTE: manifest__p era azul-base #455763 sobre blanco-roto #F4F4F4 → ratio ~4.6. OK. */
+    .manifest__p {
+      font-family: var(--ff-body);
+      font-size: .85rem;
+      font-weight: 300;
+      color: var(--azul-base);
+      line-height: 1.85
+    }
+
+    /* ── EJES ── */
+    .ejes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3.5rem;
+    }
+
+    .eje-card {
+      border: 1px solid var(--border-dark);
+      padding: 2.75rem 2.25rem;
+      position: relative;
+      overflow: hidden;
+      transition: border-color .3s ease, background .3s ease;
+    }
+
+    .eje-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(152, 113, 34, .06) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity .4s ease;
+    }
+
+    .eje-card:hover::before {
+      opacity: 1
+    }
+
+    .eje-card:hover {
+      border-color: rgba(152, 113, 34, .3)
+    }
+
+    .eje-num {
+      font-family: var(--ff-body);
+      font-size: .6rem;
+      font-weight: 500;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--dorado);
+      margin-bottom: 1.1rem;
+    }
+
+    .eje-name {
+      font-family: var(--ff-display);
+      font-size: 1.7rem;
+      font-weight: 400;
+      color: var(--crema);
+      margin-bottom: .85rem;
+      line-height: 1.15;
+    }
+
+    .eje-rule {
+      width: 28px;
+      height: 1px;
+      background: var(--dorado);
+      margin-bottom: 1rem;
+      opacity: .6
+    }
+
+    /* FIX CONTRASTE: eje-text era rgba(.52) sobre azul-dark → ratio ~2.4. Subido a .75 → ratio ~4.6 */
+    .eje-text {
+      font-family: var(--ff-body);
+      font-size: .85rem;
+      font-weight: 300;
+      color: rgba(245, 239, 234, .75);
+      line-height: 1.85
+    }
+
+    /* ── PROGRAMA ── */
+    /* ── PROGRAMA ── */
+    .prog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 3rem;
+      align-items: start
+    }
+
+    .dia {
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      height: 520px;
+      border: 0.5px solid rgba(74, 52, 46, .12);
+      overflow: hidden
+    }
+
+    .dia__h {
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid rgba(74, 52, 46, .08);
+      flex-shrink: 0
+    }
+
+    .dia__n {
+      font-family: var(--ff-body);
+      font-size: .58rem;
+      font-weight: 500;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--dorado);
+      margin-bottom: .35rem
+    }
+
+    .dia__d {
+      font-family: var(--ff-display);
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--marron-lujo)
+    }
+
+    .dia__rule {
+      width: 24px;
+      height: 1px;
+      background: var(--dorado);
+      margin-top: .6rem;
+      opacity: .6
+    }
+
+    .dia__b {
+      flex: 1;
+      overflow-y: auto;
+      padding: .75rem 1.5rem;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(152, 113, 34, .2) transparent
+    }
+
+    .dia__foot {
+      flex-shrink: 0;
+      padding: .65rem 1.5rem;
+      border-top: .5px solid rgba(74, 52, 46, .06);
+      font-family: var(--ff-body);
+      font-size: .58rem;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: rgba(152, 113, 34, .45)
+    }
+
+    .hora {
+      display: flex;
+      gap: .75rem;
+      padding: .55rem 0;
+      border-bottom: .5px solid rgba(74, 52, 46, .06)
+    }
+
+    .hora:last-child {
+      border-bottom: none
+    }
+
+    .hora__t {
+      flex-shrink: 0;
+      font-family: var(--ff-body);
+      font-size: .62rem;
+      font-weight: 600;
+      color: var(--oliva);
+      letter-spacing: .04em;
+      min-width: 36px;
+      margin-top: 1px;
+      font-variant-numeric: tabular-nums
+    }
+
+    .hora__d {
+      font-family: var(--ff-body);
+      font-size: .78rem;
+      font-weight: 300;
+      color: var(--azul-base);
+      line-height: 1.5
+    }
+
+    /* ── INCLUYE ── */
+    .inc-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 3rem
+    }
+
+    .inc-box {
+      border: 1px solid var(--border-light);
+      padding: 2.25rem 2rem;
+      background: var(--blanco)
+    }
+
+    .inc-box--no {
+      background: var(--crema)
+    }
+
+    /* FIX A11Y heading order: era h4 directo. Marcado como h3 aquí porque el h2 de sección es padre correcto */
+    .inc-box h3 {
+      font-family: var(--ff-display);
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--marron-lujo);
+      margin-bottom: 1.5rem;
+      letter-spacing: .02em
+    }
+
+    .inc-list {
+      display: flex;
+      flex-direction: column;
+      gap: .7rem
+    }
+
+    .inc-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: .75rem;
+      font-family: var(--ff-body);
+      font-size: .82rem;
+      font-weight: 300;
+      color: var(--azul-base);
+      line-height: 1.55;
+    }
+
+    .inc-list li::before {
+      flex-shrink: 0;
+      font-size: .7rem;
+      margin-top: 1px
+    }
+
+    .inc-list--yes li::before {
+      content: "—";
+      color: var(--dorado)
+    }
+
+    .inc-list--no li::before {
+      content: "—";
+      color: rgba(69, 87, 99, .3)
+    }
+
+    /* ── EXP GRID ── */
+    .exp-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .exp-img-wrap {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 3/4;
+    }
+
+    .exp-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      filter: saturate(.78) brightness(.95);
+      transition: transform .8s var(--ease-out);
+    }
+
+    .exp-img-wrap:hover img {
+      transform: scale(1.03)
+    }
+
+    .exp-img-wrap::before,
+    .exp-img-wrap::after {
+      content: "";
+      position: absolute;
+      z-index: 2;
+    }
+
+    .exp-img-wrap::before {
+      top: 16px;
+      left: 16px;
+      right: 16px;
+      bottom: 16px;
+      border-top: 1px solid rgba(152, 113, 34, .35);
+      border-left: 1px solid rgba(152, 113, 34, .35);
+      pointer-events: none;
+    }
+
+    .exp-img-wrap::after {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 55%;
+      background: linear-gradient(to top, rgba(26, 54, 54, .7) 0%, transparent 100%);
+    }
+
+    .exp-quote {
+      position: absolute;
+      bottom: 2rem;
+      left: 2rem;
+      right: 2rem;
+      z-index: 3;
+      font-family: var(--ff-quote);
+      font-size: 1.05rem;
+      font-style: italic;
+      color: rgba(245, 239, 234, .88);
+      line-height: 1.6;
+    }
+
+    .exp-narrative {
+      font-family: var(--ff-quote);
+      font-size: clamp(1.3rem, 2vw, 1.65rem);
+      font-style: italic;
+      font-weight: 400;
+      color: var(--marron-lujo);
+      line-height: 1.55;
+      margin-bottom: 1.75rem;
+    }
+
+    /* ── PRECIO / RESERVA ── */
+    .precio-section {
+      position: relative;
+      overflow: hidden
+    }
+
+    .precio-section::before {
+      content: "";
+      position: absolute;
+      top: -20%;
+      right: -5%;
+      width: 45%;
+      height: 80%;
+      background: radial-gradient(ellipse, rgba(152, 113, 34, .06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .rooms-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      background: var(--border-dark);
+      border: 1px solid var(--border-dark);
+      margin-bottom: 2.5rem;
+    }
+
+    .room-card {
+      background: rgba(245, 239, 234, .03);
+      padding: 2rem 1.75rem;
+      transition: background .3s ease;
+      position: relative;
+      border: 2px solid transparent;
+      cursor: pointer;
+    }
+
+    .room-card:hover {
+      background: rgba(152, 113, 34, .06)
+    }
+
+    .room-card.selected {
+      background: rgba(152, 113, 34, .1);
+      border-color: var(--dorado);
+      z-index: 1;
+    }
+
+    .room-card__price {
+      font-family: var(--ff-display);
+      font-size: 2.5rem;
+      font-weight: 400;
+      color: var(--dorado);
+      line-height: 1;
+      margin-bottom: .5rem;
+    }
+
+    .room-card__name {
+      font-family: var(--ff-display);
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--crema);
+      margin-bottom: .35rem;
+      letter-spacing: .04em;
+    }
+
+    /* FIX CONTRASTE: room-card__desc era rgba(.45) → subido a .72 */
+    .room-card__desc {
+      font-family: var(--ff-body);
+      font-size: .78rem;
+      font-weight: 300;
+      color: rgba(245, 239, 234, .72);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .room-card__badge {
+      font-family: var(--ff-body);
+      font-size: .62rem;
+      font-weight: 500;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--dorado);
+      border: 1px solid rgba(152, 113, 34, .3);
+      display: inline-block;
+      padding: 3px 8px;
+    }
+
+    .precio-note-box {
+      background: rgba(245, 239, 234, .04);
+      border: 1px solid var(--border-dark);
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+      font-family: var(--ff-body);
+      font-size: .8rem;
+      font-weight: 300;
+      /* FIX CONTRASTE: era rgba(.48) → subido a .72 */
+      color: rgba(245, 239, 234, .72);
+      line-height: 1.75;
+    }
+
+    .precio-note-box strong {
+      color: rgba(245, 239, 234, .9);
+      font-weight: 500
+    }
+
+    .precio-btns-main {
+      display: flex;
+      flex-direction: column;
+      gap: .85rem;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
+    .precio-btns-main .btn {
+      width: 100%;
+      justify-content: center
+    }
+
+    .room-link {
+      display: none
+    }
+
+    .room-link.active {
+      display: flex
+    }
+
+    .precio-sub {
+      font-family: var(--ff-body);
+      font-size: .68rem;
+      /* FIX CONTRASTE: era rgba(.25) → subido a .55 */
+      color: rgba(245, 239, 234, .55);
+      margin-top: 1.1rem;
+      text-align: center;
+    }
+
+    .spots-counter-main {
+      text-align: center;
+      margin: 2rem 0;
+      font-family: var(--ff-body);
+      font-size: .75rem;
+      font-weight: 400;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      /* FIX CONTRASTE: era rgba(.4) → subido a .65 */
+      color: rgba(245, 239, 234, .65);
+    }
+
+    .spots-counter-main strong {
+      color: var(--dorado)
+    }
+
+    /* ── LOGISTICA ── */
+    .logi-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem
+    }
+
+    .logi-card {
+      padding: 2rem 1.75rem;
+      background: var(--blanco);
+      border-left: 2px solid var(--beige);
+      transition: border-color .3s ease;
+    }
+
+    .logi-card:hover {
+      border-color: var(--dorado)
+    }
+
+    .logi-icon {
+      font-size: 1.3rem;
+      margin-bottom: .85rem;
+      opacity: .6
+    }
+
+    .logi-title {
+      font-family: var(--ff-display);
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: var(--marron-lujo);
+      margin-bottom: .6rem;
+      letter-spacing: .02em;
+    }
+
+    .logi-text {
+      font-family: var(--ff-body);
+      font-size: .8rem;
+      font-weight: 300;
+      color: var(--azul-base);
+      line-height: 1.75
+    }
+
+    /* ── TESTIMONIOS ── */
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3.5rem
+    }
+
+    .testi-card {
+      border: 1px solid var(--border-dark);
+      padding: 2.5rem 2rem;
+      position: relative;
+      transition: border-color .3s ease;
+    }
+
+    .testi-card:hover {
+      border-color: rgba(152, 113, 34, .3)
+    }
+
+    .testi-rule {
+      width: 24px;
+      height: 1px;
+      background: var(--dorado);
+      margin-bottom: 1.5rem;
+      opacity: .6
+    }
+
+    /* FIX CONTRASTE: testi-q era rgba(.8) sobre azul-dark → ratio ~4.8. OK. */
+    .testi-q {
+      font-family: var(--ff-quote);
+      font-size: .98rem;
+      font-style: italic;
+      color: rgba(245, 239, 234, .88);
+      line-height: 1.75;
+      margin-bottom: 1.75rem;
+    }
+
+    .testi-foot {
+      display: flex;
+      align-items: center;
+      gap: .85rem
+    }
+
+    .testi-av {
+      width: 38px;
+      height: 38px;
+      border: 1px solid rgba(152, 113, 34, .3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--ff-display);
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--dorado);
+      flex-shrink: 0;
+    }
+
+    /* FIX CONTRASTE: testi-name era rgba(.8) → ratio OK. */
+    .testi-name {
+      font-family: var(--ff-body);
+      font-size: .78rem;
+      font-weight: 500;
+      color: rgba(245, 239, 234, .9);
+      display: block;
+      letter-spacing: .04em
+    }
+
+    /* FIX CONTRASTE: testi-role era rgba(.35) sobre azul-dark → ratio ~1.5. Subido a .65 → ratio ~3.5 */
+    .testi-role {
+      font-family: var(--ff-body);
+      font-size: .68rem;
+      color: rgba(245, 239, 234, .65);
+      margin-top: 2px;
+      font-weight: 300
+    }
+
+    /* ── JENIFER BIO ── */
+    .bio-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 5rem;
+      align-items: start
+    }
+
+    .bio-img-wrap {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 3/4;
+    }
+
+    .bio-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      filter: sepia(.1) saturate(.85);
+    }
+
+    .bio-img-wrap::before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      border-bottom: 1px solid rgba(152, 113, 34, .4);
+      border-right: 1px solid rgba(152, 113, 34, .4);
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .bio-title {
+      font-family: var(--ff-display);
+      font-size: 2.2rem;
+      font-weight: 400;
+      color: var(--crema);
+      margin-bottom: .35rem;
+      letter-spacing: .02em;
+    }
+
+    .bio-role {
+      font-family: var(--ff-quote);
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--dorado);
+      margin-bottom: 2rem;
+    }
+
+    /* FIX CONTRASTE: bio-body era rgba(.58) sobre azul-dark → ratio ~2.9. Subido a .78 → ratio ~4.7 */
+    .bio-body {
+      font-family: var(--ff-body);
+      font-size: .88rem;
+      font-weight: 300;
+      color: rgba(245, 239, 234, .78);
+      line-height: 1.9
+    }
+
+    .bio-body p+p {
+      margin-top: 1rem
+    }
+
+    /* ── CIERRE ── */
+    .cierre {
+      text-align: center;
+      padding: clamp(5rem, 10vw, 9rem) 0
+    }
+
+    .cierre__eyebrow {
+      font-family: var(--ff-body);
+      font-size: .65rem;
+      font-weight: 500;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--dorado);
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+
+    .cierre__t {
+      font-family: var(--ff-display);
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      font-weight: 400;
+      line-height: 1.05;
+      color: var(--crema);
+      max-width: 720px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .cierre__t em {
+      font-style: italic;
+      color: var(--dorado)
+    }
+
+    /* FIX CONTRASTE: cierre__s era rgba(.48) → subido a .75 */
+    .cierre__s {
+      font-family: var(--ff-quote);
+      font-size: 1.05rem;
+      font-style: italic;
+      color: rgba(245, 239, 234, .75);
+      max-width: 460px;
+      margin: 0 auto 3rem;
+      line-height: 1.75;
+    }
+
+    .cierre__a {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap
+    }
+
+    /* FIX CONTRASTE: cierre__phrase era rgba(.2) → subido a .45 */
+    .cierre__phrase {
+      font-family: var(--ff-quote);
+      font-size: 1rem;
+      font-style: italic;
+      color: rgba(245, 239, 234, .45);
+      margin-top: 4.5rem;
+      letter-spacing: .04em;
+    }
+
+    /* ── FOOTER ── */
+    .foot {
+      background: rgba(0, 0, 0, .4);
+      border-top: 1px solid var(--border-dark);
+      padding: 2rem var(--pad-x);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* FIX CONTRASTE: foot__copy era rgba(.22) → subido a .55 */
+    .foot__copy {
+      font-family: var(--ff-body);
+      font-size: .68rem;
+      color: rgba(245, 239, 234, .55)
+    }
+
+    .foot__links {
+      display: flex;
+      gap: 1.5rem
+    }
+
+    /* FIX CONTRASTE: foot__links a era rgba(.22) → subido a .55 */
+    .foot__links a {
+      font-family: var(--ff-body);
+      font-size: .68rem;
+      color: rgba(245, 239, 234, .55);
+      transition: color .25s
+    }
+
+    .foot__links a:hover {
+      color: rgba(245, 239, 234, .85)
+    }
+
+    /* FIX CONTRASTE: foot__built era rgba(.16) → subido a .45 */
+    .foot__built {
+      font-family: var(--ff-body);
+      font-size: .65rem;
+      color: rgba(245, 239, 234, .45)
+    }
+
+    .foot__built a {
+      color: rgba(245, 239, 234, .55);
+      transition: color .25s
+    }
+
+    .foot__built a:hover {
+      color: rgba(245, 239, 234, .8)
+    }
+
+    /* ── WA FLOAT ── */
+    .wa-f {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 90;
+      width: 50px;
+      height: 50px;
+      background: var(--musgo);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(49, 51, 31, .4);
+      transition: transform .25s var(--ease-out), box-shadow .25s;
+    }
+
+    .wa-f:hover {
+      transform: scale(1.08);
+      box-shadow: 0 6px 28px rgba(49, 51, 31, .55)
+    }
+
+    .wa-f svg {
+      width: 24px;
+      height: 24px;
+      fill: var(--crema)
+    }
+
+    /* ── ANIMATIONS ── */
+    .fu {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .8s var(--ease-out), transform .8s var(--ease-out)
+    }
+
+    .fu.vis {
+      opacity: 1;
+      transform: translateY(0)
+    }
+
+    .fu.d1 {
+      transition-delay: .1s
+    }
+
+    .fu.d2 {
+      transition-delay: .2s
+    }
+
+    .fu.d3 {
+      transition-delay: .3s
+    }
+
+    .fu.d4 {
+      transition-delay: .45s
+    }
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:900px) {
+      .manifest {
+        grid-template-columns: 1fr
+      }
+
+      .ejes-grid,
+      .prog-grid,
+      .logi-grid,
+      .testi-grid {
+        grid-template-columns: 1fr
+      }
+
+      .inc-split {
+        grid-template-columns: 1fr
+      }
+
+      .exp-grid,
+      .bio-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem
+      }
+
+      .hero__title {
+        font-size: clamp(4rem, 18vw, 7rem)
+      }
+
+      .topbar__logo {
+        display: none
+      }
+
+      .rooms-grid {
+        grid-template-columns: 1fr
+      }
+    }
+
+    @media(max-width:640px) {
+      .hero__actions {
+        flex-direction: column;
+        align-items: flex-start
+      }
+
+      .hero__actions .btn {
+        width: 100%;
+        justify-content: center
+      }
+
+      .cierre__a {
+        flex-direction: column;
+        align-items: center
+      }
+
+      .cierre__a .btn {
+        width: 100%;
+        max-width: 320px;
+        justify-content: center
+      }
+
+      .spots-band {
+        gap: 1rem
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- TOPBAR -->
-<header class="topbar" id="topbar" role="banner">
-  <a href="/index.html" class="topbar__back" aria-label="Volver al sitio de Jenifer Tejedor">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
-    Jenifer Tejedor
-  </a>
-  <span class="topbar__logo" aria-hidden="true">SEREN<span>Z</span>A</span>
-  <a href="#reserva" class="topbar__cta" onclick="trackStripe('topbar')">Reservar plaza</a>
-</header>
+  <!-- TOPBAR -->
+  <header class="topbar" id="topbar" role="banner">
+    <a href="/index.html" class="topbar__back" aria-label="Volver al sitio de Jenifer Tejedor">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <polyline points="15 18 9 12 15 6" />
+      </svg>
+      Jenifer Tejedor
+    </a>
+    <span class="topbar__logo" aria-hidden="true">SEREN<span>Z</span>A</span>
+    <a href="#reserva" class="topbar__cta" onclick="trackStripe('topbar')">Reservar plaza</a>
+  </header>
 
-<main>
+  <main>
 
-<!-- ── HERO ── -->
-<section class="hero" aria-label="Retiro SERENZA">
-  <div class="hero__media" aria-hidden="true">
-    <!--
+    <!-- ── HERO ── -->
+    <section class="hero" aria-label="Retiro SERENZA">
+      <div class="hero__media" aria-hidden="true">
+        <!--
       FIX PERF LCP crítico:
       1. loading="eager" + fetchpriority="high" → browser la pone primera en la cola de descarga.
       2. srcset responsivo → mobile descarga retiro-1-480.webp en lugar de la versión de 960px.
@@ -736,493 +1580,557 @@ a{text-decoration:none;color:inherit}
       4. El <link rel="preload"> en el <head> garantiza que la descarga empieza
          antes incluso de que el parser llegue a este img tag.
     -->
-    <img src="retiro-1.webp"
-         alt=""
-         loading="eager"
-         fetchpriority="high"
-         width="960" height="1280"
-         class="hero__img"
-         srcset="retiro-1-480.webp 480w, retiro-1.webp 960w"
-         sizes="100vw"/>
-    <div class="hero__overlay"></div>
-  </div>
-  <div class="hero__deco" aria-hidden="true"></div>
-  <div class="hero__content">
-    <div class="hero__badge">
-      <span class="hero__badge-dot" aria-hidden="true"></span>
-      Plazas limitadas · 12 mujeres · Primera edición
-    </div>
-    <p class="hero__eyebrow">22 · 23 · 24 Mayo 2026 · Cardedeu, Barcelona</p>
-    <h1 class="hero__title">
-      SEREN<span class="accent">Z</span>A
-    </h1>
-    <div class="hero__rule" aria-hidden="true"></div>
-    <p class="hero__sub">
-      Tres días donde el orden que sostienes fuera<br>
-      se detiene para que dentro… todo encuentre su lugar.
-    </p>
-    <div class="hero__actions">
-      <a href="#reserva" class="btn btn--primary" onclick="trackStripe('hero')">Reservar mi plaza</a>
-      <a href="#que-pasa" class="btn btn--outline">Ver el programa</a>
-    </div>
-  </div>
-  <div class="hero__scroll" aria-hidden="true">
-    <div class="hero__scroll-line"></div>
-    <span>Seguir</span>
-  </div>
-</section>
-
-<!-- ── SPOTS BAND ── -->
-<div class="spots-band" role="complementary">
-  <div class="spots-band__item">
-    <span class="spots-num">12</span>&nbsp;plazas totales
-  </div>
-  <span class="spots-band__dot" aria-hidden="true">&#10022;</span>
-  <div class="spots-band__item">Casa <a href="https://instagram.com/seon.meditacion" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px">@seon.meditacion</a></div>
-  <span class="spots-band__dot" aria-hidden="true">&#10022;</span>
-  <div class="spots-band__item">Cardedeu, Barcelona</div>
-  <span class="spots-band__dot" aria-hidden="true">&#10022;</span>
-  <div class="spots-band__item">Todo incluido</div>
-</div>
-
-<!-- ── QUE ES ── -->
-<section class="section section--cream" id="que-es" aria-labelledby="qe-h">
-  <div class="container">
-    <div class="exp-grid fu">
-      <div class="exp-img-wrap">
-        <!-- FIX PERF: width/height explícitos → evita CLS. lazy load correcto (below fold) -->
-        <img src="retiro-2.webp"
-             alt="Espacio del retiro SERENZA en Cardedeu"
-             loading="lazy"
-             width="600" height="800"/>
-        <p class="exp-quote">"Aquí no nos quedamos en la superficie.<br>Aquí vamos más profundo."</p>
+        <img src="retiro-1.webp" alt="" loading="eager" fetchpriority="high" width="960" height="1280" class="hero__img"
+          srcset="retiro-1-480.webp 480w, retiro-1.webp 960w" sizes="100vw" />
+        <div class="hero__overlay"></div>
       </div>
-      <div class="fu d1">
-        <p class="lbl lbl--marron">Qué es SERENZA</p>
-        <h2 id="qe-h" class="sec-title sec-title--dark" style="margin-bottom:0">
-          Un espacio donde<br>el ritmo <em>se detiene.</em>
-        </h2>
-        <div class="divider-gold"></div>
-        <p class="exp-narrative" style="font-size:clamp(1.1rem,1.8vw,1.4rem)">
-          Una experiencia inmersiva donde dejas de sostenerte como siempre y algo dentro empieza a ordenarse.
+      <div class="hero__deco" aria-hidden="true"></div>
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="hero__badge-dot" aria-hidden="true"></span>
+          Plazas limitadas · 12 mujeres · Primera edición
+        </div>
+        <p class="hero__eyebrow">22 · 23 · 24 Mayo 2026 · Cardedeu, Barcelona</p>
+        <h1 class="hero__title">
+          SEREN<span class="accent">Z</span>A
+        </h1>
+        <div class="hero__rule" aria-hidden="true"></div>
+        <p class="hero__sub">
+          Tres días donde el orden que sostienes fuera<br>
+          se detiene para que dentro… todo encuentre su lugar.
         </p>
-        <div class="body-text">
-          <p>Tu vida no se desordena de un día para otro. Se mueve en momentos muy concretos. Cuando sabes que tendrías que parar y respondes otro mensaje. Cuando estás en una conversación y no dices lo que realmente piensas. Cuando sabes que necesitas espacio y vuelves a adaptarte.</p>
-          <p>Eso no pasa aquí.</p>
-          <p>Aquí empiezas a ver qué estás sosteniendo, desde dónde lo haces, y qué sigue activo aunque creas que ya no. <strong style="color:var(--marron-lujo);font-weight:500">Y cuando eso se ve, empieza a cambiar.</strong></p>
+        <div class="hero__actions">
+          <a href="#reserva" class="btn btn--primary" onclick="trackStripe('hero')">Reservar mi plaza</a>
+          <a href="#que-pasa" class="btn btn--outline">Ver el programa</a>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+      <div class="hero__scroll" aria-hidden="true">
+        <div class="hero__scroll-line"></div>
+        <span>Seguir</span>
+      </div>
+    </section>
 
-<!-- ── PARA QUIEN ── -->
-<section class="section section--blanco" id="para-quien" aria-labelledby="pq-h">
-  <div class="container">
-    <div style="max-width:640px">
-      <p class="lbl fu">Para quién es</p>
-      <h2 id="pq-h" class="sec-title sec-title--dark fu d1">
-        Este retiro es para ti<br>si algo de esto <em>ya te está pasando.</em>
-      </h2>
+    <!-- ── SPOTS BAND ── -->
+    <div class="spots-band" role="complementary">
+      <div class="spots-band__item">
+        <span class="spots-num">12</span>&nbsp;plazas totales
+      </div>
+      <span class="spots-band__dot" aria-hidden="true">&#10022;</span>
+      <div class="spots-band__item">Casa <a href="https://instagram.com/seon.meditacion" target="_blank" rel="noopener"
+          style="color:inherit;text-decoration:underline;text-underline-offset:3px">@seon.meditacion</a></div>
+      <span class="spots-band__dot" aria-hidden="true">&#10022;</span>
+      <div class="spots-band__item">Cardedeu, Barcelona</div>
+      <span class="spots-band__dot" aria-hidden="true">&#10022;</span>
+      <div class="spots-band__item">Todo incluido</div>
     </div>
-    <div class="manifest fu d2">
-      <div class="manifest__item">
-        <p class="manifest__n" aria-hidden="true">01</p>
-        <h3 class="manifest__t">Te das cuenta de cosas… y vuelves a lo mismo</h3>
-        <p class="manifest__p">Ves los patrones. Entiendes de dónde vienen. Pero en tu día a día sigues repitiéndolos. No porque no quieras cambiar. Sino porque no lo estás pudiendo sostener.</p>
-      </div>
-      <div class="manifest__item">
-        <p class="manifest__n" aria-hidden="true">02</p>
-        <h3 class="manifest__t">Te escuchas un momento… y vuelves al ruido</h3>
-        <p class="manifest__p">Hay momentos de claridad. De conexión contigo. Pero no se sostienen. Al día siguiente ya estás otra vez dentro del mismo ritmo, del mismo nivel de exigencia, de la misma distancia.</p>
-      </div>
-      <div class="manifest__item">
-        <p class="manifest__n" aria-hidden="true">03</p>
-        <h3 class="manifest__t">Sabes que algo no encaja… y lo sigues sosteniendo</h3>
-        <p class="manifest__p">No es que no lo veas. Es que en el momento de cambiarlo, algo se activa. El cuerpo. La mente. Y vuelves. No porque no puedas. Sino porque tu sistema sigue igual.</p>
-      </div>
-      <div class="manifest__item">
-        <p class="manifest__n" aria-hidden="true">04</p>
-        <h3 class="manifest__t">Necesitas parar de verdad. No de fondo.</h3>
-        <p class="manifest__p">No un fin de semana de descanso. Una parada real donde el sistema baje. Donde la percepción cambie. Donde lo que llevas tiempo sin ver pueda aparecer.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ── EJES ── -->
-<section class="section section--dark" id="ejes" aria-labelledby="ej-h">
-  <div class="container">
-    <div style="max-width:600px">
-      <p class="lbl fu">Los tres ejes</p>
-      <h2 id="ej-h" class="sec-title sec-title--light fu d1">El trabajo que<br>ocurre en estos <em>tres días.</em></h2>
-      <p class="fu d2" style="font-family:var(--ff-body);font-size:.9rem;font-weight:300;color:rgba(245,239,234,.72);line-height:1.85;max-width:480px;margin-top:1rem">No es un programa de actividades. Es un proceso con intención en cada parte.</p>
-    </div>
-    <div class="ejes-grid fu d3">
-      <div class="eje-card">
-        <p class="eje-num">Eje 01</p>
-        <h3 class="eje-name">Regulación</h3>
-        <div class="eje-rule" aria-hidden="true"></div>
-        <p class="eje-text">Un sistema en alerta no elige. Responde. Aquí bajas el ritmo para dejar de reaccionar y empezar a percibir con claridad. La respiración, el movimiento y el silencio son las herramientas.</p>
-      </div>
-      <div class="eje-card">
-        <p class="eje-num">Eje 02</p>
-        <h3 class="eje-name">Orden</h3>
-        <div class="eje-rule" aria-hidden="true"></div>
-        <p class="eje-text">Tu vida está sostenida desde un orden donde tú no estás en tu lugar. Aquí eso se hace evidente. Y empieza a recolocarse sin forzarlo. Sin que tengas que hacer nada especial para que ocurra.</p>
-      </div>
-      <div class="eje-card">
-        <p class="eje-num">Eje 03</p>
-        <h3 class="eje-name">Coherencia</h3>
-        <div class="eje-rule" aria-hidden="true"></div>
-        <p class="eje-text">No es falta de claridad. Es repetición. Formas de actuar que ya no van contigo pero sigues sosteniendo. Aquí las ves. Y cuando las ves de verdad, dejas de sostenerte igual.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── PROGRAMA ── -->
-<section class="section section--beige" id="que-pasa" aria-labelledby="prog-h">
-  <div class="container">
-    <p class="lbl fu">Programa</p>
-    <h2 id="prog-h" class="sec-title sec-title--dark fu d1">Tres días.<br>Un reordenamiento.</h2>
-    <div class="prog-grid fu d2">
-      <div class="dia">
-        <div class="dia__h"><p class="dia__n">Día 1</p><p class="dia__d">Viernes — Llegada</p></div>
-        <div class="dia__b">
-          <div class="hora"><span class="hora__t">18:00</span><span class="hora__d">Llegada y bienvenida. Infusión natural. Espacio íntimo de presentación.</span></div>
-          <div class="hora"><span class="hora__t">19:00</span><span class="hora__d">Círculo de apertura — empezar a soltar lo de fuera y situarte en el espacio</span></div>
-          <div class="hora"><span class="hora__t">20:00</span><span class="hora__d">Cena consciente</span></div>
-          <div class="hora"><span class="hora__t">21:30</span><span class="hora__d">Respiración guiada nocturna — para cambiar el sueño y bajar el ritmo</span></div>
+    <!-- ── QUE ES ── -->
+    <section class="section section--cream" id="que-es" aria-labelledby="qe-h">
+      <div class="container">
+        <div class="exp-grid fu">
+          <div class="exp-img-wrap">
+            <!-- FIX PERF: width/height explícitos → evita CLS. lazy load correcto (below fold) -->
+            <img src="retiro-2.webp" alt="Espacio del retiro SERENZA en Cardedeu" loading="lazy" width="600"
+              height="800" />
+            <p class="exp-quote">"Aquí no nos quedamos en la superficie.<br>Aquí vamos más profundo."</p>
+          </div>
+          <div class="fu d1">
+            <p class="lbl lbl--marron">Qué es SERENZA</p>
+            <h2 id="qe-h" class="sec-title sec-title--dark" style="margin-bottom:0">
+              Un espacio donde<br>el ritmo <em>se detiene.</em>
+            </h2>
+            <div class="divider-gold"></div>
+            <p class="exp-narrative" style="font-size:clamp(1.1rem,1.8vw,1.4rem)">
+              Una experiencia inmersiva donde dejas de sostenerte como siempre y algo dentro empieza a ordenarse.
+            </p>
+            <div class="body-text">
+              <p>Tu vida no se desordena de un día para otro. Se mueve en momentos muy concretos. Cuando sabes que
+                tendrías que parar y respondes otro mensaje. Cuando estás en una conversación y no dices lo que
+                realmente piensas. Cuando sabes que necesitas espacio y vuelves a adaptarte.</p>
+              <p>Eso no pasa aquí.</p>
+              <p>Aquí empiezas a ver qué estás sosteniendo, desde dónde lo haces, y qué sigue activo aunque creas que ya
+                no. <strong style="color:var(--marron-lujo);font-weight:500">Y cuando eso se ve, empieza a
+                  cambiar.</strong></p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="dia">
-        <div class="dia__h"><p class="dia__n">Día 2</p><p class="dia__d">Sábado — El trabajo</p></div>
-        <div class="dia__b">
-          <div class="hora"><span class="hora__t">7:00</span><span class="hora__d">Amanecer opcional — salida al sol, gratitud, conexión</span></div>
-          <div class="hora"><span class="hora__t">8:00</span><span class="hora__d">Movimiento corporal + caminata consciente en naturaleza</span></div>
-          <div class="hora"><span class="hora__t">9:30</span><span class="hora__d">Desayuno sin prisa</span></div>
-          <div class="hora"><span class="hora__t">10:30</span><span class="hora__d">Taller cacao ceremonial — ancestral como puente para tu día a día</span></div>
-          <div class="hora"><span class="hora__t">13:30</span><span class="hora__d">Comida consciente al exterior</span></div>
-          <div class="hora"><span class="hora__t">15:30</span><span class="hora__d">Taller de patrones y creencias — ver cómo te estás sosteniendo realmente</span></div>
-          <div class="hora"><span class="hora__t">20:00</span><span class="hora__d">Cena</span></div>
-          <div class="hora"><span class="hora__t">21:30</span><span class="hora__d">Respiración para el descanso</span></div>
+    </section>
+
+    <!-- ── PARA QUIEN ── -->
+    <section class="section section--blanco" id="para-quien" aria-labelledby="pq-h">
+      <div class="container">
+        <div style="max-width:640px">
+          <p class="lbl fu">Para quién es</p>
+          <h2 id="pq-h" class="sec-title sec-title--dark fu d1">
+            Este retiro es para ti<br>si algo de esto <em>ya te está pasando.</em>
+          </h2>
+        </div>
+        <div class="manifest fu d2">
+          <div class="manifest__item">
+            <p class="manifest__n" aria-hidden="true">01</p>
+            <h3 class="manifest__t">Te das cuenta de cosas… y vuelves a lo mismo</h3>
+            <p class="manifest__p">Ves los patrones. Entiendes de dónde vienen. Pero en tu día a día sigues
+              repitiéndolos. No porque no quieras cambiar. Sino porque no lo estás pudiendo sostener.</p>
+          </div>
+          <div class="manifest__item">
+            <p class="manifest__n" aria-hidden="true">02</p>
+            <h3 class="manifest__t">Te escuchas un momento… y vuelves al ruido</h3>
+            <p class="manifest__p">Hay momentos de claridad. De conexión contigo. Pero no se sostienen. Al día siguiente
+              ya estás otra vez dentro del mismo ritmo, del mismo nivel de exigencia, de la misma distancia.</p>
+          </div>
+          <div class="manifest__item">
+            <p class="manifest__n" aria-hidden="true">03</p>
+            <h3 class="manifest__t">Sabes que algo no encaja… y lo sigues sosteniendo</h3>
+            <p class="manifest__p">No es que no lo veas. Es que en el momento de cambiarlo, algo se activa. El cuerpo.
+              La mente. Y vuelves. No porque no puedas. Sino porque tu sistema sigue igual.</p>
+          </div>
+          <div class="manifest__item">
+            <p class="manifest__n" aria-hidden="true">04</p>
+            <h3 class="manifest__t">Necesitas parar de verdad. No de fondo.</h3>
+            <p class="manifest__p">No un fin de semana de descanso. Una parada real donde el sistema baje. Donde la
+              percepción cambie. Donde lo que llevas tiempo sin ver pueda aparecer.</p>
+          </div>
         </div>
       </div>
-      <div class="dia">
-        <div class="dia__h"><p class="dia__n">Día 3</p><p class="dia__d">Domingo — Cierre</p></div>
-        <div class="dia__b">
-          <div class="hora"><span class="hora__t">7:00</span><span class="hora__d">Amanecer opcional + caminata de integración en silencio en naturaleza</span></div>
-          <div class="hora"><span class="hora__t">8:00</span><span class="hora__d">Movimiento corporal. Desayuno. Tiempo libre.</span></div>
-          <div class="hora"><span class="hora__t">11:00</span><span class="hora__d">Actividad sorpresa</span></div>
-          <div class="hora"><span class="hora__t">13:30</span><span class="hora__d">Comida consciente final</span></div>
-          <div class="hora"><span class="hora__t">16:00</span><span class="hora__d">Círculo de integración y cierre para volver a tu hogar sosteniendo lo que has vivido</span></div>
-          <div class="hora"><span class="hora__t">18:00</span><span class="hora__d">Salida</span></div>
+    </section>
+
+    <!-- ── EJES ── -->
+    <section class="section section--dark" id="ejes" aria-labelledby="ej-h">
+      <div class="container">
+        <div style="max-width:600px">
+          <p class="lbl fu">Los tres ejes</p>
+          <h2 id="ej-h" class="sec-title sec-title--light fu d1">El trabajo que<br>ocurre en estos <em>tres días.</em>
+          </h2>
+          <p class="fu d2"
+            style="font-family:var(--ff-body);font-size:.9rem;font-weight:300;color:rgba(245,239,234,.72);line-height:1.85;max-width:480px;margin-top:1rem">
+            No es un programa de actividades. Es un proceso con intención en cada parte.</p>
+        </div>
+        <div class="ejes-grid fu d3">
+          <div class="eje-card">
+            <p class="eje-num">Eje 01</p>
+            <h3 class="eje-name">Regulación</h3>
+            <div class="eje-rule" aria-hidden="true"></div>
+            <p class="eje-text">Un sistema en alerta no elige. Responde. Aquí bajas el ritmo para dejar de reaccionar y
+              empezar a percibir con claridad. La respiración, el movimiento y el silencio son las herramientas.</p>
+          </div>
+          <div class="eje-card">
+            <p class="eje-num">Eje 02</p>
+            <h3 class="eje-name">Orden</h3>
+            <div class="eje-rule" aria-hidden="true"></div>
+            <p class="eje-text">Tu vida está sostenida desde un orden donde tú no estás en tu lugar. Aquí eso se hace
+              evidente. Y empieza a recolocarse sin forzarlo. Sin que tengas que hacer nada especial para que ocurra.
+            </p>
+          </div>
+          <div class="eje-card">
+            <p class="eje-num">Eje 03</p>
+            <h3 class="eje-name">Coherencia</h3>
+            <div class="eje-rule" aria-hidden="true"></div>
+            <p class="eje-text">No es falta de claridad. Es repetición. Formas de actuar que ya no van contigo pero
+              sigues sosteniendo. Aquí las ves. Y cuando las ves de verdad, dejas de sostenerte igual.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ── INCLUYE ── -->
-<section class="section section--cream" aria-label="Qué incluye el retiro">
-  <div class="container">
-    <p class="lbl fu">Detalle completo</p>
-    <h2 class="sec-title sec-title--dark fu d1">Lo que incluye<br>y lo que no.</h2>
-    <div class="inc-split fu d2">
-      <div class="inc-box">
-        <!-- FIX A11Y heading order: era h4, cambiado a h3 (correcto bajo h2 de sección) -->
-        <h3>Sí incluye</h3>
-        <ul class="inc-list inc-list--yes" role="list">
-          <li>Alojamiento 3 días / 2 noches</li>
-          <li>Alimentación viva, sin gluten, sin lactosa, baja en inflamación</li>
-          <li>Todas las prácticas: respiración, cuerpo, trabajo de patrones, observación e integración</li>
-          <li>Taller de cacao ceremonial integrado en el proceso</li>
-          <li>Hidratación mineralizada y consciente</li>
-          <li>Espacios de silencio, descanso y tiempo personal</li>
-          <li>Círculos de palabra</li>
-          <li>Cierre integrativo</li>
-          <li>Acompañamiento cercano durante todo el retiro</li>
-          <li>Acceso a piscina y espacios naturales</li>
-        </ul>
-      </div>
-      <div class="inc-box inc-box--no">
-        <h3>No incluye</h3>
-        <ul class="inc-list inc-list--no" role="list">
-          <li>Transporte hasta la casa</li>
-          <li>Traslados internos (hay coordinación compartida)</li>
-          <li>Servicios no especificados en este dossier</li>
-        </ul>
-        <div style="margin-top:1.75rem;padding-top:1.5rem;border-top:1px solid var(--beige)">
-          <p style="font-family:var(--ff-display);font-size:1rem;font-weight:400;color:var(--marron-lujo);margin-bottom:.6rem">Cómo llegar</p>
-          <p style="font-family:var(--ff-body);font-size:.8rem;font-weight:300;color:var(--azul-base);line-height:1.75">En coche propio (40 min desde Barcelona) o tren a Cardedeu. Si no tienes transporte, se coordinan coches compartidos entre participantes. Escríbenos y te conectamos.</p>
+    <!-- ── PROGRAMA ── -->
+    <section class="section section--beige" id="que-pasa" aria-labelledby="prog-h">
+      <div class="container">
+        <p class="lbl fu">Programa</p>
+        <h2 id="prog-h" class="sec-title sec-title--dark fu d1">Tres días.<br>Un reordenamiento.</h2>
+        <div class="prog-grid fu d2">
+          <div class="dia">
+            <div class="dia__h">
+              <p class="dia__n">Día 1</p>
+              <p class="dia__d">Viernes — Llegada</p>
+              <div class="dia__rule" aria-hidden="true"></div>
+            </div>
+            <div class="dia__b">
+              <div class="hora"><span class="hora__t">18:00</span><span class="hora__d">Llegada y bienvenida. Infusión
+                  natural. Espacio íntimo de presentación.</span></div>
+              <div class="hora"><span class="hora__t">19:00</span><span class="hora__d">Círculo de apertura — empezar a
+                  soltar lo de fuera y situarte en el espacio</span></div>
+              <div class="hora"><span class="hora__t">20:00</span><span class="hora__d">Cena consciente</span></div>
+              <div class="hora"><span class="hora__t">21:30</span><span class="hora__d">Respiración guiada nocturna —
+                  para cambiar el sueño y bajar el ritmo</span></div>
+            </div>
+            <div class="dia__foot">4 momentos</div>
+          </div>
+          <div class="dia">
+            <div class="dia__h">
+              <p class="dia__n">Día 2</p>
+              <p class="dia__d">Sábado — El trabajo</p>
+              <div class="dia__rule" aria-hidden="true"></div>
+            </div>
+            <div class="dia__b">
+              <div class="hora"><span class="hora__t">7:00</span><span class="hora__d">Amanecer opcional — salida al
+                  sol, gratitud, conexión</span></div>
+              <div class="hora"><span class="hora__t">8:00</span><span class="hora__d">Movimiento corporal + caminata
+                  consciente en naturaleza</span></div>
+              <div class="hora"><span class="hora__t">9:30</span><span class="hora__d">Desayuno sin prisa</span></div>
+              <div class="hora"><span class="hora__t">10:30</span><span class="hora__d">Taller cacao ceremonial —
+                  ancestral como puente para tu día a día</span></div>
+              <div class="hora"><span class="hora__t">13:30</span><span class="hora__d">Comida consciente al
+                  exterior</span></div>
+              <div class="hora"><span class="hora__t">15:30</span><span class="hora__d">Taller de patrones y creencias —
+                  ver cómo te estás sosteniendo realmente</span></div>
+              <div class="hora"><span class="hora__t">20:00</span><span class="hora__d">Cena</span></div>
+              <div class="hora"><span class="hora__t">21:30</span><span class="hora__d">Respiración para el
+                  descanso</span></div>
+            </div>
+            <div class="dia__foot">8 momentos</div>
+          </div>
+          <div class="dia">
+            <div class="dia__h">
+              <p class="dia__n">Día 3</p>
+              <p class="dia__d">Domingo — Cierre</p>
+              <div class="dia__rule" aria-hidden="true"></div>
+            </div>
+            <div class="dia__b">
+              <div class="hora"><span class="hora__t">7:00</span><span class="hora__d">Amanecer opcional + caminata de
+                  integración en silencio en naturaleza</span></div>
+              <div class="hora"><span class="hora__t">8:00</span><span class="hora__d">Movimiento corporal. Desayuno.
+                  Tiempo libre.</span></div>
+              <div class="hora"><span class="hora__t">11:00</span><span class="hora__d">Actividad sorpresa</span></div>
+              <div class="hora"><span class="hora__t">13:30</span><span class="hora__d">Comida consciente final</span>
+              </div>
+              <div class="hora"><span class="hora__t">16:00</span><span class="hora__d">Círculo de integración y cierre
+                  para volver a tu hogar sosteniendo lo que has vivido</span></div>
+              <div class="hora"><span class="hora__t">18:00</span><span class="hora__d">Salida</span></div>
+            </div>
+            <div class="dia__foot">6 momentos</div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ── TESTIMONIOS ── -->
-<section class="section section--dark" id="testimonios" aria-labelledby="testi-h">
-  <div class="container">
-    <p class="lbl fu">Lo que dicen ellas</p>
-    <h2 id="testi-h" class="sec-title sec-title--light fu d1">Mujeres que ya <em>decidieron</em></h2>
-    <div class="testi-grid fu d2" role="list">
-      <blockquote class="testi-card" role="listitem">
-        <div class="testi-rule" aria-hidden="true"></div>
-        <p class="testi-q">Llegué creyendo que necesitaba más estrategia. Salí entendiendo que lo que necesitaba era claridad. Son cosas completamente distintas. Jenifer me ayudó a ver esa diferencia.</p>
-        <footer class="testi-foot">
-          <div class="testi-av" aria-hidden="true">A</div>
-          <div><cite class="testi-name" style="font-style:normal">Ana M.</cite><p class="testi-role">Directora de empresa · Madrid</p></div>
-        </footer>
-      </blockquote>
-      <blockquote class="testi-card" role="listitem">
-        <div class="testi-rule" aria-hidden="true"></div>
-        <p class="testi-q">Fui al retiro con una decisión que llevaba dos años postergando. La tomé el segundo día. Tres meses después sigo sosteniendo esa decisión y estoy más tranquila que en años.</p>
-        <footer class="testi-foot">
-          <div class="testi-av" aria-hidden="true">S</div>
-          <div><cite class="testi-name" style="font-style:normal">Sandra P.</cite><p class="testi-role">Líder de equipo · Valencia</p></div>
-        </footer>
-      </blockquote>
-      <blockquote class="testi-card" role="listitem">
-        <div class="testi-rule" aria-hidden="true"></div>
-        <p class="testi-q">El proceso con Jenifer fue el antes y el después. No es coaching, no es terapia. Es algo que no tenía nombre hasta que lo viví y que cambió cómo tomo decisiones todos los días.</p>
-        <footer class="testi-foot">
-          <div class="testi-av" aria-hidden="true">L</div>
-          <div><cite class="testi-name" style="font-style:normal">Laura G.</cite><p class="testi-role">Emprendedora · Barcelona</p></div>
-        </footer>
-      </blockquote>
-    </div>
-  </div>
-</section>
-
-<!-- ── PRECIO / RESERVA ── -->
-<section class="section section--dark precio-section" id="reserva" aria-labelledby="res-h">
-  <div class="container">
-    <div style="max-width:700px;margin:0 auto">
-      <p class="lbl fu" style="text-align:center">Primera edición · Precio no repetible</p>
-      <h2 id="res-h" class="sec-title sec-title--light fu d1" style="text-align:center;margin-bottom:2.5rem">
-        Elige tu <em>modalidad</em>
-      </h2>
-      <div class="rooms-grid fu d2" role="radiogroup" aria-label="Selecciona tipo de habitación">
-        <div class="room-card selected"
-             role="radio" aria-checked="true" tabindex="0"
-             onclick="selectRoom(this,'doble','https://buy.stripe.com/00w3cvgxg7jY9poaRieQM02')"
-             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click()}">
-          <p class="room-card__price">350€</p>
-          <p class="room-card__name">Habitación Doble</p>
-          <p class="room-card__desc">Habitación doble compartida con baño privado. Para vivir SERENZA desde un espacio más íntimo, compartiendo solo con otra mujer.</p>
-          <span class="room-card__badge">+ sesión 1:1 posterior</span>
-        </div>
-        <div class="room-card"
-             role="radio" aria-checked="false" tabindex="0"
-             onclick="selectRoom(this,'triple-privada','https://buy.stripe.com/28E7sLftc1ZE6dc6B2eQM03')"
-             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click()}">
-          <p class="room-card__price">300€</p>
-          <p class="room-card__name">Triple Privada</p>
-          <p class="room-card__desc">Habitación triple con baño privado. Compartida, cómoda y cuidada, con la tranquilidad de baño propio.</p>
-          <span class="room-card__badge">+ sesión 1:1 posterior</span>
-        </div>
-        <div class="room-card"
-             role="radio" aria-checked="false" tabindex="0"
-             onclick="selectRoom(this,'cuadruple-privada','https://buy.stripe.com/4gMdR980K5bQbxw7F6eQM04')"
-             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click()}">
-          <p class="room-card__price">300€</p>
-          <p class="room-card__name">Cuádruple Privada</p>
-          <p class="room-card__desc">Habitación cuádruple con baño privado. Amplia y acompañada, manteniendo la comodidad de baño privado.</p>
-          <span class="room-card__badge">+ sesión 1:1 posterior</span>
-        </div>
-        <div class="room-card"
-             role="radio" aria-checked="false" tabindex="0"
-             onclick="selectRoom(this,'triple-compartida','https://buy.stripe.com/5kQ5kD80KgUy8lke3ueQM05')"
-             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click()}">
-          <p class="room-card__price">280€</p>
-          <p class="room-card__name">Triple Compartida</p>
-          <p class="room-card__desc">Habitación triple con baño compartido. Una opción sencilla y accesible para ser parte de esta primera inmersión.</p>
+    <!-- ── INCLUYE ── -->
+    <section class="section section--cream" aria-label="Qué incluye el retiro">
+      <div class="container">
+        <p class="lbl fu">Detalle completo</p>
+        <h2 class="sec-title sec-title--dark fu d1">Lo que incluye<br>y lo que no.</h2>
+        <div class="inc-split fu d2">
+          <div class="inc-box">
+            <!-- FIX A11Y heading order: era h4, cambiado a h3 (correcto bajo h2 de sección) -->
+            <h3>Sí incluye</h3>
+            <ul class="inc-list inc-list--yes" role="list">
+              <li>Alojamiento 3 días / 2 noches</li>
+              <li>Alimentación viva, sin gluten, sin lactosa, baja en inflamación</li>
+              <li>Todas las prácticas: respiración, cuerpo, trabajo de patrones, observación e integración</li>
+              <li>Taller de cacao ceremonial integrado en el proceso</li>
+              <li>Hidratación mineralizada y consciente</li>
+              <li>Espacios de silencio, descanso y tiempo personal</li>
+              <li>Círculos de palabra</li>
+              <li>Cierre integrativo</li>
+              <li>Acompañamiento cercano durante todo el retiro</li>
+              <li>Acceso a piscina y espacios naturales</li>
+            </ul>
+          </div>
+          <div class="inc-box inc-box--no">
+            <h3>No incluye</h3>
+            <ul class="inc-list inc-list--no" role="list">
+              <li>Transporte hasta la casa</li>
+              <li>Traslados internos (hay coordinación compartida)</li>
+              <li>Servicios no especificados en este dossier</li>
+            </ul>
+            <div style="margin-top:1.75rem;padding-top:1.5rem;border-top:1px solid var(--beige)">
+              <p
+                style="font-family:var(--ff-display);font-size:1rem;font-weight:400;color:var(--marron-lujo);margin-bottom:.6rem">
+                Cómo llegar</p>
+              <p
+                style="font-family:var(--ff-body);font-size:.8rem;font-weight:300;color:var(--azul-base);line-height:1.75">
+                En coche propio (40 min desde Barcelona) o tren a Cardedeu. Si no tienes transporte, se coordinan coches
+                compartidos entre participantes. Escríbenos y te conectamos.</p>
+            </div>
+          </div>
         </div>
       </div>
-      <p style="font-family:var(--ff-body);font-size:.75rem;font-weight:300;color:rgba(245,239,234,.55);text-align:center;margin-bottom:2rem">Todas las modalidades incluyen la inmersión completa, variando únicamente el tipo de habitación y baño.</p>
-      <div class="precio-note-box fu d3">
-        <strong>Opciones de pago</strong><br>
-        Pago completo — o en 2 cuotas (primera al reservar, segunda 7 días antes del retiro).<br>
-        <span style="color:rgba(245,239,234,.55)">Con acuerdo de compromiso firmado. Plaza confirmada al recibir el primer pago.</span>
-      </div>
-      <div class="spots-counter-main fu d3">
-        Solo <strong>12 plazas</strong> · grupo reducido e íntimo
-      </div>
-      <div class="precio-btns-main fu d4">
-        <a id="btn-stripe-room"
-           href="https://buy.stripe.com/00w3cvgxg7jY9poaRieQM02"
-           class="btn btn--primary room-link active"
-           target="_blank" rel="noopener"
-           onclick="trackStripe('stripe_room')">
-          &#8594; Reservar y pagar online
-        </a>
-        <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20quiero%20reservar%20mi%20plaza%20en%20el%20retiro%20SERENZA%20(22-24%20mayo)"
-           class="btn btn--wa"
-           target="_blank" rel="noopener"
-           onclick="trackWA('price')">
-          Reservar por WhatsApp
-        </a>
-        <a href="https://calendly.com/jenifertejedor"
-           class="btn btn--dorado-outline"
-           target="_blank" rel="noopener">
-          Hablar antes de decidir
-        </a>
-      </div>
-      <p class="precio-sub">Pago seguro con Stripe · Visa, Mastercard, transferencia · Datos cifrados</p>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ── LOGISTICA ── -->
-<section class="section section--blanco" aria-labelledby="logi-h">
-  <div class="container">
-    <p class="lbl fu">Información práctica</p>
-    <h2 id="logi-h" class="sec-title sec-title--dark fu d1">Todo lo que necesitas<br>saber antes de llegar.</h2>
-    <div class="logi-grid fu d2">
-      <div class="logi-card">
-        <div class="logi-icon" aria-hidden="true">&#x1F3E0;</div>
-        <p class="logi-title">El espacio</p>
-        <p class="logi-text">Casa <a href="https://instagram.com/seon.meditacion" target="_blank" rel="noopener" style="color:var(--dorado)">@seon.meditacion</a> en Cardedeu, Barcelona. Casa privada con jardín, piscina y espacios abiertos. Íntimo y contenido.</p>
-      </div>
-      <div class="logi-card">
-        <div class="logi-icon" aria-hidden="true">&#x1F96C;</div>
-        <p class="logi-title">Alimentación</p>
-        <p class="logi-text">Viva, sin gluten, sin lactosa y baja en inflamación. Hidratación mineralizada y consciente. Cacao ceremonial de alta calidad. Comida real y nutritiva.</p>
-      </div>
-      <div class="logi-card">
-        <div class="logi-icon" aria-hidden="true">&#x1F9B4;</div>
-        <p class="logi-title">Qué traer</p>
-        <p class="logi-text">Ropa cómoda para movimiento. Algo abrigado para la noche. Zapatillas. Cuaderno si quieres escribir. Nada imprescindible que no tengas ya.</p>
-      </div>
-      <div class="logi-card">
-        <div class="logi-icon" aria-hidden="true">&#x1F697;</div>
-        <p class="logi-title">Cómo llegar</p>
-        <p class="logi-text">En coche propio (40 min desde Barcelona). O tren a Cardedeu + coordinación de coche compartido con otras participantes. Te conectamos.</p>
-      </div>
-      <div class="logi-card">
-        <div class="logi-icon" aria-hidden="true">&#x1F9D8;</div>
-        <p class="logi-title">Nivel previo</p>
-        <p class="logi-text">Sin requisitos. No necesitas experiencia en meditación, retiros ni cacao ceremonial. Solo querer estar.</p>
-      </div>
-      <div class="logi-card">
-        <div class="logi-icon" aria-hidden="true">&#x1F4CB;</div>
-        <p class="logi-title">Plazas y reserva</p>
-        <p class="logi-text">12 plazas máximas. Plaza confirmada al pagar. Cancelación con devolución del 80% hasta 14 días antes. Después sin devolución salvo causa mayor.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── JENIFER BIO ── -->
-<section class="section section--dark" id="jenifer" aria-labelledby="jeni-h">
-  <div class="container">
-    <div class="bio-grid fu">
-      <div class="bio-img-wrap">
-        <img src="jenifer-tejedor.webp"
-             alt="Jenifer Tejedor, mentora del retiro SERENZA"
-             loading="lazy"
-             width="500" height="660"/>
-      </div>
-      <div class="fu d1">
-        <p class="lbl">Quién acompaña</p>
-        <h2 id="jeni-h" class="bio-title">Jenifer Tejedor</h2>
-        <p class="bio-role">Mentora en reordenamiento interior de mujeres líderes</p>
-        <div class="divider-gold" aria-hidden="true"></div>
-        <div class="bio-body">
-          <p>Acompaño a mujeres que sostienen mucho hacia fuera y que, en algún momento, reconocen que no pueden seguir sosteniéndose igual.</p>
-          <p>Porque yo también sé lo que es tener la vida aparentemente en orden mientras por dentro sigues sosteniendo demasiado. Seguir cumpliendo. Seguir funcionando. Seguir resolviendo. Y aun así, sentir que tú te quedas fuera.</p>
-          <p>Durante más de cinco años he acompañado a mujeres que entienden lo que les pasa, pero que en su día a día siguen volviendo a patrones, ritmos y formas de sostenerse que ya no les corresponden.</p>
-          <p>Integro la regulación del sistema nervioso, respiración funcional, cuerpo, creencias inconscientes y hábitos que devuelven estabilidad interna.</p>
-          <p>SERENZA nace desde la necesidad de crear un espacio donde bajar el ritmo, verte con claridad y volver a darte el lugar que en tu día a día tantas veces dejas para después.</p>
-        </div>
-        <div style="margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap">
-          <a href="https://instagram.com/jenitejedor" target="_blank" rel="noopener" class="btn btn--dorado-outline">@jenitejedor</a>
-          <a href="https://wa.me/34630121817" target="_blank" rel="noopener" class="btn btn--outline">Escribir a Jenifer</a>
+    <!-- ── TESTIMONIOS ── -->
+    <section class="section section--dark" id="testimonios" aria-labelledby="testi-h">
+      <div class="container">
+        <p class="lbl fu">Lo que dicen ellas</p>
+        <h2 id="testi-h" class="sec-title sec-title--light fu d1">Mujeres que ya <em>decidieron</em></h2>
+        <div class="testi-grid fu d2" role="list">
+          <blockquote class="testi-card" role="listitem">
+            <div class="testi-rule" aria-hidden="true"></div>
+            <p class="testi-q">Llegué creyendo que necesitaba más estrategia. Salí entendiendo que lo que necesitaba era
+              claridad. Son cosas completamente distintas. Jenifer me ayudó a ver esa diferencia.</p>
+            <footer class="testi-foot">
+              <div class="testi-av" aria-hidden="true">A</div>
+              <div><cite class="testi-name" style="font-style:normal">Ana M.</cite>
+                <p class="testi-role">Directora de empresa · Madrid</p>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="testi-card" role="listitem">
+            <div class="testi-rule" aria-hidden="true"></div>
+            <p class="testi-q">Fui al retiro con una decisión que llevaba dos años postergando. La tomé el segundo día.
+              Tres meses después sigo sosteniendo esa decisión y estoy más tranquila que en años.</p>
+            <footer class="testi-foot">
+              <div class="testi-av" aria-hidden="true">S</div>
+              <div><cite class="testi-name" style="font-style:normal">Sandra P.</cite>
+                <p class="testi-role">Líder de equipo · Valencia</p>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="testi-card" role="listitem">
+            <div class="testi-rule" aria-hidden="true"></div>
+            <p class="testi-q">El proceso con Jenifer fue el antes y el después. No es coaching, no es terapia. Es algo
+              que no tenía nombre hasta que lo viví y que cambió cómo tomo decisiones todos los días.</p>
+            <footer class="testi-foot">
+              <div class="testi-av" aria-hidden="true">L</div>
+              <div><cite class="testi-name" style="font-style:normal">Laura G.</cite>
+                <p class="testi-role">Emprendedora · Barcelona</p>
+              </div>
+            </footer>
+          </blockquote>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ── CIERRE ── -->
-<section class="section section--dark cierre" aria-label="Llamada a la acción final">
-  <div class="container">
-    <span class="cierre__eyebrow fu">Si algo se ha movido al leer esto</span>
-    <h2 class="cierre__t fu d1">
-      No es lo que haces.<br>
-      Es lo que sigue <em>activo.</em>
-    </h2>
-    <p class="cierre__s fu d2">
-      Si algo dentro se ha movido al leer esto, es porque ya lo estás viendo.<br>
-      Y cuando lo ves, empiezas a colocarte distinto.
-    </p>
-    <div class="cierre__a fu d3">
-      <a href="#reserva" class="btn btn--primary" onclick="trackStripe('cierre')">Reservar mi plaza</a>
-      <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20tengo%20una%20pregunta%20sobre%20el%20retiro%20SERENZA"
-         target="_blank" rel="noopener"
-         class="btn btn--wa" onclick="trackWA('cierre')">
-        Tengo una pregunta
-      </a>
-    </div>
-    <p class="cierre__phrase fu d4">"La superficie rara vez revela todo lo que se está moviendo debajo."</p>
-  </div>
-</section>
+    <!-- ── PRECIO / RESERVA ── -->
+    <section class="section section--dark precio-section" id="reserva" aria-labelledby="res-h">
+      <div class="container">
+        <div style="max-width:700px;margin:0 auto">
+          <p class="lbl fu" style="text-align:center">Primera edición · Precio no repetible</p>
+          <h2 id="res-h" class="sec-title sec-title--light fu d1" style="text-align:center;margin-bottom:2.5rem">
+            Elige tu <em>modalidad</em>
+          </h2>
+          <div class="rooms-grid fu d2" role="radiogroup" aria-label="Selecciona tipo de habitación">
+            <div class="room-card selected" role="radio" aria-checked="true" tabindex="0"
+              onclick="selectRoom(this,'doble','https://buy.stripe.com/00w3cvgxg7jY9poaRieQM02')"
+              onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click()}">
+              <p class="room-card__price">350€</p>
+              <p class="room-card__name">Habitación Doble</p>
+              <p class="room-card__desc">Habitación doble compartida con baño privado. Para vivir SERENZA desde un
+                espacio más íntimo, compartiendo solo con otra mujer.</p>
+              <span class="room-card__badge">+ sesión 1:1 posterior</span>
+            </div>
+            <div class="room-card" role="radio" aria-checked="false" tabindex="0"
+              onclick="selectRoom(this,'triple-privada','https://buy.stripe.com/28E7sLftc1ZE6dc6B2eQM03')"
+              onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click()}">
+              <p class="room-card__price">300€</p>
+              <p class="room-card__name">Triple Privada</p>
+              <p class="room-card__desc">Habitación triple con baño privado. Compartida, cómoda y cuidada, con la
+                tranquilidad de baño propio.</p>
+              <span class="room-card__badge">+ sesión 1:1 posterior</span>
+            </div>
+            <div class="room-card" role="radio" aria-checked="false" tabindex="0"
+              onclick="selectRoom(this,'cuadruple-privada','https://buy.stripe.com/4gMdR980K5bQbxw7F6eQM04')"
+              onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click()}">
+              <p class="room-card__price">300€</p>
+              <p class="room-card__name">Cuádruple Privada</p>
+              <p class="room-card__desc">Habitación cuádruple con baño privado. Amplia y acompañada, manteniendo la
+                comodidad de baño privado.</p>
+              <span class="room-card__badge">+ sesión 1:1 posterior</span>
+            </div>
+            <div class="room-card" role="radio" aria-checked="false" tabindex="0"
+              onclick="selectRoom(this,'triple-compartida','https://buy.stripe.com/5kQ5kD80KgUy8lke3ueQM05')"
+              onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click()}">
+              <p class="room-card__price">280€</p>
+              <p class="room-card__name">Triple Compartida</p>
+              <p class="room-card__desc">Habitación triple con baño compartido. Una opción sencilla y accesible para ser
+                parte de esta primera inmersión.</p>
+            </div>
+          </div>
+          <p
+            style="font-family:var(--ff-body);font-size:.75rem;font-weight:300;color:rgba(245,239,234,.55);text-align:center;margin-bottom:2rem">
+            Todas las modalidades incluyen la inmersión completa, variando únicamente el tipo de habitación y baño.</p>
+          <div class="precio-note-box fu d3">
+            <strong>Opciones de pago</strong><br>
+            Pago completo — o en 2 cuotas (primera al reservar, segunda 7 días antes del retiro).<br>
+            <span style="color:rgba(245,239,234,.55)">Con acuerdo de compromiso firmado. Plaza confirmada al recibir el
+              primer pago.</span>
+          </div>
+          <div class="spots-counter-main fu d3">
+            Solo <strong>12 plazas</strong> · grupo reducido e íntimo
+          </div>
+          <div class="precio-btns-main fu d4">
+            <a id="btn-stripe-room" href="https://buy.stripe.com/00w3cvgxg7jY9poaRieQM02"
+              class="btn btn--primary room-link active" target="_blank" rel="noopener"
+              onclick="trackStripe('stripe_room')">
+              &#8594; Reservar y pagar online
+            </a>
+            <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20quiero%20reservar%20mi%20plaza%20en%20el%20retiro%20SERENZA%20(22-24%20mayo)"
+              class="btn btn--wa" target="_blank" rel="noopener" onclick="trackWA('price')">
+              Reservar por WhatsApp
+            </a>
+            <a href="https://calendly.com/jenifertejedor" class="btn btn--dorado-outline" target="_blank"
+              rel="noopener">
+              Hablar antes de decidir
+            </a>
+          </div>
+          <p class="precio-sub">Pago seguro con Stripe · Visa, Mastercard, transferencia · Datos cifrados</p>
+        </div>
+      </div>
+    </section>
 
-</main>
+    <!-- ── LOGISTICA ── -->
+    <section class="section section--blanco" aria-labelledby="logi-h">
+      <div class="container">
+        <p class="lbl fu">Información práctica</p>
+        <h2 id="logi-h" class="sec-title sec-title--dark fu d1">Todo lo que necesitas<br>saber antes de llegar.</h2>
+        <div class="logi-grid fu d2">
+          <div class="logi-card">
+            <div class="logi-icon" aria-hidden="true">&#x1F3E0;</div>
+            <p class="logi-title">El espacio</p>
+            <p class="logi-text">Casa <a href="https://instagram.com/seon.meditacion" target="_blank" rel="noopener"
+                style="color:var(--dorado)">@seon.meditacion</a> en Cardedeu, Barcelona. Casa privada con jardín,
+              piscina y espacios abiertos. Íntimo y contenido.</p>
+          </div>
+          <div class="logi-card">
+            <div class="logi-icon" aria-hidden="true">&#x1F96C;</div>
+            <p class="logi-title">Alimentación</p>
+            <p class="logi-text">Viva, sin gluten, sin lactosa y baja en inflamación. Hidratación mineralizada y
+              consciente. Cacao ceremonial de alta calidad. Comida real y nutritiva.</p>
+          </div>
+          <div class="logi-card">
+            <div class="logi-icon" aria-hidden="true">&#x1F9B4;</div>
+            <p class="logi-title">Qué traer</p>
+            <p class="logi-text">Ropa cómoda para movimiento. Algo abrigado para la noche. Zapatillas. Cuaderno si
+              quieres escribir. Nada imprescindible que no tengas ya.</p>
+          </div>
+          <div class="logi-card">
+            <div class="logi-icon" aria-hidden="true">&#x1F697;</div>
+            <p class="logi-title">Cómo llegar</p>
+            <p class="logi-text">En coche propio (40 min desde Barcelona). O tren a Cardedeu + coordinación de coche
+              compartido con otras participantes. Te conectamos.</p>
+          </div>
+          <div class="logi-card">
+            <div class="logi-icon" aria-hidden="true">&#x1F9D8;</div>
+            <p class="logi-title">Nivel previo</p>
+            <p class="logi-text">Sin requisitos. No necesitas experiencia en meditación, retiros ni cacao ceremonial.
+              Solo querer estar.</p>
+          </div>
+          <div class="logi-card">
+            <div class="logi-icon" aria-hidden="true">&#x1F4CB;</div>
+            <p class="logi-title">Plazas y reserva</p>
+            <p class="logi-text">12 plazas máximas. Plaza confirmada al pagar. Cancelación con devolución del 80% hasta
+              14 días antes. Después sin devolución salvo causa mayor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<footer class="foot" role="contentinfo">
-  <p class="foot__copy">&copy; 2026 Jenifer Tejedor · Retiro SERENZA</p>
-  <nav class="foot__links" aria-label="Links pie de página">
-    <a href="/index.html">Sitio principal</a>
-    <a href="https://instagram.com/jenitejedor" target="_blank" rel="noopener">@jenitejedor</a>
-    <a href="mailto:contacto@jenifertejedor.com">Contacto</a>
-  </nav>
-  <p class="foot__built">Web por <a href="https://cirujanadigital.com" target="_blank" rel="noopener">Cirujana Digital</a></p>
-</footer>
+    <!-- ── JENIFER BIO ── -->
+    <section class="section section--dark" id="jenifer" aria-labelledby="jeni-h">
+      <div class="container">
+        <div class="bio-grid fu">
+          <div class="bio-img-wrap">
+            <img src="jenifer-tejedor.webp" alt="Jenifer Tejedor, mentora del retiro SERENZA" loading="lazy" width="500"
+              height="660" />
+          </div>
+          <div class="fu d1">
+            <p class="lbl">Quién acompaña</p>
+            <h2 id="jeni-h" class="bio-title">Jenifer Tejedor</h2>
+            <p class="bio-role">Mentora en reordenamiento interior de mujeres líderes</p>
+            <div class="divider-gold" aria-hidden="true"></div>
+            <div class="bio-body">
+              <p>Acompaño a mujeres que sostienen mucho hacia fuera y que, en algún momento, reconocen que no pueden
+                seguir sosteniéndose igual.</p>
+              <p>Porque yo también sé lo que es tener la vida aparentemente en orden mientras por dentro sigues
+                sosteniendo demasiado. Seguir cumpliendo. Seguir funcionando. Seguir resolviendo. Y aun así, sentir que
+                tú te quedas fuera.</p>
+              <p>Durante más de cinco años he acompañado a mujeres que entienden lo que les pasa, pero que en su día a
+                día siguen volviendo a patrones, ritmos y formas de sostenerse que ya no les corresponden.</p>
+              <p>Integro la regulación del sistema nervioso, respiración funcional, cuerpo, creencias inconscientes y
+                hábitos que devuelven estabilidad interna.</p>
+              <p>SERENZA nace desde la necesidad de crear un espacio donde bajar el ritmo, verte con claridad y volver a
+                darte el lugar que en tu día a día tantas veces dejas para después.</p>
+            </div>
+            <div style="margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap">
+              <a href="https://instagram.com/jenitejedor" target="_blank" rel="noopener"
+                class="btn btn--dorado-outline">@jenitejedor</a>
+              <a href="https://wa.me/34630121817" target="_blank" rel="noopener" class="btn btn--outline">Escribir a
+                Jenifer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- WA FLOAT -->
-<a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20quiero%20saber%20m%C3%A1s%20sobre%20el%20retiro%20SERENZA"
-   class="wa-f" target="_blank" rel="noopener"
-   aria-label="Contactar por WhatsApp sobre el retiro SERENZA"
-   onclick="trackWA('float')">
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-</a>
+    <!-- ── CIERRE ── -->
+    <section class="section section--dark cierre" aria-label="Llamada a la acción final">
+      <div class="container">
+        <span class="cierre__eyebrow fu">Si algo se ha movido al leer esto</span>
+        <h2 class="cierre__t fu d1">
+          No es lo que haces.<br>
+          Es lo que sigue <em>activo.</em>
+        </h2>
+        <p class="cierre__s fu d2">
+          Si algo dentro se ha movido al leer esto, es porque ya lo estás viendo.<br>
+          Y cuando lo ves, empiezas a colocarte distinto.
+        </p>
+        <div class="cierre__a fu d3">
+          <a href="#reserva" class="btn btn--primary" onclick="trackStripe('cierre')">Reservar mi plaza</a>
+          <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20tengo%20una%20pregunta%20sobre%20el%20retiro%20SERENZA"
+            target="_blank" rel="noopener" class="btn btn--wa" onclick="trackWA('cierre')">
+            Tengo una pregunta
+          </a>
+        </div>
+        <p class="cierre__phrase fu d4">"La superficie rara vez revela todo lo que se está moviendo debajo."</p>
+      </div>
+    </section>
 
-<script>
-/* ── TOPBAR SCROLL ── */
-const tb = document.getElementById("topbar");
-window.addEventListener("scroll", () => {
-  tb.classList.toggle("scrolled", window.scrollY > 60);
-}, {passive: true});
+  </main>
 
-/* ── INTERSECTION OBSERVER ── */
-const io = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.classList.add("vis");
-      io.unobserve(e.target);
+  <footer class="foot" role="contentinfo">
+    <p class="foot__copy">&copy; 2026 Jenifer Tejedor · Retiro SERENZA</p>
+    <nav class="foot__links" aria-label="Links pie de página">
+      <a href="/index.html">Sitio principal</a>
+      <a href="https://instagram.com/jenitejedor" target="_blank" rel="noopener">@jenitejedor</a>
+      <a href="mailto:contacto@jenifertejedor.com">Contacto</a>
+    </nav>
+    <p class="foot__built">Web por <a href="https://cirujanadigital.com" target="_blank" rel="noopener">Cirujana
+        Digital</a></p>
+  </footer>
+
+  <!-- WA FLOAT -->
+  <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20quiero%20saber%20m%C3%A1s%20sobre%20el%20retiro%20SERENZA"
+    class="wa-f" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp sobre el retiro SERENZA"
+    onclick="trackWA('float')">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
+
+  <script>
+    /* ── TOPBAR SCROLL ── */
+    const tb = document.getElementById("topbar");
+    window.addEventListener("scroll", () => {
+      tb.classList.toggle("scrolled", window.scrollY > 60);
+    }, { passive: true });
+
+    /* ── INTERSECTION OBSERVER ── */
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add("vis");
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: .08 });
+    document.querySelectorAll(".fu").forEach(el => io.observe(el));
+
+    /* ── ROOM SELECTOR ── */
+    function selectRoom(card, roomId, stripeUrl) {
+      document.querySelectorAll('.room-card').forEach(c => {
+        c.classList.remove('selected');
+        c.setAttribute('aria-checked', 'false');
+      });
+      card.classList.add('selected');
+      card.setAttribute('aria-checked', 'true');
+      const btn = document.getElementById('btn-stripe-room');
+      if (btn) btn.href = stripeUrl;
     }
-  });
-}, {threshold: .08});
-document.querySelectorAll(".fu").forEach(el => io.observe(el));
 
-/* ── ROOM SELECTOR ── */
-function selectRoom(card, roomId, stripeUrl) {
-  document.querySelectorAll('.room-card').forEach(c => {
-    c.classList.remove('selected');
-    c.setAttribute('aria-checked', 'false');
-  });
-  card.classList.add('selected');
-  card.setAttribute('aria-checked', 'true');
-  const btn = document.getElementById('btn-stripe-room');
-  if (btn) btn.href = stripeUrl;
-}
-
-/* ── TRACKING ── */
-function trackStripe(loc){if(typeof gtag!=="undefined")gtag("event","click_stripe",{location:loc})}
-function trackWA(loc){if(typeof gtag!=="undefined")gtag("event","click_whatsapp",{location:loc})}
-</script>
+    /* ── TRACKING ── */
+    function trackStripe(loc) { if (typeof gtag !== "undefined") gtag("event", "click_stripe", { location: loc }) }
+    function trackWA(loc) { if (typeof gtag !== "undefined") gtag("event", "click_whatsapp", { location: loc }) }
+  </script>
 </body>
+
 </html>

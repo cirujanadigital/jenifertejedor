@@ -445,25 +445,35 @@
     /* ============================================================
        RETIRO SERENZA
     ============================================================ */
-    #retiro{padding:var(--section-y) 0;background:linear-gradient(180deg,var(--beige) 0%,var(--crema) 100%)}
-    .ret__tag{display:inline-flex;align-items:center;gap:8px;background:var(--azul-osc);color:var(--crema);font-size:.68rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:6px 14px;border-radius:1px;margin-bottom:1.5rem}
-    .ret__dot{width:6px;height:6px;border-radius:50%;background:#ff6b4a;animation:pulse 2s infinite}
-    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
-    .ret__dates{font-family:var(--ff-display);font-size:1rem;font-weight:300;letter-spacing:.1em;color:var(--terracota);margin-bottom:.85rem}
-    .ret__h{font-family:var(--ff-display);font-size:clamp(3rem,6vw,5rem);font-weight:300;letter-spacing:.1em;color:var(--azul-osc);line-height:1;margin-bottom:.75rem}
-    .ret__sub{font-family:var(--ff-cita);font-size:clamp(1rem,1.8vw,1.2rem);font-style:italic;font-weight:400;color:var(--text-soft);line-height:1.65;max-width:560px;margin-bottom:4rem}
-    .ret__promo{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center;margin-top:2.5rem}
-    .ret__promo-img{border-radius:4px;overflow:hidden;aspect-ratio:16/9}
-    .ret__promo-img img{width:100%;height:100%;object-fit:cover;filter:saturate(.85);transition:transform .6s var(--ease)}
-    .ret__promo-img:hover img{transform:scale(1.03)}
-    .ret__body{font-size:.9rem;font-weight:300;color:var(--text-soft);line-height:1.9;margin-bottom:1.5rem}
-    .ret__pills{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.5rem 0 2rem}
-    .ret__pills li{font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--oliva);background:rgba(100,93,59,.1);border:1px solid rgba(100,93,59,.25);padding:.35rem .85rem;border-radius:1px}
-    .ret__promo-ctas{display:flex;gap:1rem;flex-wrap:wrap}
-    .ret__promo-note{font-size:.75rem;color:var(--text-soft);margin-top:1.25rem}
-    .ret__promo-note strong{color:var(--terracota)}
-    .ret__promo-note a{color:var(--terracota);text-decoration:underline;text-underline-offset:3px}
-
+    #retiro{
+  padding:var(--section-y) 0;
+  background:linear-gradient(180deg,var(--azul-osc) 0%,#1e3f3f 60%,#213d3d 100%);
+  position:relative;
+  overflow:hidden;
+}
+#retiro::before{
+  content:"";
+  position:absolute;inset:0;
+  background:radial-gradient(ellipse 80% 60% at 110% 20%, rgba(152,113,34,.07) 0%, transparent 60%),
+             radial-gradient(ellipse 60% 80% at -10% 80%, rgba(69,87,99,.15) 0%, transparent 55%);
+  pointer-events:none;
+}
+    .ret__tag{display:inline-flex;align-items:center;gap:8px;background:rgba(245,239,234,.06);color:rgba(245,239,234,.85);border:1px solid rgba(245,239,234,.12);font-size:.68rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:6px 14px;border-radius:1px;margin-bottom:1.5rem}
+.ret__dot{width:6px;height:6px;border-radius:50%;background:var(--terracota);animation:pulse 2s infinite}
+.ret__dates{font-family:var(--ff-display);font-size:1rem;font-weight:300;letter-spacing:.1em;color:var(--terracota);margin-bottom:.85rem}
+.ret__h{line-height:1;margin-bottom:.75rem}
+.ret__sub{font-family:var(--ff-cita);font-size:clamp(1rem,1.8vw,1.2rem);font-style:italic;font-weight:400;color:rgba(245,239,234,.72);line-height:1.65;max-width:560px;margin-bottom:4rem}
+.ret__promo{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center;margin-top:2.5rem}
+.ret__promo-img{border-radius:2px;overflow:hidden;aspect-ratio:16/9;border:1px solid rgba(245,239,234,.08)}
+.ret__promo-img img{width:100%;height:100%;object-fit:cover;filter:saturate(.82) brightness(.9);transition:transform .6s var(--ease)}
+.ret__promo-img:hover img{transform:scale(1.03)}
+.ret__body{font-size:.9rem;font-weight:300;color:rgba(245,239,234,.72);line-height:1.9;margin-bottom:1.5rem}
+.ret__pills{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.5rem 0 2rem}
+.ret__pills li{font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:rgba(200,185,160,.85);background:rgba(245,239,234,.05);border:1px solid rgba(245,239,234,.12);padding:.35rem .85rem;border-radius:1px}
+.ret__promo-ctas{display:flex;gap:1rem;flex-wrap:wrap}
+.ret__promo-note{font-size:.75rem;color:rgba(245,239,234,.5);margin-top:1.25rem}
+.ret__promo-note strong{color:var(--terracota)}
+.ret__promo-note a{color:var(--terracota);text-decoration:underline;text-underline-offset:3px}
     /* ============================================================
        SOBRE MÍ
     ============================================================ */
@@ -786,9 +796,9 @@
           <p class="ment__sub fu d2">Dejar de sostener tu vida desde el mismo lugar. Ocupar tu lugar en ella.</p>
           <div class="ment__div"></div>
           <div class="ment__body fu">
-            <p>El orden de tu vida ahora mismo habla por ti. En qué ocupa tu tiempo. En qué ocupa tu energía. Y en el lugar en el que te estás colocando.</p>
-            <p>Cuando sabes que tendrías que parar y respondes otro mensaje. Cuando quieres poner un límite y vuelves a adaptarte. Cuando notas que el trabajo está ocupando un lugar que no le corresponde pero sigues colocándolo por delante de ti.</p>
-            <p><strong>Eso es lo que trabajamos.</strong></p>
+            <p>No trabajamos lo que ves. Trabajamos lo que lo está sosteniendo.</p>
+            <p>Tu carga acumulada. Las incoherencias pequeñas que se han vuelto invisibles. El sistema nervioso que interpreta cada cambio como amenaza y te devuelve al lugar conocido aunque ya no encaje.</p>
+            <p><strong>No necesitas más disciplina. Necesitas menos carga interna.</strong></p>
           </div>
           <ul class="inc__list fu" aria-label="Qué incluye la mentoría">
             <li>12 sesiones 1:1 (1 por semana durante 3 meses)</li>
@@ -841,7 +851,7 @@
           <div class="signals">
             <p class="lbl lbl--azul">Señales de que esto es para ti</p>
             <ul>
-              <li>Ya has ido a terapia y sabes lo que tienes que cambiar, pero no lo sostienes</li>
+              <li>Ya has hecho trabajo interno. Entiendes lo que pasa. Pero tu sistema sigue respondiendo igual.</li>
               <li>Priorizas tu trabajo, familia y relaciones antes que a ti misma, de forma sistemática</li>
               <li>Sabes lo que necesitas pero en el momento de sostenerlo, te echas hacia atrás</li>
               <li>Llevas tiempo funcionando bien pero desde un lugar que ya no es tuyo</li>
@@ -860,7 +870,11 @@
         Plazas limitadas · 12 mujeres · Primera edición
       </div>
       <p class="ret__dates">22–24 Mayo 2026 · Cardedeu, Barcelona</p>
-      <h2 id="ret-h" class="ret__h">SERENZA</h2>
+      <h2 id="ret-h" class="ret__h">
+  <img src="logo-serenza.png" alt="SERENZA" width="400" height="106"
+    loading="lazy" decoding="async"
+    style="max-width:clamp(200px,40vw,400px);height:auto;" />
+</h2>
       <p class="ret__sub">Tres días donde el orden que sostienes fuera se detiene<br>para que dentro… todo encuentre su lugar.</p>
       <div class="ret__promo fu">
         <div class="ret__promo-img">
@@ -962,7 +976,7 @@
     <div class="container">
       <p class="lbl">El siguiente paso</p>
       <h2 id="cierre-h" class="cierre__t">No es que no sepas qué hacer.<br>Es que tu sistema no está preparado para <em>sostenerlo.</em></h2>
-      <p class="cierre__s">Ahí es donde trabajo. Una primera conexión sin estructura de sesión, sin compromiso, para ver si esto es para ti.</p>
+      <p class="cierre__s">Una primera conexión. Sin sesión, sin compromiso. Veo contigo qué está sosteniendo lo que no consigues cambiar.</p>
       <div class="cierre__a">
         <a href="https://calendly.com/jenifertejedor" target="_blank" rel="noopener" class="btn btn--p" onclick="trackCal('cierre')">Reservar primera conexión</a>
         <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20me%20gustaria%20saber%20mas%20sobre%20el%20proceso" target="_blank" rel="noopener" class="btn btn--wa" onclick="trackWA('cierre')">Escribir por WhatsApp</a>

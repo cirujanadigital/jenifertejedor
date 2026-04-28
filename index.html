@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Jenifer Tejedor — Acompañamiento sistémico en Barcelona. Para mujeres que saben lo que tienen que cambiar y no consiguen sostenerlo. Mentoría 1:1 y retiro SERENZA." />
+  <meta name="description"
+    content="Jenifer Tejedor — Acompañamiento sistémico en Barcelona. Para mujeres que saben lo que tienen que cambiar y no consiguen sostenerlo. Mentoría 1:1 y retiro SERENZA." />
   <meta property="og:title" content="Jenifer Tejedor — Reordenamiento sistémico" />
   <meta property="og:description" content="No trabajas el síntoma. Reordenas el sistema desde el que decides." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://jenifertejedor.com" />
   <!-- Añadir después de og:url -->
-<meta property="og:image" content="https://jenifertejedor.com/og-image.jpg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://jenifertejedor.com/og-image.webp" />
+  <meta property="og:image" content="https://jenifertejedor.com/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://jenifertejedor.com/og-image.webp" />
   <link rel="canonical" href="https://jenifertejedor.com" />
   <title>Jenifer Tejedor — Reordenamiento sistémico · Barcelona</title>
   <link rel="preload" as="image" href="img-hero.webp" fetchpriority="high" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,500;1,300&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,500;1,300&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" media="print" onload="this.media='all'" />
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,500;1,300&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" /></noscript>
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,500;1,300&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,500;1,300&family=Playfair+Display:ital,wght@1,400;1,500&display=swap"
+    media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,500;1,300&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" />
+  </noscript>
   <script type="application/ld+json">{"@context": "https://schema.org",
   "@type": "Person",
   "name": "Jenifer Tejedor",
@@ -47,1083 +55,2503 @@
        TOKENS
     ============================================================ */
     :root {
-      --azul:       #455763;
-      --azul-osc:   #1A3636;
-      --marron:     #4A342E;
-      --beige:      #E8E2DA;
-      --crema:      #F5EFEA;
-      --oliva:      #645D3B;
-      --musgo:      #31331F;
-      --terracota:  #987122;
-      --gris-cl:    #F4F4F4;
-      --blanco:     #FFFFFF;
-      --text-main:  #1A3636;
-      --text-soft:  #455763;
+      --azul: #455763;
+      --azul-osc: #1A3636;
+      --marron: #4A342E;
+      --beige: #E8E2DA;
+      --crema: #F5EFEA;
+      --oliva: #645D3B;
+      --musgo: #31331F;
+      --terracota: #987122;
+      --gris-cl: #F4F4F4;
+      --blanco: #FFFFFF;
+      --text-main: #1A3636;
+      --text-soft: #455763;
       --text-muted: #645D3B;
       --text-light: #987122;
       --ff-display: "Cormorant Garamond", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
-      --ff-body:    "Libre Franklin", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-      --ff-cita:    "Playfair Display", "Palatino Linotype", Georgia, serif;
-      --pad-x:      clamp(1.25rem, 5vw, 3rem);
-      --section-y:  clamp(5rem, 9vw, 8rem);
-      --ease:       cubic-bezier(0.16, 1, 0.3, 1);
-      --sombra:     0 8px 40px rgba(26,54,54,.12);
+      --ff-body: "Libre Franklin", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      --ff-cita: "Playfair Display", "Palatino Linotype", Georgia, serif;
+      --pad-x: clamp(1.25rem, 5vw, 3rem);
+      --section-y: clamp(5rem, 9vw, 8rem);
+      --ease: cubic-bezier(0.16, 1, 0.3, 1);
+      --sombra: 0 8px 40px rgba(26, 54, 54, .12);
     }
 
     /* ============================================================
        RESET MÍNIMO
     ============================================================ */
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth;font-size:16px}
-    body{font-family:var(--ff-body);background:var(--crema);color:var(--text-main);line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-    img{max-width:100%;display:block}
-    a{text-decoration:none;color:inherit}
-    button{cursor:pointer;font-family:var(--ff-body);border:none;background:none}
-    ul,ol{list-style:none}
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px
+    }
+
+    body {
+      font-family: var(--ff-body);
+      background: var(--crema);
+      color: var(--text-main);
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased
+    }
+
+    img {
+      max-width: 100%;
+      display: block
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit
+    }
+
+    button {
+      cursor: pointer;
+      font-family: var(--ff-body);
+      border: none;
+      background: none
+    }
+
+    ul,
+    ol {
+      list-style: none
+    }
 
     /* ============================================================
        UTILIDADES
     ============================================================ */
-    .container{max-width:1160px;margin:0 auto;padding:0 var(--pad-x)}
-    .container--n{max-width:720px;margin:0 auto;padding:0 var(--pad-x)}
-    .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
-    .lbl{display:inline-block;font-family:var(--ff-body);font-size:.65rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--terracota);margin-bottom:1.1rem}
-    .lbl--azul{color:var(--azul)}
-    .lbl--crema{color:#c8b9a0}
-    .lbl--oliva{color:var(--oliva)}
+    .container {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 var(--pad-x)
+    }
+
+    .container--n {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 var(--pad-x)
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap
+    }
+
+    .lbl {
+      display: inline-block;
+      font-family: var(--ff-body);
+      font-size: .65rem;
+      font-weight: 500;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--terracota);
+      margin-bottom: 1.1rem
+    }
+
+    .lbl--azul {
+      color: var(--azul)
+    }
+
+    .lbl--crema {
+      color: #c8b9a0
+    }
+
+    .lbl--oliva {
+      color: var(--oliva)
+    }
 
     /* BOTONES */
-    .btn{display:inline-flex;align-items:center;gap:8px;padding:.95rem 2.1rem;font-family:var(--ff-body);font-size:.75rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;border-radius:1px;transition:all .3s var(--ease);cursor:pointer;border:none;white-space:nowrap}
-    .btn--p{background:var(--azul-osc);color:#fff;box-shadow:0 4px 20px rgba(26,54,54,.25)}
-    .btn--p:hover{background:var(--azul);transform:translateY(-2px);box-shadow:0 8px 32px rgba(26,54,54,.3)}
-    .btn--o{background:transparent;color:var(--azul-osc);border:1px solid var(--azul)}
-    .btn--o:hover{background:var(--azul-osc);color:#fff}
-    .btn--terra{background:var(--terracota);color:#fff;box-shadow:0 4px 20px rgba(152,113,34,.25)}
-    .btn--terra:hover{background:#7a5b1c;transform:translateY(-2px)}
-    .btn--ghost{background:transparent;color:var(--azul);border:1px solid rgba(69,87,99,.4)}
-    .btn--ghost:hover{border-color:var(--azul-osc);color:var(--azul-osc)}
-    .btn--wa{background:#3d6b4a;color:#fff;box-shadow:0 4px 20px rgba(61,107,74,.2)}
-    .btn--wa:hover{background:#2e5238;transform:translateY(-2px)}
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: .95rem 2.1rem;
+      font-family: var(--ff-body);
+      font-size: .75rem;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      border-radius: 1px;
+      transition: all .3s var(--ease);
+      cursor: pointer;
+      border: none;
+      white-space: nowrap
+    }
+
+    .btn--p {
+      background: var(--azul-osc);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(26, 54, 54, .25)
+    }
+
+    .btn--p:hover {
+      background: var(--azul);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(26, 54, 54, .3)
+    }
+
+    .btn--o {
+      background: transparent;
+      color: var(--azul-osc);
+      border: 1px solid var(--azul)
+    }
+
+    .btn--o:hover {
+      background: var(--azul-osc);
+      color: #fff
+    }
+
+    .btn--terra {
+      background: var(--terracota);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(152, 113, 34, .25)
+    }
+
+    .btn--terra:hover {
+      background: #7a5b1c;
+      transform: translateY(-2px)
+    }
+
+    .btn--ghost {
+      background: transparent;
+      color: var(--azul);
+      border: 1px solid rgba(69, 87, 99, .4)
+    }
+
+    .btn--ghost:hover {
+      border-color: var(--azul-osc);
+      color: var(--azul-osc)
+    }
+
+    .btn--wa {
+      background: #3d6b4a;
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(61, 107, 74, .2)
+    }
+
+    .btn--wa:hover {
+      background: #2e5238;
+      transform: translateY(-2px)
+    }
+
     /* botón fantasma claro para fondos oscuros */
-    .btn--light{background:transparent;color:var(--crema);border:1px solid rgba(245,239,234,.45);backdrop-filter:blur(8px)}
-    .btn--light:hover{background:rgba(245,239,234,.1);border-color:rgba(245,239,234,.7)}
+    .btn--light {
+      background: transparent;
+      color: var(--crema);
+      border: 1px solid rgba(245, 239, 234, .45);
+      backdrop-filter: blur(8px)
+    }
+
+    .btn--light:hover {
+      background: rgba(245, 239, 234, .1);
+      border-color: rgba(245, 239, 234, .7)
+    }
 
     /* ============================================================
        NAVEGACIÓN
     ============================================================ */
-    #nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.3rem 0;transition:background .4s var(--ease),padding .4s var(--ease),box-shadow .4s var(--ease)}
-    #nav.scrolled{background:rgba(26,54,54,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:.9rem 0;box-shadow:0 1px 0 rgba(245,239,234,.08)}
+    #nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 1.3rem 0;
+      transition: background .4s var(--ease), padding .4s var(--ease), box-shadow .4s var(--ease)
+    }
+
+    #nav.scrolled {
+      background: rgba(26, 54, 54, .92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: .9rem 0;
+      box-shadow: 0 1px 0 rgba(245, 239, 234, .08)
+    }
+
     /* En hero oscuro, el nav arranca transparente sobre dark */
-    #nav.hero-dark{color:var(--crema)}
-    #nav.hero-dark .nav__logo{color:var(--crema)}
-    #nav.hero-dark .nav__logo em{color:var(--terracota)}
-    #nav.hero-dark .nav__links a{color:rgba(245,239,234,.8)}
-    #nav.hero-dark .nav__links a:hover{color:var(--crema)}
-    #nav.hero-dark .nav__hbg span{background:var(--crema)}
-    .nav__inner{display:flex;align-items:center;justify-content:space-between}
-    .nav__logo{font-family:var(--ff-cita);font-size:1.15rem;font-weight:400;font-style:italic;color:var(--beige);letter-spacing:.02em;transition:color .4s}
-    .nav__logo em{color:var(--terracota);font-style:normal}
-    .nav__links{display:flex;align-items:center;gap:2.25rem}
-    .nav__links a{font-size:.73rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:var(--gris-cl);transition:color .25s}
-    .nav__links a:hover{color:var(--crema)}
-    .nav__cta{background:rgba(152,113,34,.85)!important;color:#fff!important;padding:.55rem 1.3rem;border-radius:1px;transition:all .25s!important}
-    .nav__cta:hover{background:var(--terracota)!important;transform:translateY(-1px)}
-    .nav__hbg{display:none;flex-direction:column;gap:5px;padding:6px;background:none;border:none}
-    .nav__hbg span{width:22px;height:1.5px;background:var(--azul-osc);transition:.3s;display:block}
+    #nav.hero-dark {
+      color: var(--crema)
+    }
+
+    #nav.hero-dark .nav__logo {
+      color: var(--crema)
+    }
+
+    #nav.hero-dark .nav__logo em {
+      color: var(--terracota)
+    }
+
+    #nav.hero-dark .nav__links a {
+      color: rgba(245, 239, 234, .8)
+    }
+
+    #nav.hero-dark .nav__links a:hover {
+      color: var(--crema)
+    }
+
+    #nav.hero-dark .nav__hbg span {
+      background: var(--crema)
+    }
+
+    .nav__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between
+    }
+
+    .nav__logo {
+      font-family: var(--ff-cita);
+      font-size: 1.15rem;
+      font-weight: 400;
+      font-style: italic;
+      color: var(--beige);
+      letter-spacing: .02em;
+      transition: color .4s
+    }
+
+    .nav__logo em {
+      color: var(--terracota);
+      font-style: normal
+    }
+
+    .nav__links {
+      display: flex;
+      align-items: center;
+      gap: 2.25rem
+    }
+
+    .nav__links a {
+      font-size: .73rem;
+      font-weight: 400;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--gris-cl);
+      transition: color .25s
+    }
+
+    .nav__links a:hover {
+      color: var(--crema)
+    }
+
+    .nav__cta {
+      background: rgba(152, 113, 34, .85) !important;
+      color: #fff !important;
+      padding: .55rem 1.3rem;
+      border-radius: 1px;
+      transition: all .25s !important
+    }
+
+    .nav__cta:hover {
+      background: var(--terracota) !important;
+      transform: translateY(-1px)
+    }
+
+    .nav__hbg {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      padding: 6px;
+      background: none;
+      border: none
+    }
+
+    .nav__hbg span {
+      width: 22px;
+      height: 1.5px;
+      background: var(--azul-osc);
+      transition: .3s;
+      display: block
+    }
 
     /* ============================================================
        MENÚ MÓVIL — panel lateral derecho, no pantalla completa
     ============================================================ */
-    .nav__mob{
-     display: none;
-  position: fixed;
-  top: 0; right: 0; bottom: 0;
-  width: min(320px, 85vw);
-  background: var(--azul-osc);
-  z-index: 200;
-  flex-direction: column;
-  padding: 4.5rem 2.5rem 3rem;
-  gap: 0;
-  box-shadow: -8px 0 40px rgba(0,0,0,.3);
-  transform: translateX(100%);
-  transition: transform .4s var(--ease);
+    .nav__mob {
+      display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: min(320px, 85vw);
+      background: var(--azul-osc);
+      z-index: 200;
+      flex-direction: column;
+      padding: 4.5rem 2.5rem 3rem;
+      gap: 0;
+      box-shadow: -8px 0 40px rgba(0, 0, 0, .3);
+      transform: translateX(100%);
+      transition: transform .4s var(--ease);
     }
-    .nav__mob.open{
-      display:flex;
-      transform:translateX(0);
+
+    .nav__mob.open {
+      display: flex;
+      transform: translateX(0);
     }
+
     /* Overlay oscuro detrás del panel */
-    .nav__overlay{
-      display:none;
-      position:fixed;
-      inset:0;
-      background:rgba(0,0,0,.45);
-      z-index:199;
-      backdrop-filter:blur(2px);
+    .nav__overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, .45);
+      z-index: 199;
+      backdrop-filter: blur(2px);
     }
-    .nav__overlay.open{display:block}
 
-    .nav__mob-x{
-      position:absolute;
-      top:1.25rem;right:1.25rem;
-      width:36px;height:36px;
-      display:flex;align-items:center;justify-content:center;
-      font-size:1.5rem;line-height:1;
-      color:rgba(245,239,234,.7);
-      cursor:pointer;
-      background:rgba(245,239,234,.08);
-      border-radius:50%;
-      border:1px solid rgba(245,239,234,.15);
-      transition:all .25s;
+    .nav__overlay.open {
+      display: block
     }
-    .nav__mob-x:hover{color:var(--crema);background:rgba(245,239,234,.15)}
 
-    .nav__mob-logo{
-      font-family:var(--ff-cita);
-      font-size:1rem;
-      font-style:italic;
-      color:rgba(245,239,234,.55);
-      margin-bottom:2.5rem;
-      letter-spacing:.02em;
+    .nav__mob-x {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      line-height: 1;
+      color: rgba(245, 239, 234, .7);
+      cursor: pointer;
+      background: rgba(245, 239, 234, .08);
+      border-radius: 50%;
+      border: 1px solid rgba(245, 239, 234, .15);
+      transition: all .25s;
     }
-    .nav__mob-logo em{color:var(--terracota);font-style:normal}
 
-    .nav__mob a{
-      font-family:var(--ff-body);
-      font-size:.8rem;
-      font-weight:400;
-      letter-spacing:.14em;
-      text-transform:uppercase;
-      color:rgba(245,239,234,.75);
-      padding:1rem 0;
-      border-bottom:1px solid rgba(245,239,234,.07);
-      transition:color .25s;
+    .nav__mob-x:hover {
+      color: var(--crema);
+      background: rgba(245, 239, 234, .15)
     }
-    .nav__mob a:hover{color:var(--crema)}
-    .nav__mob a:last-of-type{border-bottom:none}
 
-    .nav__mob-cta{
-      margin-top:2rem;
-      background:var(--terracota)!important;
-      color:#fff!important;
-      text-align:center;
-      justify-content:center;
-      padding:.8rem 1.5rem;
-      border-radius:1px;
-      font-size:.72rem;
-      letter-spacing:.14em;
+    .nav__mob-logo {
+      font-family: var(--ff-cita);
+      font-size: 1rem;
+      font-style: italic;
+      color: rgba(245, 239, 234, .55);
+      margin-bottom: 2.5rem;
+      letter-spacing: .02em;
     }
-    .nav__mob-cta:hover{background:#7a5b1c!important}
 
-    .nav__mob-social{
-      margin-top:auto;
-      padding-top:2rem;
-      display:flex;gap:1.25rem;
-      align-items:center;
+    .nav__mob-logo em {
+      color: var(--terracota);
+      font-style: normal
     }
-    .nav__mob-social a{
-      font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;
-      color:rgba(245,239,234,.45);border-bottom:none;padding:0;
-      transition:color .25s;
+
+    .nav__mob a {
+      font-family: var(--ff-body);
+      font-size: .8rem;
+      font-weight: 400;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: rgba(245, 239, 234, .75);
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(245, 239, 234, .07);
+      transition: color .25s;
     }
-    .nav__mob-social a:hover{color:rgba(245,239,234,.8)}
+
+    .nav__mob a:hover {
+      color: var(--crema)
+    }
+
+    .nav__mob a:last-of-type {
+      border-bottom: none
+    }
+
+    .nav__mob-cta {
+      margin-top: 2rem;
+      background: var(--terracota) !important;
+      color: #fff !important;
+      text-align: center;
+      justify-content: center;
+      padding: .8rem 1.5rem;
+      border-radius: 1px;
+      font-size: .72rem;
+      letter-spacing: .14em;
+    }
+
+    .nav__mob-cta:hover {
+      background: #7a5b1c !important
+    }
+
+    .nav__mob-social {
+      margin-top: auto;
+      padding-top: 2rem;
+      display: flex;
+      gap: 1.25rem;
+      align-items: center;
+    }
+
+    .nav__mob-social a {
+      font-size: .68rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: rgba(245, 239, 234, .45);
+      border-bottom: none;
+      padding: 0;
+      transition: color .25s;
+    }
+
+    .nav__mob-social a:hover {
+      color: rgba(245, 239, 234, .8)
+    }
 
     /* ============================================================
        HERO OSCURO DE LUJO
     ============================================================ */
-    #hero{
-      min-height:100dvh;
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      align-items:stretch;
-      position:relative;
-      overflow:hidden;
+    #hero {
+      min-height: 100dvh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: stretch;
+      position: relative;
+      overflow: hidden;
     }
 
     /* Lado izquierdo — contenido sobre fondo oscuro */
-    .hero__content{
-      position:relative;
-      z-index:10;
-      background:var(--azul-osc);
-      padding:clamp(6rem,10vw,8rem) clamp(2rem,5vw,4rem) clamp(3rem,6vw,5rem);
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
+    .hero__content {
+      position: relative;
+      z-index: 10;
+      background: var(--azul-osc);
+      padding: clamp(6rem, 10vw, 8rem) clamp(2rem, 5vw, 4rem) clamp(3rem, 6vw, 5rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       /* Sutil textura de grano */
-      isolation:isolate;
+      isolation: isolate;
     }
-    .hero__content::before{
-      content:"";
-      position:absolute;inset:0;z-index:-1;
+
+    .hero__content::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
       background:
-        radial-gradient(ellipse 120% 80% at -20% 50%, rgba(69,87,99,.35) 0%, transparent 60%),
-        radial-gradient(ellipse 60% 60% at 110% 10%, rgba(152,113,34,.08) 0%, transparent 55%);
+        radial-gradient(ellipse 120% 80% at -20% 50%, rgba(69, 87, 99, .35) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 60% at 110% 10%, rgba(152, 113, 34, .08) 0%, transparent 55%);
     }
+
     /* Línea vertical decorativa lateral */
-    .hero__content::after{
-      content:"";
-      position:absolute;top:15%;bottom:15%;right:0;
-      width:1px;
-      background:linear-gradient(to bottom, transparent, rgba(152,113,34,.4) 30%, rgba(152,113,34,.4) 70%, transparent);
-      z-index:5;
+    .hero__content::after {
+      content: "";
+      position: absolute;
+      top: 15%;
+      bottom: 15%;
+      right: 0;
+      width: 1px;
+      background: linear-gradient(to bottom, transparent, rgba(152, 113, 34, .4) 30%, rgba(152, 113, 34, .4) 70%, transparent);
+      z-index: 5;
     }
 
-    .hero__badge{
-      display:inline-flex;align-items:center;gap:8px;
-      padding:5px 13px;
-      border:1px solid rgba(152,113,34,.4);
-      border-radius:1px;
-      font-size:.62rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;
-      color:rgba(200,185,160,.85);
-      margin-bottom:2.5rem;
-      width:fit-content;
-    }
-    .hero__badge::before{content:"";width:4px;height:4px;background:var(--terracota);border-radius:50%}
-
-    .hero__eyebrow{
-      font-family:var(--ff-cita);
-      font-size:clamp(.9rem,1.4vw,1.05rem);
-      font-weight:400;font-style:italic;
-      color:rgba(200,185,160,.75);
-      letter-spacing:.02em;
-      margin-bottom:1.1rem;
+    .hero__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 13px;
+      border: 1px solid rgba(152, 113, 34, .4);
+      border-radius: 1px;
+      font-size: .62rem;
+      font-weight: 500;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: rgba(200, 185, 160, .85);
+      margin-bottom: 2.5rem;
+      width: fit-content;
     }
 
-    .hero__title{
-      font-family:var(--ff-display);
-      font-size:clamp(2.2rem,4.2vw,3.8rem);
-      font-weight:300;
-      color:var(--crema);
-      line-height:1.1;
-      letter-spacing:-.02em;
-      margin-bottom:2rem;
+    .hero__badge::before {
+      content: "";
+      width: 4px;
+      height: 4px;
+      background: var(--terracota);
+      border-radius: 50%
     }
-    .hero__title em{
-      font-style:italic;
-      color:rgba(200,185,160,.85);
-      font-weight:300;
+
+    .hero__eyebrow {
+      font-family: var(--ff-cita);
+      font-size: clamp(.9rem, 1.4vw, 1.05rem);
+      font-weight: 400;
+      font-style: italic;
+      color: rgba(200, 185, 160, .75);
+      letter-spacing: .02em;
+      margin-bottom: 1.1rem;
+    }
+
+    .hero__title {
+      font-family: var(--ff-display);
+      font-size: clamp(2.2rem, 4.2vw, 3.8rem);
+      font-weight: 300;
+      color: var(--crema);
+      line-height: 1.1;
+      letter-spacing: -.02em;
+      margin-bottom: 2rem;
+    }
+
+    .hero__title em {
+      font-style: italic;
+      color: rgba(200, 185, 160, .85);
+      font-weight: 300;
     }
 
     /* Separador dorado */
-    .hero__rule{
-      width:40px;height:1px;
-      background:var(--terracota);
-      margin-bottom:1.75rem;
-      opacity:.7;
+    .hero__rule {
+      width: 40px;
+      height: 1px;
+      background: var(--terracota);
+      margin-bottom: 1.75rem;
+      opacity: .7;
     }
 
-    .hero__text{
-      font-size:clamp(.88rem,1.2vw,.97rem);
-      color:rgba(245,239,234,.62);
-      line-height:1.9;
-      max-width:420px;
-      margin-bottom:2.75rem;
-      font-weight:300;
+    .hero__text {
+      font-size: clamp(.88rem, 1.2vw, .97rem);
+      color: rgba(245, 239, 234, .62);
+      line-height: 1.9;
+      max-width: 420px;
+      margin-bottom: 2.75rem;
+      font-weight: 300;
     }
-    .hero__text strong{color:rgba(245,239,234,.88);font-weight:400}
 
-    .hero__actions{display:flex;flex-wrap:wrap;gap:.85rem;align-items:center}
-
-    .hero__stats{
-      display:flex;gap:2.25rem;
-      margin-top:3.5rem;padding-top:2.5rem;
-      border-top:1px solid rgba(245,239,234,.08);
+    .hero__text strong {
+      color: rgba(245, 239, 234, .88);
+      font-weight: 400
     }
-    .hero__sv{display:block;font-family:var(--ff-display);font-size:2rem;font-weight:300;color:rgba(152,113,34,.9);line-height:1}
-    .hero__sl{font-size:.63rem;font-weight:400;color:rgba(245,239,234,.45);letter-spacing:.1em;text-transform:uppercase;margin-top:5px}
+
+    .hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .85rem;
+      align-items: center
+    }
+
+    .hero__stats {
+      display: flex;
+      gap: 2.25rem;
+      margin-top: 3.5rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid rgba(245, 239, 234, .08);
+    }
+
+    .hero__sv {
+      display: block;
+      font-family: var(--ff-display);
+      font-size: 2rem;
+      font-weight: 300;
+      color: rgba(152, 113, 34, .9);
+      line-height: 1
+    }
+
+    .hero__sl {
+      font-size: .63rem;
+      font-weight: 400;
+      color: rgba(245, 239, 234, .45);
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      margin-top: 5px
+    }
 
     /* Lado derecho — imagen con overlay */
-    .hero__visual{
-      position:relative;
-      z-index:5;
-      overflow:hidden;
+    .hero__visual {
+      position: relative;
+      z-index: 5;
+      overflow: hidden;
     }
-    .hero__pw{width:100%;height:100%;position:relative}
-    .hero__photo{
-      width:100%;height:100%;
-      min-height:100dvh;
-      object-fit:cover;
-      object-position:center top;
-      display:block;
-      filter:saturate(.75) brightness(.88) contrast(1.05);
+
+    .hero__pw {
+      width: 100%;
+      height: 100%;
+      position: relative
     }
+
+    .hero__photo {
+      width: 100%;
+      height: 100%;
+      min-height: 100dvh;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      filter: saturate(.75) brightness(.88) contrast(1.05);
+    }
+
     /* Overlay elegante sobre la foto */
-    .hero__pw::after{
-      content:"";
-      position:absolute;inset:0;
+    .hero__pw::after {
+      content: "";
+      position: absolute;
+      inset: 0;
       background:
-        linear-gradient(to right, rgba(26,54,54,.55) 0%, transparent 40%),
-        linear-gradient(to top, rgba(26,54,54,.6) 0%, transparent 50%);
-      pointer-events:none;
+        linear-gradient(to right, rgba(26, 54, 54, .55) 0%, transparent 40%),
+        linear-gradient(to top, rgba(26, 54, 54, .6) 0%, transparent 50%);
+      pointer-events: none;
     }
+
     /* Tarjeta cita flotante */
-    .hero__card{
-      position:absolute;
-      bottom:2.5rem;left:2rem;right:2rem;
-      z-index:10;
-      background:rgba(26,54,54,.82);
-      backdrop-filter:blur(20px);
-      -webkit-backdrop-filter:blur(20px);
-      padding:1.5rem 1.75rem;
-      border-radius:2px;
-      border-left:2px solid var(--terracota);
-      box-shadow:0 12px 48px rgba(0,0,0,.3);
+    .hero__card {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 2rem;
+      right: 2rem;
+      z-index: 10;
+      background: rgba(26, 54, 54, .82);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      padding: 1.5rem 1.75rem;
+      border-radius: 2px;
+      border-left: 2px solid var(--terracota);
+      box-shadow: 0 12px 48px rgba(0, 0, 0, .3);
     }
-    .hero__cq{
-      font-family:var(--ff-cita);
-      font-size:1rem;
-      font-style:italic;
-      color:rgba(245,239,234,.88);
-      line-height:1.6;
+
+    .hero__cq {
+      font-family: var(--ff-cita);
+      font-size: 1rem;
+      font-style: italic;
+      color: rgba(245, 239, 234, .88);
+      line-height: 1.6;
     }
-    .hero__ca{
-      font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;
-      color:rgba(200,185,160,.6);
-      margin-top:.6rem;
+
+    .hero__ca {
+      font-size: .62rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: rgba(200, 185, 160, .6);
+      margin-top: .6rem;
     }
 
     /* ============================================================
        TRUST BAR
     ============================================================ */
-    .trust{background:linear-gradient(90deg,var(--musgo) 0%,var(--azul-osc) 100%);padding:1.1rem 0}
-    .trust__inner{display:flex;align-items:center;gap:2.5rem;flex-wrap:wrap;justify-content:center}
-    .trust__item{display:flex;align-items:center;gap:8px;font-size:.7rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,239,234,.75);white-space:nowrap}
-    .trust__dot{color:var(--terracota);font-size:.8rem}
+    .trust {
+      background: linear-gradient(90deg, var(--musgo) 0%, var(--azul-osc) 100%);
+      padding: 1.1rem 0
+    }
+
+    .trust__inner {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+      justify-content: center
+    }
+
+    .trust__item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .7rem;
+      font-weight: 400;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: rgba(245, 239, 234, .75);
+      white-space: nowrap
+    }
+
+    .trust__dot {
+      color: var(--terracota);
+      font-size: .8rem
+    }
 
     /* ============================================================
        PARA QUIÉN
     ============================================================ */
-    #pq{padding:var(--section-y) 0;background:var(--gris-cl)}
-    .pq__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5px;margin-top:3.5rem;background:rgba(69,87,99,.15);border:1.5px solid rgba(69,87,99,.15);border-radius:2px;overflow:hidden}
-    .pq__card{background:var(--blanco);padding:2.5rem 2rem;transition:background .3s;position:relative}
-    .pq__card::after{content:"";position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--terracota),var(--azul));transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
-    .pq__card:hover{background:var(--crema)}
-    .pq__card:hover::after{transform:scaleX(1)}
-    .pq__num{font-family:var(--ff-display);font-size:3.5rem;font-weight:300;color:rgba(69,87,99,.18);line-height:1;margin-bottom:1.25rem;transition:color .3s}
-    .pq__card:hover .pq__num{color:rgba(152,113,34,.25)}
-    .pq__title{font-family:var(--ff-display);font-size:1.3rem;font-weight:400;color:var(--azul-osc);margin-bottom:1rem;line-height:1.3}
-    .pq__body{font-size:.875rem;font-weight:300;color:var(--text-soft);line-height:1.85}
+    #pq {
+      padding: var(--section-y) 0;
+      background: var(--gris-cl)
+    }
+
+    .pq__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5px;
+      margin-top: 3.5rem;
+      background: rgba(69, 87, 99, .15);
+      border: 1.5px solid rgba(69, 87, 99, .15);
+      border-radius: 2px;
+      overflow: hidden
+    }
+
+    .pq__card {
+      background: var(--blanco);
+      padding: 2.5rem 2rem;
+      transition: background .3s;
+      position: relative
+    }
+
+    .pq__card::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--terracota), var(--azul));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .4s var(--ease)
+    }
+
+    .pq__card:hover {
+      background: var(--crema)
+    }
+
+    .pq__card:hover::after {
+      transform: scaleX(1)
+    }
+
+    .pq__num {
+      font-family: var(--ff-display);
+      font-size: 3.5rem;
+      font-weight: 300;
+      color: rgba(69, 87, 99, .18);
+      line-height: 1;
+      margin-bottom: 1.25rem;
+      transition: color .3s
+    }
+
+    .pq__card:hover .pq__num {
+      color: rgba(152, 113, 34, .25)
+    }
+
+    .pq__title {
+      font-family: var(--ff-display);
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--azul-osc);
+      margin-bottom: 1rem;
+      line-height: 1.3
+    }
+
+    .pq__body {
+      font-size: .875rem;
+      font-weight: 300;
+      color: var(--text-soft);
+      line-height: 1.85
+    }
 
     /* ============================================================
        MÉTODO
     ============================================================ */
-    #metodo{padding:var(--section-y) 0;background:var(--azul-osc);position:relative;overflow:hidden}
-    #metodo::before{content:"";position:absolute;top:-30%;right:-10%;width:60%;height:80%;background:radial-gradient(ellipse,rgba(69,87,99,.15) 0%,transparent 70%);pointer-events:none}
-    .met__pattern{position:absolute;bottom:0;left:0;right:0;height:120px;opacity:.06;pointer-events:none;overflow:hidden}
-    .met__pattern svg{width:100%;height:100%}
-    .met__title{font-family:var(--ff-display);font-size:clamp(1.9rem,3.8vw,3rem);font-weight:300;line-height:1.15;color:var(--crema);letter-spacing:-.01em;margin-bottom:1.25rem}
-    .met__title em{font-style:italic;color:#c8b9a0}
-    .met__sub{font-size:.98rem;font-weight:300;color:rgba(245,239,234,.75);line-height:1.85;max-width:560px;margin-bottom:1.5rem}
-    .met__div{width:48px;height:1px;background:var(--terracota);margin:2rem 0 3rem}
-    .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
-    .pillar{padding:2.5rem 2rem;border:1px solid rgba(245,239,234,.06);transition:background .3s,border-color .3s;cursor:default}
-    .pillar:hover{background:rgba(245,239,234,.04);border-color:rgba(152,113,34,.25)}
-    .pillar__g{font-size:1.75rem;margin-bottom:1.25rem;opacity:.5;color:#c8b9a0;font-family:Georgia,serif;line-height:1}
-    .pillar__n{font-family:var(--ff-display);font-size:1.5rem;font-weight:400;color:var(--crema);margin-bottom:.75rem}
-    .pillar__t{font-size:.87rem;font-weight:300;color:rgba(245,239,234,.7);line-height:1.85}
+    #metodo {
+      padding: var(--section-y) 0;
+      background: var(--azul-osc);
+      position: relative;
+      overflow: hidden
+    }
+
+    #metodo::before {
+      content: "";
+      position: absolute;
+      top: -30%;
+      right: -10%;
+      width: 60%;
+      height: 80%;
+      background: radial-gradient(ellipse, rgba(69, 87, 99, .15) 0%, transparent 70%);
+      pointer-events: none
+    }
+
+    .met__pattern {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 120px;
+      opacity: .06;
+      pointer-events: none;
+      overflow: hidden
+    }
+
+    .met__pattern svg {
+      width: 100%;
+      height: 100%
+    }
+
+    .met__title {
+      font-family: var(--ff-display);
+      font-size: clamp(1.9rem, 3.8vw, 3rem);
+      font-weight: 300;
+      line-height: 1.15;
+      color: var(--crema);
+      letter-spacing: -.01em;
+      margin-bottom: 1.25rem
+    }
+
+    .met__title em {
+      font-style: italic;
+      color: #c8b9a0
+    }
+
+    .met__sub {
+      font-size: .98rem;
+      font-weight: 300;
+      color: rgba(245, 239, 234, .75);
+      line-height: 1.85;
+      max-width: 560px;
+      margin-bottom: 1.5rem
+    }
+
+    .met__div {
+      width: 48px;
+      height: 1px;
+      background: var(--terracota);
+      margin: 2rem 0 3rem
+    }
+
+    .pillars {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px
+    }
+
+    .pillar {
+      padding: 2.5rem 2rem;
+      border: 1px solid rgba(245, 239, 234, .06);
+      transition: background .3s, border-color .3s;
+      cursor: default
+    }
+
+    .pillar:hover {
+      background: rgba(245, 239, 234, .04);
+      border-color: rgba(152, 113, 34, .25)
+    }
+
+    .pillar__g {
+      font-size: 1.75rem;
+      margin-bottom: 1.25rem;
+      opacity: .5;
+      color: #c8b9a0;
+      font-family: Georgia, serif;
+      line-height: 1
+    }
+
+    .pillar__n {
+      font-family: var(--ff-display);
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--crema);
+      margin-bottom: .75rem
+    }
+
+    .pillar__t {
+      font-size: .87rem;
+      font-weight: 300;
+      color: rgba(245, 239, 234, .7);
+      line-height: 1.85
+    }
 
     /* ============================================================
        CTA BAND
     ============================================================ */
-    .cta-band{background:linear-gradient(135deg,#5a4215 0%,var(--terracota) 50%,#6b4b10 100%);padding:clamp(3.5rem,6vw,5rem) 0;text-align:center}
-    .cta-band__t{font-family:var(--ff-display);font-size:clamp(1.7rem,3.2vw,2.7rem);font-weight:300;line-height:1.2;color:var(--crema);max-width:640px;margin:.5rem auto 1rem}
-    .cta-band__s{font-size:.95rem;font-weight:300;color:rgba(245,239,234,.85);margin-bottom:2.25rem}
-    .cta-band__a{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+    .cta-band {
+      background: linear-gradient(135deg, #5a4215 0%, var(--terracota) 50%, #6b4b10 100%);
+      padding: clamp(3.5rem, 6vw, 5rem) 0;
+      text-align: center
+    }
+
+    .cta-band__t {
+      font-family: var(--ff-display);
+      font-size: clamp(1.7rem, 3.2vw, 2.7rem);
+      font-weight: 300;
+      line-height: 1.2;
+      color: var(--crema);
+      max-width: 640px;
+      margin: .5rem auto 1rem
+    }
+
+    .cta-band__s {
+      font-size: .95rem;
+      font-weight: 300;
+      color: rgba(245, 239, 234, .85);
+      margin-bottom: 2.25rem
+    }
+
+    .cta-band__a {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap
+    }
 
     /* ============================================================
        MENTORÍA 1:1
     ============================================================ */
-    #mentoria{padding:var(--section-y) 0;background:var(--blanco)}
-    .ment__grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
-    .ment__title{font-family:var(--ff-display);font-size:clamp(2rem,3.8vw,3rem);font-weight:300;line-height:1.1;color:var(--azul-osc);margin-bottom:1rem}
-    .ment__sub{font-family:var(--ff-cita);font-size:1.05rem;font-style:italic;font-weight:400;color:var(--azul);line-height:1.6}
-    .ment__div{width:48px;height:1px;background:var(--terracota);margin:2rem 0}
-    .ment__body{font-size:.9rem;font-weight:300;color:var(--text-soft);line-height:1.9}
-    .ment__body p+p{margin-top:1.1rem}
-    .ment__body strong{color:var(--azul-osc);font-weight:500}
-    .inc__list{margin-top:2rem;display:flex;flex-direction:column;gap:.85rem}
-    .inc__list li{display:flex;align-items:flex-start;gap:.85rem;font-size:.875rem;font-weight:300;color:var(--text-soft);line-height:1.65}
-    .inc__list li::before{content:"—";color:var(--terracota);flex-shrink:0;font-size:.72rem;margin-top:.18rem}
-    .price__box{background:linear-gradient(135deg,var(--crema) 0%,var(--beige) 100%);border:1px solid rgba(69,87,99,.18);padding:2.25rem;border-radius:4px;margin-top:2.5rem}
-    .price__orig{font-size:.82rem;color:var(--text-light);text-decoration:line-through;margin-bottom:.25rem}
-    .price__cur{font-family:var(--ff-display);font-size:3rem;font-weight:300;color:var(--azul-osc);line-height:1;margin-bottom:.4rem}
-    .price__badge{display:inline-flex;align-items:center;gap:6px;background:var(--terracota);color:#fff;font-size:.63rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:1px;margin-bottom:1.25rem}
-    .price__opts{font-size:.8rem;font-weight:300;color:var(--text-soft);line-height:1.75;margin-bottom:1.75rem}
-    .ment__vis{position:sticky;top:5.5rem}
-    .ment__iw{border-radius:4px;overflow:hidden;aspect-ratio:4/5;position:relative}
-    .ment__iw img{width:100%;height:100%;object-fit:cover;object-position:center top;filter:saturate(.82)}
-    .ment__ic{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(26,54,54,.9) 0%,transparent 100%);padding:2.5rem 1.75rem 1.75rem}
-    .ment__ic p{font-family:var(--ff-cita);font-size:1.05rem;font-style:italic;color:rgba(245,239,234,.92);line-height:1.55}
-    .signals{margin-top:1.5rem;padding:1.5rem;background:linear-gradient(135deg,rgba(69,87,99,.06) 0%,rgba(26,54,54,.04) 100%);border-radius:4px;border:1px solid rgba(69,87,99,.2)}
-    .signals ul{display:flex;flex-direction:column;gap:.65rem;margin-top:.75rem}
-    .signals li{font-size:.83rem;font-weight:300;color:var(--text-soft);padding-left:1rem;border-left:2px solid var(--azul);line-height:1.55}
+    #mentoria {
+      padding: var(--section-y) 0;
+      background: var(--blanco)
+    }
+
+    .ment__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start
+    }
+
+    .ment__title {
+      font-family: var(--ff-display);
+      font-size: clamp(2rem, 3.8vw, 3rem);
+      font-weight: 300;
+      line-height: 1.1;
+      color: var(--azul-osc);
+      margin-bottom: 1rem
+    }
+
+    .ment__sub {
+      font-family: var(--ff-cita);
+      font-size: 1.05rem;
+      font-style: italic;
+      font-weight: 400;
+      color: var(--azul);
+      line-height: 1.6
+    }
+
+    .ment__div {
+      width: 48px;
+      height: 1px;
+      background: var(--terracota);
+      margin: 2rem 0
+    }
+
+    .ment__body {
+      font-size: .9rem;
+      font-weight: 300;
+      color: var(--text-soft);
+      line-height: 1.9
+    }
+
+    .ment__body p+p {
+      margin-top: 1.1rem
+    }
+
+    .ment__body strong {
+      color: var(--azul-osc);
+      font-weight: 500
+    }
+
+    .inc__list {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: .85rem
+    }
+
+    .inc__list li {
+      display: flex;
+      align-items: flex-start;
+      gap: .85rem;
+      font-size: .875rem;
+      font-weight: 300;
+      color: var(--text-soft);
+      line-height: 1.65
+    }
+
+    .inc__list li::before {
+      content: "—";
+      color: var(--terracota);
+      flex-shrink: 0;
+      font-size: .72rem;
+      margin-top: .18rem
+    }
+
+    .price__box {
+      background: linear-gradient(135deg, var(--crema) 0%, var(--beige) 100%);
+      border: 1px solid rgba(69, 87, 99, .18);
+      padding: 2.25rem;
+      border-radius: 4px;
+      margin-top: 2.5rem
+    }
+
+    .price__orig {
+      font-size: .82rem;
+      color: var(--text-light);
+      text-decoration: line-through;
+      margin-bottom: .25rem
+    }
+
+    .price__cur {
+      font-family: var(--ff-display);
+      font-size: 3rem;
+      font-weight: 300;
+      color: var(--azul-osc);
+      line-height: 1;
+      margin-bottom: .4rem
+    }
+
+    .price__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--terracota);
+      color: #fff;
+      font-size: .63rem;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 1px;
+      margin-bottom: 1.25rem
+    }
+
+    .price__opts {
+      font-size: .8rem;
+      font-weight: 300;
+      color: var(--text-soft);
+      line-height: 1.75;
+      margin-bottom: 1.75rem
+    }
+
+    .ment__vis {
+      position: sticky;
+      top: 5.5rem
+    }
+
+    .ment__iw {
+      border-radius: 4px;
+      overflow: hidden;
+      aspect-ratio: 4/5;
+      position: relative
+    }
+
+    .ment__iw img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      filter: saturate(.82)
+    }
+
+    .ment__ic {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(26, 54, 54, .9) 0%, transparent 100%);
+      padding: 2.5rem 1.75rem 1.75rem
+    }
+
+    .ment__ic p {
+      font-family: var(--ff-cita);
+      font-size: 1.05rem;
+      font-style: italic;
+      color: rgba(245, 239, 234, .92);
+      line-height: 1.55
+    }
+
+    .signals {
+      margin-top: 1.5rem;
+      padding: 1.5rem;
+      background: linear-gradient(135deg, rgba(69, 87, 99, .06) 0%, rgba(26, 54, 54, .04) 100%);
+      border-radius: 4px;
+      border: 1px solid rgba(69, 87, 99, .2)
+    }
+
+    .signals ul {
+      display: flex;
+      flex-direction: column;
+      gap: .65rem;
+      margin-top: .75rem
+    }
+
+    .signals li {
+      font-size: .83rem;
+      font-weight: 300;
+      color: var(--text-soft);
+      padding-left: 1rem;
+      border-left: 2px solid var(--azul);
+      line-height: 1.55
+    }
 
     /* FAQ */
-    .faq__list{margin-top:2.5rem}
-    .faq__item{border-bottom:1px solid rgba(69,87,99,.15);padding:1.25rem 0}
-    .faq__q{display:flex;justify-content:space-between;align-items:flex-start;cursor:pointer;gap:1rem}
-    .faq__q span{font-size:.875rem;font-weight:500;color:var(--text-main);line-height:1.5}
-    .faq__icon{flex-shrink:0;width:20px;height:20px;border:1px solid rgba(69,87,99,.25);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem;color:var(--terracota);transition:transform .3s;margin-top:2px}
-    .faq__item.open .faq__icon{transform:rotate(45deg)}
-    .faq__a{font-size:.85rem;font-weight:300;color:var(--text-soft);line-height:1.8;max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s ease}
-    .faq__item.open .faq__a{max-height:300px;padding-top:.85rem}
+    .faq__list {
+      margin-top: 2.5rem
+    }
+
+    .faq__item {
+      border-bottom: 1px solid rgba(69, 87, 99, .15);
+      padding: 1.25rem 0
+    }
+
+    .faq__q {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      cursor: pointer;
+      gap: 1rem
+    }
+
+    .faq__q span {
+      font-size: .875rem;
+      font-weight: 500;
+      color: var(--text-main);
+      line-height: 1.5
+    }
+
+    .faq__icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      border: 1px solid rgba(69, 87, 99, .25);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .8rem;
+      color: var(--terracota);
+      transition: transform .3s;
+      margin-top: 2px
+    }
+
+    .faq__item.open .faq__icon {
+      transform: rotate(45deg)
+    }
+
+    .faq__a {
+      font-size: .85rem;
+      font-weight: 300;
+      color: var(--text-soft);
+      line-height: 1.8;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s ease, padding .3s ease
+    }
+
+    .faq__item.open .faq__a {
+      max-height: 300px;
+      padding-top: .85rem
+    }
 
     /* ============================================================
        RETIRO SERENZA
     ============================================================ */
-    #retiro{
-  padding:var(--section-y) 0;
-  background:linear-gradient(180deg,var(--azul-osc) 0%,#1e3f3f 60%,#213d3d 100%);
-  position:relative;
-  overflow:hidden;
-}
-#retiro::before{
-  content:"";
-  position:absolute;inset:0;
-  background:radial-gradient(ellipse 80% 60% at 110% 20%, rgba(152,113,34,.07) 0%, transparent 60%),
-             radial-gradient(ellipse 60% 80% at -10% 80%, rgba(69,87,99,.15) 0%, transparent 55%);
-  pointer-events:none;
-}
-    .ret__tag{display:inline-flex;align-items:center;gap:8px;background:rgba(245,239,234,.06);color:rgba(245,239,234,.85);border:1px solid rgba(245,239,234,.12);font-size:.68rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:6px 14px;border-radius:1px;margin-bottom:1.5rem}
-.ret__dot{width:6px;height:6px;border-radius:50%;background:var(--terracota);animation:pulse 2s infinite}
-.ret__dates{font-family:var(--ff-display);font-size:1rem;font-weight:300;letter-spacing:.1em;color:var(--terracota);margin-bottom:.85rem}
-.ret__h{line-height:1;margin-bottom:.75rem}
-.ret__sub{font-family:var(--ff-cita);font-size:clamp(1rem,1.8vw,1.2rem);font-style:italic;font-weight:400;color:rgba(245,239,234,.72);line-height:1.65;max-width:560px;margin-bottom:4rem}
-.ret__promo{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center;margin-top:2.5rem}
-.ret__promo-img{border-radius:2px;overflow:hidden;aspect-ratio:16/9;border:1px solid rgba(245,239,234,.08)}
-.ret__promo-img img{width:100%;height:100%;object-fit:cover;filter:saturate(.82) brightness(.9);transition:transform .6s var(--ease)}
-.ret__promo-img:hover img{transform:scale(1.03)}
-.ret__body{font-size:.9rem;font-weight:300;color:rgba(245,239,234,.72);line-height:1.9;margin-bottom:1.5rem}
-.ret__pills{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.5rem 0 2rem}
-.ret__pills li{font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:rgba(200,185,160,.85);background:rgba(245,239,234,.05);border:1px solid rgba(245,239,234,.12);padding:.35rem .85rem;border-radius:1px}
-.ret__promo-ctas{display:flex;gap:1rem;flex-wrap:wrap}
-.ret__promo-note{font-size:.75rem;color:rgba(245,239,234,.5);margin-top:1.25rem}
-.ret__promo-note strong{color:var(--terracota)}
-.ret__promo-note a{color:var(--terracota);text-decoration:underline;text-underline-offset:3px}
+    #retiro {
+      padding: var(--section-y) 0;
+      background: linear-gradient(180deg, var(--azul-osc) 0%, #1e3f3f 60%, #213d3d 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    #retiro::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 110% 20%, rgba(152, 113, 34, .07) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 80% at -10% 80%, rgba(69, 87, 99, .15) 0%, transparent 55%);
+      pointer-events: none;
+    }
+
+    .ret__tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(245, 239, 234, .06);
+      color: rgba(245, 239, 234, .85);
+      border: 1px solid rgba(245, 239, 234, .12);
+      font-size: .68rem;
+      font-weight: 500;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 1px;
+      margin-bottom: 1.5rem
+    }
+
+    .ret__dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--terracota);
+      animation: pulse 2s infinite
+    }
+
+    .ret__dates {
+      font-family: var(--ff-display);
+      font-size: 1rem;
+      font-weight: 300;
+      letter-spacing: .1em;
+      color: var(--terracota);
+      margin-bottom: .85rem
+    }
+
+    .ret__h {
+      line-height: 1;
+      margin-bottom: .75rem
+    }
+
+    .ret__sub {
+      font-family: var(--ff-cita);
+      font-size: clamp(1rem, 1.8vw, 1.2rem);
+      font-style: italic;
+      font-weight: 400;
+      color: rgba(245, 239, 234, .72);
+      line-height: 1.65;
+      max-width: 560px;
+      margin-bottom: 4rem
+    }
+
+    .ret__promo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: center;
+      margin-top: 2.5rem
+    }
+
+    .ret__promo-img {
+      border-radius: 2px;
+      overflow: hidden;
+      aspect-ratio: 16/9;
+      border: 1px solid rgba(245, 239, 234, .08)
+    }
+
+    .ret__promo-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(.82) brightness(.9);
+      transition: transform .6s var(--ease)
+    }
+
+    .ret__promo-img:hover img {
+      transform: scale(1.03)
+    }
+
+    .ret__body {
+      font-size: .9rem;
+      font-weight: 300;
+      color: rgba(245, 239, 234, .72);
+      line-height: 1.9;
+      margin-bottom: 1.5rem
+    }
+
+    .ret__pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      margin: 1.5rem 0 2rem
+    }
+
+    .ret__pills li {
+      font-size: .7rem;
+      font-weight: 500;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: rgba(200, 185, 160, .85);
+      background: rgba(245, 239, 234, .05);
+      border: 1px solid rgba(245, 239, 234, .12);
+      padding: .35rem .85rem;
+      border-radius: 1px
+    }
+
+    .ret__promo-ctas {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap
+    }
+
+    .ret__promo-note {
+      font-size: .75rem;
+      color: rgba(245, 239, 234, .5);
+      margin-top: 1.25rem
+    }
+
+    .ret__promo-note strong {
+      color: var(--terracota)
+    }
+
+    .ret__promo-note a {
+      color: var(--terracota);
+      text-decoration: underline;
+      text-underline-offset: 3px
+    }
+
     /* ============================================================
        SOBRE MÍ
     ============================================================ */
-    #sobre{padding:var(--section-y) 0;background:linear-gradient(180deg,var(--crema) 0%,var(--beige) 100%)}
-    .sobre__grid{display:grid;grid-template-columns:1fr 1.15fr;gap:6rem;align-items:start}
-    .sobre__iw{position:sticky;top:5.5rem}
-    .sobre__ii{position:relative}
-    .sobre__ii img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center top;border-radius:4px;filter:saturate(.82)}
-    .sobre__badge{position:absolute;bottom:-1.5rem;right:-1.5rem;background:var(--azul-osc);color:var(--crema);padding:1.25rem;border-radius:4px;text-align:center;min-width:130px}
-    .sobre__badge strong{font-family:var(--ff-display);font-size:2rem;font-weight:300;display:block;line-height:1;margin-bottom:.25rem;color:#c8b9a0}
-    .sobre__badge span{font-size:.67rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,239,234,.72)}
-    .sobre__stats{display:flex;gap:2.5rem;margin-top:3.5rem;padding-top:2.5rem;border-top:1px solid rgba(69,87,99,.2)}
-    .sobre__sv strong{font-family:var(--ff-display);font-size:2rem;font-weight:300;color:var(--terracota);display:block;line-height:1;margin-bottom:.2rem}
-    .sobre__sv span{font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--text-soft)}
-    .sobre__op{font-family:var(--ff-cita);font-size:clamp(1.2rem,2vw,1.7rem);font-weight:400;font-style:italic;color:var(--azul-osc);line-height:1.45;margin-bottom:2rem}
-    .sobre__body{font-size:.9rem;font-weight:300;color:var(--text-soft);line-height:1.95}
-    .sobre__body p+p{margin-top:1.25rem}
-    .sobre__body strong{color:var(--azul-osc);font-weight:500}
-    .form__g{margin-top:2.5rem;display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
-    .form__i{display:flex;align-items:flex-start;gap:.6rem;font-size:.8rem;font-weight:300;color:var(--text-soft);line-height:1.45}
-    .form__i::before{content:"";width:4px;height:4px;border-radius:50%;background:var(--terracota);flex-shrink:0;margin-top:.45rem}
+    #sobre {
+      padding: var(--section-y) 0;
+      background: linear-gradient(180deg, var(--crema) 0%, var(--beige) 100%)
+    }
+
+    .sobre__grid {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 6rem;
+      align-items: start
+    }
+
+    .sobre__iw {
+      position: sticky;
+      top: 5.5rem
+    }
+
+    .sobre__ii {
+      position: relative
+    }
+
+    .sobre__ii img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 4px;
+      filter: saturate(.82)
+    }
+
+    .sobre__badge {
+      position: absolute;
+      bottom: -1.5rem;
+      right: -1.5rem;
+      background: var(--azul-osc);
+      color: var(--crema);
+      padding: 1.25rem;
+      border-radius: 4px;
+      text-align: center;
+      min-width: 130px
+    }
+
+    .sobre__badge strong {
+      font-family: var(--ff-display);
+      font-size: 2rem;
+      font-weight: 300;
+      display: block;
+      line-height: 1;
+      margin-bottom: .25rem;
+      color: #c8b9a0
+    }
+
+    .sobre__badge span {
+      font-size: .67rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: rgba(245, 239, 234, .72)
+    }
+
+    .sobre__stats {
+      display: flex;
+      gap: 2.5rem;
+      margin-top: 3.5rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid rgba(69, 87, 99, .2)
+    }
+
+    .sobre__sv strong {
+      font-family: var(--ff-display);
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--terracota);
+      display: block;
+      line-height: 1;
+      margin-bottom: .2rem
+    }
+
+    .sobre__sv span {
+      font-size: .68rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--text-soft)
+    }
+
+    .sobre__op {
+      font-family: var(--ff-cita);
+      font-size: clamp(1.2rem, 2vw, 1.7rem);
+      font-weight: 400;
+      font-style: italic;
+      color: var(--azul-osc);
+      line-height: 1.45;
+      margin-bottom: 2rem
+    }
+
+    .sobre__body {
+      font-size: .9rem;
+      font-weight: 300;
+      color: var(--text-soft);
+      line-height: 1.95
+    }
+
+    .sobre__body p+p {
+      margin-top: 1.25rem
+    }
+
+    .sobre__body strong {
+      color: var(--azul-osc);
+      font-weight: 500
+    }
+
+    .form__g {
+      margin-top: 2.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .75rem
+    }
+
+    .form__i {
+      display: flex;
+      align-items: flex-start;
+      gap: .6rem;
+      font-size: .8rem;
+      font-weight: 300;
+      color: var(--text-soft);
+      line-height: 1.45
+    }
+
+    .form__i::before {
+      content: "";
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--terracota);
+      flex-shrink: 0;
+      margin-top: .45rem
+    }
 
     /* ============================================================
        TESTIMONIOS
     ============================================================ */
-    #testi{padding:var(--section-y) 0;background:linear-gradient(135deg,var(--azul-osc) 0%,#213d3d 100%)}
-    .testi__title{font-family:var(--ff-display);font-size:clamp(2rem,3.5vw,3rem);font-weight:300;line-height:1.15;color:var(--crema)}
-    .testi__title em{font-style:italic;color:#c8b9a0}
-    .testi__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3.5rem}
-    .testi__card{background:rgba(245,239,234,.06);border:1px solid rgba(245,239,234,.1);padding:2.25rem 2rem;border-radius:4px;transition:background .3s,border-color .3s}
-    .testi__card:hover{background:rgba(245,239,234,.1);border-color:rgba(152,113,34,.3)}
-    .testi__q{font-family:var(--ff-cita);font-size:1.05rem;font-style:italic;color:rgba(245,239,234,.88);line-height:1.65;margin-bottom:1.75rem}
-    .testi__q::before{content:"\201C";font-size:3rem;line-height:0;vertical-align:-1rem;color:#c8b9a0;margin-right:.1rem}
-    .testi__f{display:flex;align-items:center;gap:.85rem;margin-top:1.75rem}
-    .testi__av{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--terracota),#7a5b1c);display:flex;align-items:center;justify-content:center;font-family:var(--ff-display);font-size:.95rem;color:#fff;flex-shrink:0}
-    .testi__name{font-size:.82rem;font-weight:500;color:rgba(245,239,234,.9)}
-    .testi__role{font-size:.7rem;color:rgba(245,239,234,.65);margin-top:2px}
+    #testi {
+      padding: var(--section-y) 0;
+      background: linear-gradient(135deg, var(--azul-osc) 0%, #213d3d 100%)
+    }
+
+    .testi__title {
+      font-family: var(--ff-display);
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 300;
+      line-height: 1.15;
+      color: var(--crema)
+    }
+
+    .testi__title em {
+      font-style: italic;
+      color: #c8b9a0
+    }
+
+    .testi__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3.5rem
+    }
+
+    .testi__card {
+      background: rgba(245, 239, 234, .06);
+      border: 1px solid rgba(245, 239, 234, .1);
+      padding: 2.25rem 2rem;
+      border-radius: 4px;
+      transition: background .3s, border-color .3s
+    }
+
+    .testi__card:hover {
+      background: rgba(245, 239, 234, .1);
+      border-color: rgba(152, 113, 34, .3)
+    }
+
+    .testi__q {
+      font-family: var(--ff-cita);
+      font-size: 1.05rem;
+      font-style: italic;
+      color: rgba(245, 239, 234, .88);
+      line-height: 1.65;
+      margin-bottom: 1.75rem
+    }
+
+    .testi__q::before {
+      content: "\201C";
+      font-size: 3rem;
+      line-height: 0;
+      vertical-align: -1rem;
+      color: #c8b9a0;
+      margin-right: .1rem
+    }
+
+    .testi__f {
+      display: flex;
+      align-items: center;
+      gap: .85rem;
+      margin-top: 1.75rem
+    }
+
+    .testi__av {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--terracota), #7a5b1c);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--ff-display);
+      font-size: .95rem;
+      color: #fff;
+      flex-shrink: 0
+    }
+
+    .testi__name {
+      font-size: .82rem;
+      font-weight: 500;
+      color: rgba(245, 239, 234, .9)
+    }
+
+    .testi__role {
+      font-size: .7rem;
+      color: rgba(245, 239, 234, .65);
+      margin-top: 2px
+    }
 
     /* ============================================================
        CIERRE
     ============================================================ */
-    #cierre{padding:clamp(6rem,12vw,10rem) 0;background:var(--blanco);text-align:center}
-    .cierre__t{font-family:var(--ff-display);font-size:clamp(2rem,4.2vw,3.6rem);font-weight:300;line-height:1.15;color:var(--azul-osc);max-width:680px;margin:1rem auto 1.25rem}
-    .cierre__t em{font-style:italic;color:var(--terracota)}
-    .cierre__s{font-size:1rem;font-weight:300;color:var(--text-soft);line-height:1.8;max-width:500px;margin:0 auto 2.5rem}
-    .cierre__a{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
-    .cierre__div{width:1px;height:100px;background:rgba(69,87,99,.2);margin:4rem auto}
-    .cierre__ph{font-family:var(--ff-cita);font-size:clamp(1.1rem,2vw,1.4rem);font-style:italic;font-weight:400;color:var(--text-soft);max-width:420px;margin:0 auto;line-height:1.65}
+    #cierre {
+      padding: clamp(6rem, 12vw, 10rem) 0;
+      background: var(--blanco);
+      text-align: center
+    }
+
+    .cierre__t {
+      font-family: var(--ff-display);
+      font-size: clamp(2rem, 4.2vw, 3.6rem);
+      font-weight: 300;
+      line-height: 1.15;
+      color: var(--azul-osc);
+      max-width: 680px;
+      margin: 1rem auto 1.25rem
+    }
+
+    .cierre__t em {
+      font-style: italic;
+      color: var(--terracota)
+    }
+
+    .cierre__s {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--text-soft);
+      line-height: 1.8;
+      max-width: 500px;
+      margin: 0 auto 2.5rem
+    }
+
+    .cierre__a {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap
+    }
+
+    .cierre__div {
+      width: 1px;
+      height: 100px;
+      background: rgba(69, 87, 99, .2);
+      margin: 4rem auto
+    }
+
+    .cierre__ph {
+      font-family: var(--ff-cita);
+      font-size: clamp(1.1rem, 2vw, 1.4rem);
+      font-style: italic;
+      font-weight: 400;
+      color: var(--text-soft);
+      max-width: 420px;
+      margin: 0 auto;
+      line-height: 1.65
+    }
 
     /* ============================================================
        FOOTER
     ============================================================ */
-    footer{background:var(--azul-osc);color:var(--crema);padding:4rem 0 2.5rem}
-    .foot__g{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(245,239,234,.08)}
-    .foot__logo{font-family:var(--ff-cita);font-size:1.3rem;font-style:italic;font-weight:400;margin-bottom:.75rem}
-    .foot__logo em{color:var(--terracota);font-style:normal}
-    .foot__tag{font-size:.82rem;font-weight:300;color:rgba(245,239,234,.62);line-height:1.75;max-width:240px}
-    .foot__col h3{font-size:.65rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:#c8b9a0;margin-bottom:1.25rem}
-    .foot__links{display:flex;flex-direction:column;gap:.65rem}
-    .foot__links a{font-size:.83rem;font-weight:300;color:rgba(245,239,234,.7);transition:color .25s}
-    .foot__links a:hover{color:var(--crema)}
-    .foot__bot{display:flex;justify-content:space-between;align-items:center;padding-top:2rem;flex-wrap:wrap;gap:1rem}
-    .foot__copy{font-size:.72rem;color:rgba(245,239,234,.52)}
-    .foot__leg{display:flex;gap:1.5rem}
-    .foot__leg a{font-size:.72rem;color:rgba(245,239,234,.52);transition:color .25s}
-    .foot__leg a:hover{color:rgba(245,239,234,.85)}
-    .foot__built{font-size:.68rem;color:rgba(245,239,234,.42);margin-top:1rem;text-align:center}
-    .foot__built a{color:rgba(245,239,234,.58);transition:color .25s}
-    .foot__built a:hover{color:rgba(245,239,234,.85)}
+    footer {
+      background: var(--azul-osc);
+      color: var(--crema);
+      padding: 4rem 0 2.5rem
+    }
+
+    .foot__g {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(245, 239, 234, .08)
+    }
+
+    .foot__logo {
+      font-family: var(--ff-cita);
+      font-size: 1.3rem;
+      font-style: italic;
+      font-weight: 400;
+      margin-bottom: .75rem
+    }
+
+    .foot__logo em {
+      color: var(--terracota);
+      font-style: normal
+    }
+
+    .foot__tag {
+      font-size: .82rem;
+      font-weight: 300;
+      color: rgba(245, 239, 234, .62);
+      line-height: 1.75;
+      max-width: 240px
+    }
+
+    .foot__col h3 {
+      font-size: .65rem;
+      font-weight: 500;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: #c8b9a0;
+      margin-bottom: 1.25rem
+    }
+
+    .foot__links {
+      display: flex;
+      flex-direction: column;
+      gap: .65rem
+    }
+
+    .foot__links a {
+      font-size: .83rem;
+      font-weight: 300;
+      color: rgba(245, 239, 234, .7);
+      transition: color .25s
+    }
+
+    .foot__links a:hover {
+      color: var(--crema)
+    }
+
+    .foot__bot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 2rem;
+      flex-wrap: wrap;
+      gap: 1rem
+    }
+
+    .foot__copy {
+      font-size: .72rem;
+      color: rgba(245, 239, 234, .52)
+    }
+
+    .foot__leg {
+      display: flex;
+      gap: 1.5rem
+    }
+
+    .foot__leg a {
+      font-size: .72rem;
+      color: rgba(245, 239, 234, .52);
+      transition: color .25s
+    }
+
+    .foot__leg a:hover {
+      color: rgba(245, 239, 234, .85)
+    }
+
+    .foot__built {
+      font-size: .68rem;
+      color: rgba(245, 239, 234, .42);
+      margin-top: 1rem;
+      text-align: center
+    }
+
+    .foot__built a {
+      color: rgba(245, 239, 234, .58);
+      transition: color .25s
+    }
+
+    .foot__built a:hover {
+      color: rgba(245, 239, 234, .85)
+    }
 
     /* ============================================================
        WA FLOAT
     ============================================================ */
-    .wa-f{position:fixed;bottom:2rem;right:2rem;z-index:90;width:52px;height:52px;background:#3d6b4a;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(61,107,74,.35);transition:transform .25s var(--ease),box-shadow .25s var(--ease)}
-    .wa-f:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(61,107,74,.5)}
-    .wa-f svg{width:26px;height:26px;fill:#fff}
+    .wa-f {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 90;
+      width: 52px;
+      height: 52px;
+      background: #3d6b4a;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(61, 107, 74, .35);
+      transition: transform .25s var(--ease), box-shadow .25s var(--ease)
+    }
+
+    .wa-f:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 28px rgba(61, 107, 74, .5)
+    }
+
+    .wa-f svg {
+      width: 26px;
+      height: 26px;
+      fill: #fff
+    }
 
     /* ============================================================
        ANIMACIONES
     ============================================================ */
-    .fu{opacity:0;transform:translateY(24px);transition:opacity .65s var(--ease),transform .65s var(--ease)}
-    .fu.vis{opacity:1;transform:translateY(0)}
-    .fu.d1{transition-delay:.1s}
-    .fu.d2{transition-delay:.2s}
-    .fu.d3{transition-delay:.3s}
+    .fu {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity .65s var(--ease), transform .65s var(--ease)
+    }
+
+    .fu.vis {
+      opacity: 1;
+      transform: translateY(0)
+    }
+
+    .fu.d1 {
+      transition-delay: .1s
+    }
+
+    .fu.d2 {
+      transition-delay: .2s
+    }
+
+    .fu.d3 {
+      transition-delay: .3s
+    }
 
     /* ============================================================
        RESPONSIVE
     ============================================================ */
-    @media(max-width:1024px){
-      .ment__grid{grid-template-columns:1fr;gap:3rem}
-      .ment__vis{position:static}
-      .ment__iw{aspect-ratio:16/9}
-      .sobre__grid{grid-template-columns:1fr;gap:3rem}
-      .sobre__iw{position:static}
-      .sobre__ii img{aspect-ratio:16/9}
-      .sobre__badge{right:1rem;bottom:-1rem}
+    @media(max-width:1024px) {
+      .ment__grid {
+        grid-template-columns: 1fr;
+        gap: 3rem
+      }
+
+      .ment__vis {
+        position: static
+      }
+
+      .ment__iw {
+        aspect-ratio: 16/9
+      }
+
+      .sobre__grid {
+        grid-template-columns: 1fr;
+        gap: 3rem
+      }
+
+      .sobre__iw {
+        position: static
+      }
+
+      .sobre__ii img {
+        aspect-ratio: 16/9
+      }
+
+      .sobre__badge {
+        right: 1rem;
+        bottom: -1rem
+      }
     }
-    @media(max-width:900px){
-      #hero{grid-template-columns:1fr}
-      .hero__visual{height:70vw;max-height:520px}
-      .hero__photo{min-height:unset;height:100%}
-      .hero__content{padding-top:calc(2rem + 72px)}
-      .hero__content::after{display:none}
-      .pq__grid,.pillars,.testi__grid{grid-template-columns:1fr}
-      .foot__g{grid-template-columns:1fr;gap:2rem}
-      .nav__links{display:none}
-      .nav__hbg{display:flex}
-      .ret__promo{grid-template-columns:1fr;gap:2rem}
+
+    @media(max-width:900px) {
+      #hero {
+        grid-template-columns: 1fr
+      }
+
+      .hero__visual {
+        height: 70vw;
+        max-height: 520px
+      }
+
+      .hero__photo {
+        min-height: unset;
+        height: 100%
+      }
+
+      .hero__content {
+        padding-top: calc(2rem + 72px)
+      }
+
+      .hero__content::after {
+        display: none
+      }
+
+      .pq__grid,
+      .pillars,
+      .testi__grid {
+        grid-template-columns: 1fr
+      }
+
+      .foot__g {
+        grid-template-columns: 1fr;
+        gap: 2rem
+      }
+
+      .nav__links {
+        display: none
+      }
+
+      .nav__hbg {
+        display: flex
+      }
+
+      .ret__promo {
+        grid-template-columns: 1fr;
+        gap: 2rem
+      }
     }
-    @media(max-width:640px){
-      .hero__actions,.cierre__a,.cta-band__a{flex-direction:column;align-items:center}
-      .hero__actions .btn,.cierre__a .btn,.cta-band__a .btn{width:100%;max-width:320px;justify-content:center}
-      .hero__stats{gap:1.75rem}
-      .form__g,.ret__promo-ctas{flex-direction:column}
-      .ret__promo-ctas .btn{width:100%;justify-content:center}
-      .sobre__stats{gap:1.5rem}
-      .foot__bot{flex-direction:column;text-align:center}
-      .trust__inner{gap:1.25rem}
-      .ment__title{font-size:clamp(1.6rem,6vw,2.2rem)}
-      .price__cur{font-size:2.2rem}
-      .price__box{padding:1.5rem}
-      .btn{white-space:normal;text-align:center;line-height:1.4}
-      .price__box .btn{width:100%;justify-content:center}
+
+    @media(max-width:640px) {
+
+      .hero__actions,
+      .cierre__a,
+      .cta-band__a {
+        flex-direction: column;
+        align-items: center
+      }
+
+      .hero__actions .btn,
+      .cierre__a .btn,
+      .cta-band__a .btn {
+        width: 100%;
+        max-width: 320px;
+        justify-content: center
+      }
+
+      .hero__stats {
+        gap: 1.75rem
+      }
+
+      .form__g,
+      .ret__promo-ctas {
+        flex-direction: column
+      }
+
+      .ret__promo-ctas .btn {
+        width: 100%;
+        justify-content: center
+      }
+
+      .sobre__stats {
+        gap: 1.5rem
+      }
+
+      .foot__bot {
+        flex-direction: column;
+        text-align: center
+      }
+
+      .trust__inner {
+        gap: 1.25rem
+      }
+
+      .ment__title {
+        font-size: clamp(1.6rem, 6vw, 2.2rem)
+      }
+
+      .price__cur {
+        font-size: 2.2rem
+      }
+
+      .price__box {
+        padding: 1.5rem
+      }
+
+      .btn {
+        white-space: normal;
+        text-align: center;
+        line-height: 1.4
+      }
+
+      .price__box .btn {
+        width: 100%;
+        justify-content: center
+      }
     }
   </style>
 </head>
+
 <body>
 
-<!-- ======================================================
+  <!-- ======================================================
      NAV
 ====================================================== -->
-<nav id="nav" class="hero-dark" role="navigation" aria-label="Navegación principal">
-  <div class="container">
-    <div class="nav__inner">
-      <a href="#" class="nav__logo" aria-label="Jenifer Tejedor inicio">Jenifer Tejedor<em>.</em></a>
-      <ul class="nav__links" role="list">
-        <li><a href="#pq">Para quién</a></li>
-        <li><a href="#mentoria">Mentoría</a></li>
-        <li><a href="/serenza/">Retiro</a></li>
-        <li><a href="#sobre">Sobre mí</a></li>
-        <li><a href="https://calendly.com/llamada-de-diagnostico-para-mentoria-1a1" target="_blank" rel="noopener noreferrer" class="nav__cta" onclick="trackCal('nav')">Reservar llamada</a></li>
-      </ul>
-      <button class="nav__hbg" id="hbg" aria-label="Abrir menú" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+  <nav id="nav" class="hero-dark" role="navigation" aria-label="Navegación principal">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="#" class="nav__logo" aria-label="Jenifer Tejedor inicio">Jenifer Tejedor<em>.</em></a>
+        <ul class="nav__links" role="list">
+          <li><a href="#pq">Para quién</a></li>
+          <li><a href="#mentoria">Mentoría</a></li>
+          <li><a href="/serenza.html">Retiro</a></li>
+          <li><a href="#sobre">Sobre mí</a></li>
+          <li><a href="https://calendly.com/llamada-de-diagnostico-para-mentoria-1a1" target="_blank"
+              rel="noopener noreferrer" class="nav__cta" onclick="trackCal('nav')">Reservar llamada</a></li>
+        </ul>
+        <button class="nav__hbg" id="hbg" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Overlay para cerrar menú al clic fuera -->
+  <div class="nav__overlay" id="navOverlay"></div>
+
+  <!-- Menú móvil — panel lateral -->
+  <div class="nav__mob" id="mobNav" role="dialog" aria-label="Menú móvil" aria-modal="true">
+    <button class="nav__mob-x" id="mobX" aria-label="Cerrar menú">×</button>
+    <p class="nav__mob-logo">Jenifer Tejedor<em>.</em></p>
+    <a href="#pq" onclick="closeMob()">Para quién</a>
+    <a href="#metodo" onclick="closeMob()">El método</a>
+    <a href="#mentoria" onclick="closeMob()">Mentoría</a>
+    <a href="/serenza/" onclick="closeMob()">Retiro SERENZA</a>
+    <a href="#sobre" onclick="closeMob()">Sobre mí</a>
+    <a href="https://calendly.com/jenifertejedor/llamada-de-diagnostico-para-mentoria-1a1" target="_blank"
+      rel="noopener noreferrer" class="btn nav__mob-cta" onclick="trackCal('mob');closeMob()">Reservar primera
+      conexión</a>
+    <div class="nav__mob-social">
+      <a href="https://instagram.com/jenitejedor" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://wa.me/34630121817" target="_blank" rel="noopener noreferrer">WhatsApp</a>
     </div>
   </div>
-</nav>
 
-<!-- Overlay para cerrar menú al clic fuera -->
-<div class="nav__overlay" id="navOverlay"></div>
-
-<!-- Menú móvil — panel lateral -->
-<div class="nav__mob" id="mobNav" role="dialog" aria-label="Menú móvil" aria-modal="true">
-  <button class="nav__mob-x" id="mobX" aria-label="Cerrar menú">×</button>
-  <p class="nav__mob-logo">Jenifer Tejedor<em>.</em></p>
-  <a href="#pq" onclick="closeMob()">Para quién</a>
-  <a href="#metodo" onclick="closeMob()">El método</a>
-  <a href="#mentoria" onclick="closeMob()">Mentoría</a>
-  <a href="/serenza/" onclick="closeMob()">Retiro SERENZA</a>
-  <a href="#sobre" onclick="closeMob()">Sobre mí</a>
-  <a href="https://calendly.com/jenifertejedor/llamada-de-diagnostico-para-mentoria-1a1" target="_blank" rel="noopener noreferrer" class="btn nav__mob-cta" onclick="trackCal('mob');closeMob()">Reservar primera conexión</a>
-  <div class="nav__mob-social">
-    <a href="https://instagram.com/jenitejedor" target="_blank" rel="noopener noreferrer">Instagram</a>
-    <a href="https://wa.me/34630121817" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-  </div>
-</div>
-
-<!-- ======================================================
+  <!-- ======================================================
      MAIN
 ====================================================== -->
-<main>
-  <!-- HERO OSCURO DE LUJO -->
-  <section id="hero" aria-label="Propuesta de valor">
-    <!-- Lado izquierdo: contenido -->
-    <div class="hero__content">
-      <div class="hero__badge">Acompañamiento sistémico · Barcelona</div>
-      <p class="hero__eyebrow">No es que no lo veas.</p>
-      <h1 class="hero__title">
-        Hay una forma de vivir<br>en la que ya no te reconoces.<br><em>Y aun así, la sigues sosteniendo.</em>
-      </h1>
-      <div class="hero__rule"></div>
-      <p class="hero__text">
-        No es falta de claridad.<br>
-        Es el sistema desde el que estás intentando sostener trabajo, relaciones y decisiones <strong>sin incluirte a ti.</strong><br>
-        Ahí es donde trabajamos.
-      </p>
-      <div class="hero__actions">
-        <a href="https://calendly.com/jenifertejedor/llamada-de-diagnostico-para-mentoria-1a1" target="_blank" rel="noopener noreferrer" class="btn btn--terra" onclick="trackCal('hero')">Reservar primera conexión</a>
-        <a href="/serenza/" class="btn btn--light" onclick="trackRet()">Ver retiro SERENZA</a>
-      </div>
-      <div class="hero__stats">
-        <div><span class="hero__sv">+5</span><span class="hero__sl">años de práctica</span></div>
-        <div><span class="hero__sv">+100</span><span class="hero__sl">mujeres acompañadas</span></div>
-        <div><span class="hero__sv">1</span><span class="hero__sl">retiro propio</span></div>
-      </div>
-    </div>
-
-    <!-- Lado derecho: imagen -->
-    <div class="hero__visual" aria-hidden="true">
-      <div class="hero__pw">
-        <img
-          src="img-hero.webp"
-          alt="Jenifer Tejedor"
-          loading="eager"
-          fetchpriority="high"
-          width="960"
-          height="1280"
-          class="hero__photo"
-        />
-      </div>
-      <div class="hero__card">
-        <p class="hero__cq">"No estás desbordada.<br>Estás funcionando desde el mismo sistema."</p>
-        <p class="hero__ca">Jenifer Tejedor</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- TRUST BAR -->
-  <div class="trust" role="complementary">
-    <div class="container">
-      <ul class="trust__inner" role="list">
-        <li class="trust__item"><span class="trust__dot" aria-hidden="true">◆</span> +5 años acompañando procesos</li>
-        <li class="trust__item"><span class="trust__dot" aria-hidden="true">◆</span> +100 mujeres acompañadas</li>
-        <li class="trust__item"><span class="trust__dot" aria-hidden="true">◆</span> Respiración funcional certificada</li>
-        <li class="trust__item"><span class="trust__dot" aria-hidden="true">◆</span> Thetahealing · Terapeuta emocional</li>
-        <li class="trust__item"><span class="trust__dot" aria-hidden="true">◆</span> Facilitadora de cacao ancestral</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- PARA QUIÉN -->
-  <section id="pq" aria-labelledby="pq-h">
-    <div class="container">
-      <div class="container--n" style="padding:0">
-        <p class="lbl fu">Reconocimiento</p>
-        <h2 id="pq-h" class="fu d1" style="font-family:var(--ff-display);font-size:clamp(2rem,4vw,3rem);font-weight:300;line-height:1.15;color:var(--azul-osc);">
-          Si algo aquí te resuena,<br>es porque ya lo estás viendo.
-        </h2>
-        <p class="fu d2" style="font-size:1rem;font-weight:300;color:var(--text-soft);line-height:1.85;max-width:540px;margin-top:1.25rem;">
-          No trabajo con quien empieza. Trabajo con quien ya ha hecho camino y sigue sosteniendo lo mismo.
+  <main>
+    <!-- HERO OSCURO DE LUJO -->
+    <section id="hero" aria-label="Propuesta de valor">
+      <!-- Lado izquierdo: contenido -->
+      <div class="hero__content">
+        <div class="hero__badge">Acompañamiento sistémico · Barcelona</div>
+        <p class="hero__eyebrow">No es que no lo veas.</p>
+        <h1 class="hero__title">
+          Hay una forma de vivir<br>en la que ya no te reconoces.<br><em>Y aun así, la sigues sosteniendo.</em>
+        </h1>
+        <div class="hero__rule"></div>
+        <p class="hero__text">
+          No es falta de claridad.<br>
+          Es el sistema desde el que estás intentando sostener trabajo, relaciones y decisiones <strong>sin incluirte a
+            ti.</strong><br>
+          Ahí es donde trabajamos.
         </p>
+        <div class="hero__actions">
+          <a href="https://calendly.com/jenifertejedor/llamada-de-diagnostico-para-mentoria-1a1" target="_blank"
+            rel="noopener noreferrer" class="btn btn--terra" onclick="trackCal('hero')">Reservar primera conexión</a>
+          <a href="/serenza/" class="btn btn--light" onclick="trackRet()">Ver retiro SERENZA</a>
+        </div>
+        <div class="hero__stats">
+          <div><span class="hero__sv">+5</span><span class="hero__sl">años de práctica</span></div>
+          <div><span class="hero__sv">+100</span><span class="hero__sl">mujeres acompañadas</span></div>
+          <div><span class="hero__sv">1</span><span class="hero__sl">retiro propio</span></div>
+        </div>
       </div>
-      <div class="pq__grid fu d3" role="list">
-        <div class="pq__card" role="listitem">
-          <p class="pq__num" aria-hidden="true">01</p>
-          <h3 class="pq__title">Sabes que no es por ahí</h3>
-          <p class="pq__body">Estás en una conversación, en tu trabajo, en una decisión… y hay algo dentro que te dice: esto no es. Lo ves. Lo sientes. Pero no dices nada. Sigues. Te adaptas. Cumples. Y luego te vas con esa sensación en el cuerpo de haberte fallado otra vez.</p>
+
+      <!-- Lado derecho: imagen -->
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__pw">
+          <img src="img-hero.webp" alt="Jenifer Tejedor" loading="eager" fetchpriority="high" width="960" height="1280"
+            class="hero__photo" />
         </div>
-        <div class="pq__card" role="listitem">
-          <p class="pq__num" aria-hidden="true">02</p>
-          <h3 class="pq__title">Te priorizas… a ratos</h3>
-          <p class="pq__body">Hay días en los que lo haces distinto. Te eliges. Pones un límite. Paras. Y lo notas. El cuerpo cambia. Pero no se sostiene. A los pocos días, vuelves a ceder, a decir que sí cuando es no, a colocarte después de todo lo demás. Y no entiendes por qué, si lo ves tan claro.</p>
+        <div class="hero__card">
+          <p class="hero__cq">"No estás desbordada.<br>Estás funcionando desde el mismo sistema."</p>
+          <p class="hero__ca">Jenifer Tejedor</p>
         </div>
-        <div class="pq__card" role="listitem">
-          <p class="pq__num" aria-hidden="true">03</p>
-          <h3 class="pq__title">Hay algo que tira de ti</h3>
-          <p class="pq__body">No es que no sepas hacerlo diferente. Es que, en el momento en el que vas a hacerlo, lo notas en el cuerpo. Se cierra. Se activa. Dudas. Y vuelves a lo conocido. A lo que ya no encaja… pero sabes sostener. No es consciente. Pero está dirigiendo más de lo que crees.</p>
-        </div>
+      </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <div class="trust" role="complementary">
+      <div class="container">
+        <ul class="trust__inner" role="list">
+          <li class="trust__item"><span class="trust__dot" aria-hidden="true">◆</span> +5 años acompañando procesos</li>
+          <li class="trust__item"><span class="trust__dot" aria-hidden="true">◆</span> +100 mujeres acompañadas</li>
+          <li class="trust__item"><span class="trust__dot" aria-hidden="true">◆</span> Respiración funcional certificada
+          </li>
+          <li class="trust__item"><span class="trust__dot" aria-hidden="true">◆</span> Thetahealing · Terapeuta
+            emocional</li>
+          <li class="trust__item"><span class="trust__dot" aria-hidden="true">◆</span> Facilitadora de cacao ancestral
+          </li>
+        </ul>
       </div>
     </div>
-  </section>
 
-  <!-- MÉTODO -->
-  <section id="metodo" aria-labelledby="met-h">
-    <div class="container">
-      <div class="met__pattern" aria-hidden="true">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,60 C150,90 350,20 600,60 C850,100 1050,20 1200,60 L1200,120 L0,120 Z" fill="rgba(245,239,234,1)"/>
-          <path d="M0,80 C200,40 400,100 600,80 C800,60 1000,100 1200,80 L1200,120 L0,120 Z" fill="rgba(245,239,234,.5)"/>
-        </svg>
-      </div>
-      <div class="container--n" style="padding:0">
-        <p class="lbl lbl--crema fu">El método</p>
-        <h2 id="met-h" class="met__title fu d1">No va de soltar o dejar ir.<br><em>Va de comprender qué pasa en ti cuando intentas sostenerlo… y no lo consigues.</em></h2>
-        <p class="met__sub fu d2">Hay un momento muy concreto: sabes lo que tienes que hacer, vas a hacerlo, y algo en ti cambia. Lo notas en el cuerpo. Dudas. Lo pospones. Te distraes con otra cosa. Y vuelves a lo mismo. No es falta de capacidad. Es lo que se activa en ti, de forma inconsciente, en ese punto. Ahí es donde trabajamos.</p>
-        <div class="met__div fu d2"></div>
-      </div>
-      <div class="pillars fu d3" role="list">
-        <div class="pillar" role="listitem">
-          <div class="pillar__g" aria-hidden="true">∿</div>
-          <h3 class="pillar__n">Regulación</h3>
-          <p class="pillar__t">En ese momento, tu sistema se activa. Se acelera, se cierra o se pone en alerta. Trabajamos sobre esa respuesta: respiración, activación y regulación. Porque si eso no cambia, vas a seguir saboteándote en el mismo punto.</p>
-        </div>
-        <div class="pillar" role="listitem">
-          <div class="pillar__g" aria-hidden="true">⬡</div>
-          <h3 class="pillar__n">Orden</h3>
-          <p class="pillar__t">No es lo que haces. Es el lugar que le das a cada cosa en tu vida. Trabajo, relaciones, exigencia. Cuando todo ocupa más espacio que tú, acabas sosteniendo una vida en la que tú no estás. Reordenamos prioridades para que dejes de ponerte después de todo lo demás.</p>
-        </div>
-        <div class="pillar" role="listitem">
-          <div class="pillar__g" aria-hidden="true">◎</div>
-          <h3 class="pillar__n">Coherencia</h3>
-          <p class="pillar__t">No se trata de hacerlo perfecto. Se trata de que, hagas lo que hagas, no sientas que te estás traicionando. Trabajamos hasta que lo que haces forme parte de una identidad encarnada y coherente.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA BAND -->
-  <div class="cta-band" role="complementary">
-    <div class="container">
-      <p class="lbl lbl--crema">Primera conexión sin coste</p>
-      <h2 class="cta-band__t">Antes de empezar, veo contigo en qué punto estás.</h2>
-      <p class="cta-band__s">Sin estructura de sesión. Sin compromiso. Solo claridad de si esto es para ti.</p>
-      <div class="cta-band__a">
-        <a href="https://calendly.com/llamada-de-diagnostico-para-mentoria-1a1" target="_blank" rel="noopener" class="btn btn--light" onclick="trackCal('band')">Reservar primera conexión</a>
-        <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20quiero%20saber%20mas%20sobre%20la%20mentoria" target="_blank" rel="noopener noreferrer" class="btn btn--wa" onclick="trackWA('band')">Escribir por WhatsApp</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- MENTORÍA 1:1 -->
-  <section id="mentoria" aria-labelledby="ment-h">
-    <div class="container">
-      <div class="ment__grid">
-        <div>
-          <p class="lbl fu">Proceso 1:1 · 3 meses</p>
-          <h2 id="ment-h" class="ment__title fu d1">Mentoría<br>Privada 1:1</h2>
-          <p class="ment__sub fu d2">Dejar de sostener tu vida desde el mismo lugar. Ocupar tu lugar en ella.</p>
-          <div class="ment__div"></div>
-          <div class="ment__body fu">
-            <p>No trabajamos lo que ves. Trabajamos lo que lo está sosteniendo.</p>
-            <p>Tu carga acumulada. Las incoherencias pequeñas que se han vuelto invisibles. El sistema nervioso que interpreta cada cambio como amenaza y te devuelve al lugar conocido aunque ya no encaje.</p>
-            <p><strong>No necesitas más disciplina. Necesitas menos carga interna.</strong></p>
-          </div>
-          <ul class="inc__list fu" aria-label="Qué incluye la mentoría">
-            <li>12 sesiones 1:1 (1 por semana durante 3 meses)</li>
-            <li>Primera conexión inicial — analizo tu momento, patrones y estructuro el proceso</li>
-            <li>Acompañamiento entre sesiones — cuando algo importante esté pasando, puedes escribirme</li>
-            <li>Trabajo directo sobre patrones — no solo los ves, los cambias</li>
-            <li>Reordenamiento de prioridades aplicado a tu vida real</li>
-            <li>Regulación aplicada — herramientas para que tu cuerpo no te saque del punto</li>
-            <li>Integración en trabajo, relaciones, decisiones, límites</li>
-            <li>Cacao como puente en momentos concretos (cuando aplica)</li>
-          </ul>
-          <div class="price__box fu">
-            <p class="price__orig">Valor del proceso: 1.888&euro;</p>
-            <p class="price__cur">1.200&euro;</p>
-            <span class="price__badge">Precio de lanzamiento · Tiempo limitado</span>
-            <p class="price__opts">Pago completo o en 2, 3 o 4 cuotas.<br>Primera cuota antes de iniciar. Última antes de finalizar.<br>Con firma de acuerdo de compromiso.</p>
-            <a href="https://calendly.com/jenifertejedor/llamada-de-diagnostico-para-mentoria-1a1" target="_blank" rel="noopener noreferrer" class="btn btn--p" style="width:100%;justify-content:center" onclick="trackCal('price')">Reservar primera conexión gratuita</a>
-          </div>
-          <div class="faq__list fu" aria-label="Preguntas frecuentes mentoría">
-            <div class="faq__item">
-              <div class="faq__q" role="button" tabindex="0" aria-expanded="false">
-                <span>¿Qué pasa en la primera conexión?</span>
-                <div class="faq__icon" aria-hidden="true">+</div>
-              </div>
-              <div class="faq__a" role="region">Antes de empezar, tenemos una primera conexión, no una sesión. Ahí veo contigo en qué punto estás, tu historia y lo que se repite. A partir de eso estructuro el proceso de forma personalizada.</div>
-            </div>
-            <div class="faq__item">
-              <div class="faq__q" role="button" tabindex="0" aria-expanded="false">
-                <span>¿Este proceso es para mí?</span>
-                <div class="faq__icon" aria-hidden="true">+</div>
-              </div>
-              <div class="faq__a" role="region">Es para mujeres que ya han hecho trabajo interno. Que ven lo que tienen que cambiar, pero no consiguen sostenerlo en su día a día.</div>
-            </div>
-            <div class="faq__item">
-              <div class="faq__q" role="button" tabindex="0" aria-expanded="false">
-                <span>¿Qué cambios noto en el primer mes?</span>
-                <div class="faq__icon" aria-hidden="true">+</div>
-              </div>
-              <div class="faq__a" role="region">Empiezas a ver tus patrones en el momento en el que ocurren. Dejas de reaccionar igual. Empiezas a priorizarte sin tanta resistencia. Y situaciones que antes repetías automáticamente empiezan a sentirse distintas.</div>
-            </div>
-          </div>
-        </div>
-        <div class="ment__vis fu d1">
-          <div class="ment__iw">
-            <img src="jenifer-tejedor.webp" alt="Jenifer Tejedor sesión de acompañamiento sistémico" loading="lazy" width="800" height="1000" />
-            <div class="ment__ic">
-              <p>"No necesitas más herramientas. Necesitas dejar de sostener tu vida desde el mismo sistema."</p>
-            </div>
-          </div>
-          <div class="signals">
-            <p class="lbl lbl--azul">Señales de que esto es para ti</p>
-            <ul>
-              <li>Ya has hecho trabajo interno. Entiendes lo que pasa. Pero tu sistema sigue respondiendo igual.</li>
-              <li>Priorizas tu trabajo, familia y relaciones antes que a ti misma, de forma sistemática</li>
-              <li>Sabes lo que necesitas pero en el momento de sostenerlo, te echas hacia atrás</li>
-              <li>Llevas tiempo funcionando bien pero desde un lugar que ya no es tuyo</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- RETIRO SERENZA -->
-  <section id="retiro" aria-labelledby="ret-h">
-    <div class="container">
-      <div class="ret__tag">
-        <span class="ret__dot" aria-hidden="true"></span>
-        Plazas limitadas · 12 mujeres · Primera edición
-      </div>
-      <p class="ret__dates">22–24 Mayo 2026 · Cardedeu, Barcelona</p>
-      <h2 id="ret-h" class="ret__h">
-  <img src="logo-serenza.webp" alt="SERENZA" width="400" height="106"
-    loading="lazy" decoding="async"
-    style="max-width:clamp(200px,40vw,400px);height:auto;" />
-</h2>
-      <p class="ret__sub">Tres días donde el orden que sostienes fuera se detiene<br>para que dentro… todo encuentre su lugar.</p>
-      <div class="ret__promo fu">
-        <div class="ret__promo-img">
-          <img src="retiro-1.webp" alt="Retiro SERENZA en Cardedeu, Barcelona" loading="lazy" width="900" height="506" srcset="retiro-1-480.webp 480w, retiro-1.webp 900w" sizes="(max-width:768px) 100vw, 50vw" />
-        </div>
-        <div class="ret__promo-body">
-          <p class="ret__body">No es un retiro de descanso.<br>Es una parada real donde el sistema baja, la percepción cambia y lo que llevas tiempo sin ver… aparece.</p>
-          <ul class="ret__pills" aria-label="Incluye">
-            <li>Alojamiento completo</li>
-            <li>Alimentación</li>
-            <li>Cacao ceremonial</li>
-            <li>Respiración guiada</li>
-            <li>Trabajo de patrones</li>
-            <li>Círculos de palabra</li>
-          </ul>
-          <div class="ret__promo-ctas">
-            <a href="/serenza/" class="btn btn--p" onclick="trackRet()">Ver el programa completo</a>
-            <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20retiro%20SERENZA" target="_blank" rel="noopener noreferrer" class="btn btn--wa" onclick="trackWA('retiro');trackRet()">Reservar plaza</a>
-          </div>
-          <p class="ret__promo-note">Sólo <strong>12 plazas</strong> · <a href="/serenza/" onclick="trackRet()">Ver todo el detalle</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SOBRE MÍ -->
-  <section id="sobre" aria-labelledby="sm-h">
-    <div class="container">
-      <div class="sobre__grid">
-        <div class="sobre__iw fu">
-          <div class="sobre__ii">
-            <img src="jenifer-tejedor-3.webp" alt="Jenifer Tejedor, acompañante sistémica en Barcelona" loading="lazy" width="700" height="933" />
-            <div class="sobre__badge"><strong>+100</strong><span>mujeres<br>acompañadas</span></div>
-          </div>
-          <div class="sobre__stats">
-            <div class="sobre__sv"><strong>+5</strong><span>años<br>práctica</span></div>
-            <div class="sobre__sv"><strong>1</strong><span>retiro<br>propio</span></div>
-            <div class="sobre__sv"><strong>5</strong><span>titulaciones<br>especializadas</span></div>
-          </div>
-        </div>
-        <div class="fu d1">
-          <p class="lbl">Sobre mí</p>
-          <h2 id="sm-h" style="font-family:var(--ff-display);font-size:clamp(1.8rem,3vw,2.5rem);font-weight:300;line-height:1.2;color:var(--azul-osc);margin-bottom:1.5rem">
-            No trabajo con lo que dices que te pasa. Trabajo con lo que lo está sosteniendo.
+    <!-- PARA QUIÉN -->
+    <section id="pq" aria-labelledby="pq-h">
+      <div class="container">
+        <div class="container--n" style="padding:0">
+          <p class="lbl fu">Reconocimiento</p>
+          <h2 id="pq-h" class="fu d1"
+            style="font-family:var(--ff-display);font-size:clamp(2rem,4vw,3rem);font-weight:300;line-height:1.15;color:var(--azul-osc);">
+            Si algo aquí te resuena,<br>es porque ya lo estás viendo.
           </h2>
-          <p class="sobre__op">"Hay un punto en el que ya no falta información.<br>Falta estructura interna para sostenerla."</p>
-          <div class="sobre__body">
-            <p>Mi trabajo nace ahí. No en la teoría. No en el desarrollo personal. En el momento en el que ves lo que tienes que hacer y aun así no lo haces.</p>
-            <p>Yo estuve ahí. Una ruptura me desordenó por completo. No era solo la relación. Era todo lo que se sostenía desde ese lugar. Identidad. Dirección. Forma de vivir. Y en ese punto entendí algo que no se enseña: <strong>no es falta de claridad. Es falta de regulación para sostenerla.</strong></p>
-            <p>Desde entonces, todo mi trabajo se construye sobre eso. Acompaño a mujeres que ya han hecho trabajo interno. Que entienden. Que han ido a terapia. Que han probado distintas herramientas. Y que, aun así, siguen repitiendo lo mismo. No por falta de capacidad. Sino porque <strong>su sistema sigue funcionando igual.</strong></p>
-            <p>El mar no es un recurso visual en mi vida. Es estructura. El surf me enfrenta constantemente a lo que no controlo. A sostenerme sin rigidez. A leer el sistema en tiempo real. <strong>Eso define también cómo acompaño.</strong></p>
+          <p class="fu d2"
+            style="font-size:1rem;font-weight:300;color:var(--text-soft);line-height:1.85;max-width:540px;margin-top:1.25rem;">
+            No trabajo con quien empieza. Trabajo con quien ya ha hecho camino y sigue sosteniendo lo mismo.
+          </p>
+        </div>
+        <div class="pq__grid fu d3" role="list">
+          <div class="pq__card" role="listitem">
+            <p class="pq__num" aria-hidden="true">01</p>
+            <h3 class="pq__title">Sabes que no es por ahí</h3>
+            <p class="pq__body">Estás en una conversación, en tu trabajo, en una decisión… y hay algo dentro que te
+              dice: esto no es. Lo ves. Lo sientes. Pero no dices nada. Sigues. Te adaptas. Cumples. Y luego te vas con
+              esa sensación en el cuerpo de haberte fallado otra vez.</p>
           </div>
-          <p class="lbl lbl--oliva" style="margin-top:2.5rem">Formación</p>
-          <div class="form__g">
-            <div class="form__i">Instructora de respiración funcional</div>
-            <div class="form__i">Thetahealer</div>
-            <div class="form__i">Terapeuta emocional</div>
-            <div class="form__i">Herbolaria espiritual</div>
-            <div class="form__i" style="grid-column:span 2">Facilitadora de ceremonias de cacao ancestral</div>
+          <div class="pq__card" role="listitem">
+            <p class="pq__num" aria-hidden="true">02</p>
+            <h3 class="pq__title">Te priorizas… a ratos</h3>
+            <p class="pq__body">Hay días en los que lo haces distinto. Te eliges. Pones un límite. Paras. Y lo notas. El
+              cuerpo cambia. Pero no se sostiene. A los pocos días, vuelves a ceder, a decir que sí cuando es no, a
+              colocarte después de todo lo demás. Y no entiendes por qué, si lo ves tan claro.</p>
+          </div>
+          <div class="pq__card" role="listitem">
+            <p class="pq__num" aria-hidden="true">03</p>
+            <h3 class="pq__title">Hay algo que tira de ti</h3>
+            <p class="pq__body">No es que no sepas hacerlo diferente. Es que, en el momento en el que vas a hacerlo, lo
+              notas en el cuerpo. Se cierra. Se activa. Dudas. Y vuelves a lo conocido. A lo que ya no encaja… pero
+              sabes sostener. No es consciente. Pero está dirigiendo más de lo que crees.</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- TESTIMONIOS -->
-  <section id="testi" aria-labelledby="testi-h">
+    <!-- MÉTODO -->
+    <section id="metodo" aria-labelledby="met-h">
+      <div class="container">
+        <div class="met__pattern" aria-hidden="true">
+          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,60 C150,90 350,20 600,60 C850,100 1050,20 1200,60 L1200,120 L0,120 Z"
+              fill="rgba(245,239,234,1)" />
+            <path d="M0,80 C200,40 400,100 600,80 C800,60 1000,100 1200,80 L1200,120 L0,120 Z"
+              fill="rgba(245,239,234,.5)" />
+          </svg>
+        </div>
+        <div class="container--n" style="padding:0">
+          <p class="lbl lbl--crema fu">El método</p>
+          <h2 id="met-h" class="met__title fu d1">No va de soltar o dejar ir.<br><em>Va de comprender qué pasa en ti
+              cuando intentas sostenerlo… y no lo consigues.</em></h2>
+          <p class="met__sub fu d2">Hay un momento muy concreto: sabes lo que tienes que hacer, vas a hacerlo, y algo en
+            ti cambia. Lo notas en el cuerpo. Dudas. Lo pospones. Te distraes con otra cosa. Y vuelves a lo mismo. No es
+            falta de capacidad. Es lo que se activa en ti, de forma inconsciente, en ese punto. Ahí es donde trabajamos.
+          </p>
+          <div class="met__div fu d2"></div>
+        </div>
+        <div class="pillars fu d3" role="list">
+          <div class="pillar" role="listitem">
+            <div class="pillar__g" aria-hidden="true">∿</div>
+            <h3 class="pillar__n">Regulación</h3>
+            <p class="pillar__t">En ese momento, tu sistema se activa. Se acelera, se cierra o se pone en alerta.
+              Trabajamos sobre esa respuesta: respiración, activación y regulación. Porque si eso no cambia, vas a
+              seguir saboteándote en el mismo punto.</p>
+          </div>
+          <div class="pillar" role="listitem">
+            <div class="pillar__g" aria-hidden="true">⬡</div>
+            <h3 class="pillar__n">Orden</h3>
+            <p class="pillar__t">No es lo que haces. Es el lugar que le das a cada cosa en tu vida. Trabajo, relaciones,
+              exigencia. Cuando todo ocupa más espacio que tú, acabas sosteniendo una vida en la que tú no estás.
+              Reordenamos prioridades para que dejes de ponerte después de todo lo demás.</p>
+          </div>
+          <div class="pillar" role="listitem">
+            <div class="pillar__g" aria-hidden="true">◎</div>
+            <h3 class="pillar__n">Coherencia</h3>
+            <p class="pillar__t">No se trata de hacerlo perfecto. Se trata de que, hagas lo que hagas, no sientas que te
+              estás traicionando. Trabajamos hasta que lo que haces forme parte de una identidad encarnada y coherente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <div class="cta-band" role="complementary">
+      <div class="container">
+        <p class="lbl lbl--crema">Primera conexión sin coste</p>
+        <h2 class="cta-band__t">Antes de empezar, veo contigo en qué punto estás.</h2>
+        <p class="cta-band__s">Sin estructura de sesión. Sin compromiso. Solo claridad de si esto es para ti.</p>
+        <div class="cta-band__a">
+          <a href="https://calendly.com/llamada-de-diagnostico-para-mentoria-1a1" target="_blank" rel="noopener"
+            class="btn btn--light" onclick="trackCal('band')">Reservar primera conexión</a>
+          <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20quiero%20saber%20mas%20sobre%20la%20mentoria"
+            target="_blank" rel="noopener noreferrer" class="btn btn--wa" onclick="trackWA('band')">Escribir por
+            WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MENTORÍA 1:1 -->
+    <section id="mentoria" aria-labelledby="ment-h">
+      <div class="container">
+        <div class="ment__grid">
+          <div>
+            <p class="lbl fu">Proceso 1:1 · 3 meses</p>
+            <h2 id="ment-h" class="ment__title fu d1">Mentoría<br>Privada 1:1</h2>
+            <p class="ment__sub fu d2">Dejar de sostener tu vida desde el mismo lugar. Ocupar tu lugar en ella.</p>
+            <div class="ment__div"></div>
+            <div class="ment__body fu">
+              <p>No trabajamos lo que ves. Trabajamos lo que lo está sosteniendo.</p>
+              <p>Tu carga acumulada. Las incoherencias pequeñas que se han vuelto invisibles. El sistema nervioso que
+                interpreta cada cambio como amenaza y te devuelve al lugar conocido aunque ya no encaje.</p>
+              <p><strong>No necesitas más disciplina. Necesitas menos carga interna.</strong></p>
+            </div>
+            <ul class="inc__list fu" aria-label="Qué incluye la mentoría">
+              <li>12 sesiones 1:1 (1 por semana durante 3 meses)</li>
+              <li>Primera conexión inicial — analizo tu momento, patrones y estructuro el proceso</li>
+              <li>Acompañamiento entre sesiones — cuando algo importante esté pasando, puedes escribirme</li>
+              <li>Trabajo directo sobre patrones — no solo los ves, los cambias</li>
+              <li>Reordenamiento de prioridades aplicado a tu vida real</li>
+              <li>Regulación aplicada — herramientas para que tu cuerpo no te saque del punto</li>
+              <li>Integración en trabajo, relaciones, decisiones, límites</li>
+              <li>Cacao como puente en momentos concretos (cuando aplica)</li>
+            </ul>
+            <div class="price__box fu">
+              <p class="price__orig">Valor del proceso: 1.888&euro;</p>
+              <p class="price__cur">1.200&euro;</p>
+              <span class="price__badge">Precio de lanzamiento · Tiempo limitado</span>
+              <p class="price__opts">Pago completo o en 2, 3 o 4 cuotas.<br>Primera cuota antes de iniciar. Última antes
+                de finalizar.<br>Con firma de acuerdo de compromiso.</p>
+              <a href="https://calendly.com/jenifertejedor/llamada-de-diagnostico-para-mentoria-1a1" target="_blank"
+                rel="noopener noreferrer" class="btn btn--p" style="width:100%;justify-content:center"
+                onclick="trackCal('price')">Reservar primera conexión gratuita</a>
+            </div>
+            <div class="faq__list fu" aria-label="Preguntas frecuentes mentoría">
+              <div class="faq__item">
+                <div class="faq__q" role="button" tabindex="0" aria-expanded="false">
+                  <span>¿Qué pasa en la primera conexión?</span>
+                  <div class="faq__icon" aria-hidden="true">+</div>
+                </div>
+                <div class="faq__a" role="region">Antes de empezar, tenemos una primera conexión, no una sesión. Ahí veo
+                  contigo en qué punto estás, tu historia y lo que se repite. A partir de eso estructuro el proceso de
+                  forma personalizada.</div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__q" role="button" tabindex="0" aria-expanded="false">
+                  <span>¿Este proceso es para mí?</span>
+                  <div class="faq__icon" aria-hidden="true">+</div>
+                </div>
+                <div class="faq__a" role="region">Es para mujeres que ya han hecho trabajo interno. Que ven lo que
+                  tienen que cambiar, pero no consiguen sostenerlo en su día a día.</div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__q" role="button" tabindex="0" aria-expanded="false">
+                  <span>¿Qué cambios noto en el primer mes?</span>
+                  <div class="faq__icon" aria-hidden="true">+</div>
+                </div>
+                <div class="faq__a" role="region">Empiezas a ver tus patrones en el momento en el que ocurren. Dejas de
+                  reaccionar igual. Empiezas a priorizarte sin tanta resistencia. Y situaciones que antes repetías
+                  automáticamente empiezan a sentirse distintas.</div>
+              </div>
+            </div>
+          </div>
+          <div class="ment__vis fu d1">
+            <div class="ment__iw">
+              <img src="jenifer-tejedor.webp" alt="Jenifer Tejedor sesión de acompañamiento sistémico" loading="lazy"
+                width="800" height="1000" />
+              <div class="ment__ic">
+                <p>"No necesitas más herramientas. Necesitas dejar de sostener tu vida desde el mismo sistema."</p>
+              </div>
+            </div>
+            <div class="signals">
+              <p class="lbl lbl--azul">Señales de que esto es para ti</p>
+              <ul>
+                <li>Ya has hecho trabajo interno. Entiendes lo que pasa. Pero tu sistema sigue respondiendo igual.</li>
+                <li>Priorizas tu trabajo, familia y relaciones antes que a ti misma, de forma sistemática</li>
+                <li>Sabes lo que necesitas pero en el momento de sostenerlo, te echas hacia atrás</li>
+                <li>Llevas tiempo funcionando bien pero desde un lugar que ya no es tuyo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RETIRO SERENZA -->
+    <section id="retiro" aria-labelledby="ret-h">
+      <div class="container">
+        <div class="ret__tag">
+          <span class="ret__dot" aria-hidden="true"></span>
+          Plazas limitadas · 12 mujeres · Primera edición
+        </div>
+        <p class="ret__dates">22–24 Mayo 2026 · Cardedeu, Barcelona</p>
+        <h2 id="ret-h" class="ret__h">
+          <img src="logo-serenza.webp" alt="SERENZA" width="400" height="106" loading="lazy" decoding="async"
+            style="max-width:clamp(200px,40vw,400px);height:auto;" />
+        </h2>
+        <p class="ret__sub">Tres días donde el orden que sostienes fuera se detiene<br>para que dentro… todo encuentre
+          su lugar.</p>
+        <div class="ret__promo fu">
+          <div class="ret__promo-img">
+            <img src="retiro-1.webp" alt="Retiro SERENZA en Cardedeu, Barcelona" loading="lazy" width="900" height="506"
+              srcset="retiro-1-480.webp 480w, retiro-1.webp 900w" sizes="(max-width:768px) 100vw, 50vw" />
+          </div>
+          <div class="ret__promo-body">
+            <p class="ret__body">No es un retiro de descanso.<br>Es una parada real donde el sistema baja, la percepción
+              cambia y lo que llevas tiempo sin ver… aparece.</p>
+            <ul class="ret__pills" aria-label="Incluye">
+              <li>Alojamiento completo</li>
+              <li>Alimentación</li>
+              <li>Cacao ceremonial</li>
+              <li>Respiración guiada</li>
+              <li>Trabajo de patrones</li>
+              <li>Círculos de palabra</li>
+            </ul>
+            <div class="ret__promo-ctas">
+              <a href="/serenza/" class="btn btn--p" onclick="trackRet()">Ver el programa completo</a>
+              <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20retiro%20SERENZA"
+                target="_blank" rel="noopener noreferrer" class="btn btn--wa"
+                onclick="trackWA('retiro');trackRet()">Reservar plaza</a>
+            </div>
+            <p class="ret__promo-note">Sólo <strong>12 plazas</strong> · <a href="/serenza/" onclick="trackRet()">Ver
+                todo el detalle</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre" aria-labelledby="sm-h">
+      <div class="container">
+        <div class="sobre__grid">
+          <div class="sobre__iw fu">
+            <div class="sobre__ii">
+              <img src="jenifer-tejedor-3.webp" alt="Jenifer Tejedor, acompañante sistémica en Barcelona" loading="lazy"
+                width="700" height="933" />
+              <div class="sobre__badge"><strong>+100</strong><span>mujeres<br>acompañadas</span></div>
+            </div>
+            <div class="sobre__stats">
+              <div class="sobre__sv"><strong>+5</strong><span>años<br>práctica</span></div>
+              <div class="sobre__sv"><strong>1</strong><span>retiro<br>propio</span></div>
+              <div class="sobre__sv"><strong>5</strong><span>titulaciones<br>especializadas</span></div>
+            </div>
+          </div>
+          <div class="fu d1">
+            <p class="lbl">Sobre mí</p>
+            <h2 id="sm-h"
+              style="font-family:var(--ff-display);font-size:clamp(1.8rem,3vw,2.5rem);font-weight:300;line-height:1.2;color:var(--azul-osc);margin-bottom:1.5rem">
+              No trabajo con lo que dices que te pasa. Trabajo con lo que lo está sosteniendo.
+            </h2>
+            <p class="sobre__op">"Hay un punto en el que ya no falta información.<br>Falta estructura interna para
+              sostenerla."</p>
+            <div class="sobre__body">
+              <p>Mi trabajo nace ahí. No en la teoría. No en el desarrollo personal. En el momento en el que ves lo que
+                tienes que hacer y aun así no lo haces.</p>
+              <p>Yo estuve ahí. Una ruptura me desordenó por completo. No era solo la relación. Era todo lo que se
+                sostenía desde ese lugar. Identidad. Dirección. Forma de vivir. Y en ese punto entendí algo que no se
+                enseña: <strong>no es falta de claridad. Es falta de regulación para sostenerla.</strong></p>
+              <p>Desde entonces, todo mi trabajo se construye sobre eso. Acompaño a mujeres que ya han hecho trabajo
+                interno. Que entienden. Que han ido a terapia. Que han probado distintas herramientas. Y que, aun así,
+                siguen repitiendo lo mismo. No por falta de capacidad. Sino porque <strong>su sistema sigue funcionando
+                  igual.</strong></p>
+              <p>El mar no es un recurso visual en mi vida. Es estructura. El surf me enfrenta constantemente a lo que
+                no controlo. A sostenerme sin rigidez. A leer el sistema en tiempo real. <strong>Eso define también cómo
+                  acompaño.</strong></p>
+            </div>
+            <p class="lbl lbl--oliva" style="margin-top:2.5rem">Formación</p>
+            <div class="form__g">
+              <div class="form__i">Instructora de respiración funcional</div>
+              <div class="form__i">Thetahealer</div>
+              <div class="form__i">Terapeuta emocional</div>
+              <div class="form__i">Herbolaria espiritual</div>
+              <div class="form__i" style="grid-column:span 2">Facilitadora de ceremonias de cacao ancestral</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section id="testi" aria-labelledby="testi-h">
+      <div class="container">
+        <p class="lbl lbl--crema fu">Lo que dicen ellas</p>
+        <h2 id="testi-h" class="testi__title fu d1">Mujeres que ya <em>decidieron</em></h2>
+        <div class="testi__grid fu d2" role="list">
+          <blockquote class="testi__card" role="listitem">
+            <p class="testi__q">Llegué creyendo que necesitaba más estrategia. Salí entendiendo que lo que necesitaba
+              era claridad. Son cosas completamente distintas. Jenifer me ayudó a ver esa diferencia.</p>
+            <div class="testi__f">
+              <div class="testi__av" aria-hidden="true">A</div>
+              <div><cite class="testi__name" style="font-style:normal">Ana M.</cite>
+                <p class="testi__role">Directora de empresa · Madrid</p>
+              </div>
+            </div>
+          </blockquote>
+          <blockquote class="testi__card" role="listitem">
+            <p class="testi__q">El proceso con Jenifer fue el antes y el después. No es coaching, no es terapia. Es algo
+              que no tenía nombre hasta que lo viví y que cambió cómo tomo decisiones todos los días.</p>
+            <div class="testi__f">
+              <div class="testi__av" aria-hidden="true">L</div>
+              <div><cite class="testi__name" style="font-style:normal">Laura G.</cite>
+                <p class="testi__role">Emprendedora · Barcelona</p>
+              </div>
+            </div>
+          </blockquote>
+          <blockquote class="testi__card" role="listitem">
+            <p class="testi__q">Fui al retiro con una decisión que llevaba dos años postergando. La tomé el segundo día.
+              Tres meses después sigo sosteniendo esa decisión y estoy más tranquila que en años.</p>
+            <div class="testi__f">
+              <div class="testi__av" aria-hidden="true">S</div>
+              <div><cite class="testi__name" style="font-style:normal">Sandra P.</cite>
+                <p class="testi__role">Líder de equipo · Valencia</p>
+              </div>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CIERRE -->
+    <section id="cierre" aria-labelledby="cierre-h">
+      <div class="container">
+        <p class="lbl">El siguiente paso</p>
+        <h2 id="cierre-h" class="cierre__t">No es que no sepas qué hacer.<br>Es que tu sistema no está preparado para
+          <em>sostenerlo.</em></h2>
+        <p class="cierre__s">Una primera conexión. Sin sesión, sin compromiso. Veo contigo qué está sosteniendo lo que
+          no consigues cambiar.</p>
+        <div class="cierre__a">
+          <a href="https://calendly.com/jenifertejedor/llamada-de-diagnostico-para-mentoria-1a1" target="_blank"
+            rel="noopener" class="btn btn--p" onclick="trackCal('cierre')">Reservar primera conexión</a>
+          <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20me%20gustaria%20saber%20mas%20sobre%20el%20proceso"
+            target="_blank" rel="noopener noreferrer" class="btn btn--wa" onclick="trackWA('cierre')">Escribir por
+            WhatsApp</a>
+          <a href="/serenza/" class="btn btn--ghost" onclick="trackRet()">Ver retiro SERENZA</a>
+        </div>
+        <div class="cierre__div" aria-hidden="true"></div>
+        <p class="cierre__ph">"Cuando esto cambia,<br>todo se reordena."</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
     <div class="container">
-      <p class="lbl lbl--crema fu">Lo que dicen ellas</p>
-      <h2 id="testi-h" class="testi__title fu d1">Mujeres que ya <em>decidieron</em></h2>
-      <div class="testi__grid fu d2" role="list">
-        <blockquote class="testi__card" role="listitem">
-          <p class="testi__q">Llegué creyendo que necesitaba más estrategia. Salí entendiendo que lo que necesitaba era claridad. Son cosas completamente distintas. Jenifer me ayudó a ver esa diferencia.</p>
-          <div class="testi__f">
-            <div class="testi__av" aria-hidden="true">A</div>
-            <div><cite class="testi__name" style="font-style:normal">Ana M.</cite><p class="testi__role">Directora de empresa · Madrid</p></div>
-          </div>
-        </blockquote>
-        <blockquote class="testi__card" role="listitem">
-          <p class="testi__q">El proceso con Jenifer fue el antes y el después. No es coaching, no es terapia. Es algo que no tenía nombre hasta que lo viví y que cambió cómo tomo decisiones todos los días.</p>
-          <div class="testi__f">
-            <div class="testi__av" aria-hidden="true">L</div>
-            <div><cite class="testi__name" style="font-style:normal">Laura G.</cite><p class="testi__role">Emprendedora · Barcelona</p></div>
-          </div>
-        </blockquote>
-        <blockquote class="testi__card" role="listitem">
-          <p class="testi__q">Fui al retiro con una decisión que llevaba dos años postergando. La tomé el segundo día. Tres meses después sigo sosteniendo esa decisión y estoy más tranquila que en años.</p>
-          <div class="testi__f">
-            <div class="testi__av" aria-hidden="true">S</div>
-            <div><cite class="testi__name" style="font-style:normal">Sandra P.</cite><p class="testi__role">Líder de equipo · Valencia</p></div>
-          </div>
-        </blockquote>
+      <div class="foot__g">
+        <div>
+          <p class="foot__logo">Jenifer Tejedor<em>.</em></p>
+          <p class="foot__tag">Acompañamiento sistémico para mujeres que ya saben lo que tienen que cambiar y no
+            consiguen sostenerlo.</p>
+        </div>
+        <div class="foot__col">
+          <h3>Navegación</h3>
+          <nav class="foot__links" aria-label="Pie de página">
+            <a href="#pq">Para quién</a>
+            <a href="#metodo">El método</a>
+            <a href="#mentoria">Mentoría 1:1</a>
+            <a href="/serenza/">Retiro SERENZA</a>
+            <a href="#sobre">Sobre mí</a>
+          </nav>
+        </div>
+        <div class="foot__col">
+          <h3>Contacto</h3>
+          <nav class="foot__links" aria-label="Contacto">
+            <a href="https://calendly.com/jenifertejedor/llamada-de-diagnostico-para-mentoria-1a1" target="_blank"
+              rel="noopener noreferrer" onclick="trackCal('footer')">Reservar llamada</a>
+            <a href="https://wa.me/34630121817" target="_blank" rel="noopener noreferrer"
+              onclick="trackWA('footer')">WhatsApp</a>
+            <a href="https://instagram.com/jenitejedor" target="_blank" rel="noopener noreferrer">@jenitejedor</a>
+            <a href="mailto:jenifertejedorrobles@gmail.com">jenifertejedorrobles@gmail.com</a>
+          </nav>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- CIERRE -->
-  <section id="cierre" aria-labelledby="cierre-h">
-    <div class="container">
-      <p class="lbl">El siguiente paso</p>
-      <h2 id="cierre-h" class="cierre__t">No es que no sepas qué hacer.<br>Es que tu sistema no está preparado para <em>sostenerlo.</em></h2>
-      <p class="cierre__s">Una primera conexión. Sin sesión, sin compromiso. Veo contigo qué está sosteniendo lo que no consigues cambiar.</p>
-      <div class="cierre__a">
-        <a href="https://calendly.com/jenifertejedor/llamada-de-diagnostico-para-mentoria-1a1" target="_blank" rel="noopener" class="btn btn--p" onclick="trackCal('cierre')">Reservar primera conexión</a>
-        <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20me%20gustaria%20saber%20mas%20sobre%20el%20proceso" target="_blank" rel="noopener noreferrer" class="btn btn--wa" onclick="trackWA('cierre')">Escribir por WhatsApp</a>
-        <a href="/serenza/" class="btn btn--ghost" onclick="trackRet()">Ver retiro SERENZA</a>
-      </div>
-      <div class="cierre__div" aria-hidden="true"></div>
-      <p class="cierre__ph">"Cuando esto cambia,<br>todo se reordena."</p>
-    </div>
-  </section>
-</main>
-
-<!-- FOOTER -->
-<footer role="contentinfo">
-  <div class="container">
-    <div class="foot__g">
-      <div>
-        <p class="foot__logo">Jenifer Tejedor<em>.</em></p>
-        <p class="foot__tag">Acompañamiento sistémico para mujeres que ya saben lo que tienen que cambiar y no consiguen sostenerlo.</p>
-      </div>
-      <div class="foot__col">
-        <h3>Navegación</h3>
-        <nav class="foot__links" aria-label="Pie de página">
-          <a href="#pq">Para quién</a>
-          <a href="#metodo">El método</a>
-          <a href="#mentoria">Mentoría 1:1</a>
-          <a href="/serenza/">Retiro SERENZA</a>
-          <a href="#sobre">Sobre mí</a>
+      <div class="foot__bot">
+        <p class="foot__copy">&copy; 2026 Jenifer Tejedor. Todos los derechos reservados.</p>
+        <nav class="foot__leg" aria-label="Legal">
+          <a href="/privacidad">Privacidad</a>
+          <a href="/aviso-legal">Aviso legal</a>
+          <a href="/cookies">Cookies</a>
         </nav>
       </div>
-      <div class="foot__col">
-        <h3>Contacto</h3>
-        <nav class="foot__links" aria-label="Contacto">
-          <a href="https://calendly.com/jenifertejedor/llamada-de-diagnostico-para-mentoria-1a1" target="_blank" rel="noopener noreferrer" onclick="trackCal('footer')">Reservar llamada</a>
-          <a href="https://wa.me/34630121817" target="_blank" rel="noopener noreferrer" onclick="trackWA('footer')">WhatsApp</a>
-          <a href="https://instagram.com/jenitejedor" target="_blank" rel="noopener noreferrer">@jenitejedor</a>
-          <a href="mailto:jenifertejedorrobles@gmail.com">jenifertejedorrobles@gmail.com</a>
-        </nav>
-      </div>
+      <p class="foot__built">Sitio diseñado y desarrollado por <a href="https://cirujanadigital.com" target="_blank"
+          rel="noopener noreferrer">Cirujana Digital</a></p>
     </div>
-    <div class="foot__bot">
-      <p class="foot__copy">&copy; 2026 Jenifer Tejedor. Todos los derechos reservados.</p>
-      <nav class="foot__leg" aria-label="Legal">
-        <a href="/privacidad">Privacidad</a>
-        <a href="/aviso-legal">Aviso legal</a>
-        <a href="/cookies">Cookies</a>
-      </nav>
-    </div>
-    <p class="foot__built">Sitio diseñado y desarrollado por <a href="https://cirujanadigital.com" target="_blank" rel="noopener noreferrer">Cirujana Digital</a></p>
-  </div>
-</footer>
+  </footer>
 
-<!-- WA FLOTANTE -->
-<a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20quiero%20saber%20mas%20sobre%20tu%20trabajo" class="wa-f" target="_blank" rel="noopener noreferrer" aria-label="Contactar a Jenifer Tejedor por WhatsApp" onclick="trackWA('float')">
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-  </svg>
-</a>
+  <!-- WA FLOTANTE -->
+  <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20quiero%20saber%20mas%20sobre%20tu%20trabajo" class="wa-f"
+    target="_blank" rel="noopener noreferrer" aria-label="Contactar a Jenifer Tejedor por WhatsApp"
+    onclick="trackWA('float')">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
 
-<script>
-  const nav = document.getElementById("nav");
-  const heroSection = document.getElementById("hero");
-  window.addEventListener("scroll", () => {
-    const scrolled = window.scrollY > 40;
-    nav.classList.toggle("scrolled", scrolled);
-    const heroBottom = heroSection.offsetHeight;
-    nav.classList.toggle("hero-dark", window.scrollY < heroBottom - 80);
-  }, { passive: true });
+  <script>
+    const nav = document.getElementById("nav");
+    const heroSection = document.getElementById("hero");
+    window.addEventListener("scroll", () => {
+      const scrolled = window.scrollY > 40;
+      nav.classList.toggle("scrolled", scrolled);
+      const heroBottom = heroSection.offsetHeight;
+      nav.classList.toggle("hero-dark", window.scrollY < heroBottom - 80);
+    }, { passive: true });
 
-  const hbg        = document.getElementById("hbg");
-  const mobNav     = document.getElementById("mobNav");
-  const mobX       = document.getElementById("mobX");
-  const navOverlay = document.getElementById("navOverlay");
+    const hbg = document.getElementById("hbg");
+    const mobNav = document.getElementById("mobNav");
+    const mobX = document.getElementById("mobX");
+    const navOverlay = document.getElementById("navOverlay");
 
-  function openMob() {
-    mobNav.classList.add("open");
-    navOverlay.classList.add("open");
-    hbg.setAttribute("aria-expanded", "true");
-    document.body.style.overflow = "hidden";
-  }
-  function closeMob() {
-    mobNav.classList.remove("open");
-    navOverlay.classList.remove("open");
-    hbg.setAttribute("aria-expanded", "false");
-    document.body.style.overflow = "";
-  }
+    function openMob() {
+      mobNav.classList.add("open");
+      navOverlay.classList.add("open");
+      hbg.setAttribute("aria-expanded", "true");
+      document.body.style.overflow = "hidden";
+    }
+    function closeMob() {
+      mobNav.classList.remove("open");
+      navOverlay.classList.remove("open");
+      hbg.setAttribute("aria-expanded", "false");
+      document.body.style.overflow = "";
+    }
 
-  hbg.addEventListener("click", openMob);
-  mobX.addEventListener("click", closeMob);
-  navOverlay.addEventListener("click", closeMob);
-  document.addEventListener("keydown", e => {
-    if (e.key === "Escape" && mobNav.classList.contains("open")) closeMob();
-  });
+    hbg.addEventListener("click", openMob);
+    mobX.addEventListener("click", closeMob);
+    navOverlay.addEventListener("click", closeMob);
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape" && mobNav.classList.contains("open")) closeMob();
+    });
 
-  document.querySelectorAll(".faq__q").forEach(q => {
-    q.addEventListener("click", () => {
-      const item = q.closest(".faq__item");
-      const isOpen = item.classList.contains("open");
-      document.querySelectorAll(".faq__item").forEach(x => {
-        x.classList.remove("open");
-        x.querySelector(".faq__q").setAttribute("aria-expanded", "false");
+    document.querySelectorAll(".faq__q").forEach(q => {
+      q.addEventListener("click", () => {
+        const item = q.closest(".faq__item");
+        const isOpen = item.classList.contains("open");
+        document.querySelectorAll(".faq__item").forEach(x => {
+          x.classList.remove("open");
+          x.querySelector(".faq__q").setAttribute("aria-expanded", "false");
+        });
+        if (!isOpen) {
+          item.classList.add("open");
+          q.setAttribute("aria-expanded", "true");
+        }
       });
-      if (!isOpen) {
-        item.classList.add("open");
-        q.setAttribute("aria-expanded", "true");
-      }
+      q.addEventListener("keydown", e => {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); q.click(); }
+      });
     });
-    q.addEventListener("keydown", e => {
-      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); q.click(); }
-    });
-  });
 
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add("vis"); io.unobserve(e.target); }
-    });
-  }, { threshold: .1 });
-  document.querySelectorAll(".fu").forEach(el => io.observe(el));
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add("vis"); io.unobserve(e.target); }
+      });
+    }, { threshold: .1 });
+    document.querySelectorAll(".fu").forEach(el => io.observe(el));
 
-  function trackCal(loc) { if (typeof gtag !== "undefined") gtag("event","click_calendly",{location:loc}); }
-  function trackWA(loc)  { if (typeof gtag !== "undefined") gtag("event","click_whatsapp",{location:loc}); }
-  function trackRet()    { if (typeof gtag !== "undefined") gtag("event","click_retiro",{}); }
-</script>
+    function trackCal(loc) { if (typeof gtag !== "undefined") gtag("event", "click_calendly", { location: loc }); }
+    function trackWA(loc) { if (typeof gtag !== "undefined") gtag("event", "click_whatsapp", { location: loc }); }
+    function trackRet() { if (typeof gtag !== "undefined") gtag("event", "click_retiro", {}); }
+  </script>
 </body>
+
 </html>

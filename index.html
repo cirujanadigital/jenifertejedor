@@ -3,11 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Jenifer Tejedor — Acompañamiento sistémico para mujeres que ya saben lo que tienen que cambiar pero no consiguen sostenerlo. Mentoría 1:1 y retiro SERENZA en Barcelona." />
+  <meta name="description" content="Jenifer Tejedor — Acompañamiento sistémico en Barcelona. Para mujeres que saben lo que tienen que cambiar y no consiguen sostenerlo. Mentoría 1:1 y retiro SERENZA." />
   <meta property="og:title" content="Jenifer Tejedor — Reordenamiento sistémico" />
   <meta property="og:description" content="No trabajas el síntoma. Reordenas el sistema desde el que decides." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://jenifertejedor.com" />
+  <!-- Añadir después de og:url -->
+<meta property="og:image" content="https://jenifertejedor.com/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://jenifertejedor.com/og-image.webp" />
   <link rel="canonical" href="https://jenifertejedor.com" />
   <title>Jenifer Tejedor — Reordenamiento sistémico · Barcelona</title>
   <link rel="preload" as="image" href="img-hero.webp" fetchpriority="high" />
@@ -15,7 +21,27 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,500;1,300&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,500;1,300&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" media="print" onload="this.media='all'" />
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,500;1,300&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" /></noscript>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Jenifer Tejedor","jobTitle":"Acompañante sistémica","url":"https://jenifertejedor.com","sameAs":["https://instagram.com/jenitejedor"],"address":{"@type":"PostalAddress","addressLocality":"Barcelona","addressCountry":"ES"}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jenifer Tejedor",
+  "jobTitle": "Acompañante sistémica",
+  "description": "Acompañamiento sistémico para mujeres que ya saben lo que tienen que cambiar pero no consiguen sostenerlo.",
+  "url": "https://jenifertejedor.com",
+  "image": "https://jenifertejedor.com/jenifer-tejedor.webp",
+  "knowsAbout": ["reordenamiento sistémico", "regulación del sistema nervioso", "respiración funcional", "thetahealing"],
+  "sameAs": ["https://instagram.com/jenitejedor"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Barcelona",
+    "addressCountry": "ES"
+  },
+  "offers": {
+    "@type": "Offer",
+    "name": "Mentoría Privada 1:1",
+    "price": "1200",
+    "priceCurrency": "EUR",
+    "url": "https://jenifertejedor.com/#mentoria"
+  }}</script>
   <style>
     /* ============================================================
        TOKENS
@@ -109,18 +135,18 @@
        MENÚ MÓVIL — panel lateral derecho, no pantalla completa
     ============================================================ */
     .nav__mob{
-      display:none; /* oculto por defecto; JS añade clase open */
-      position:fixed;
-      top:0;right:0;bottom:0;
-      width:min(320px, 85vw);
-      background:var(--azul-osc);
-      z-index:200;
-      flex-direction:column;
-      padding:4.5rem 2.5rem 3rem;
-      gap:0;
-      box-shadow:-8px 0 40px rgba(0,0,0,.3);
-      transform:translateX(100%);
-      transition:transform .4s var(--ease);
+     display: none;
+  position: fixed;
+  top: 0; right: 0; bottom: 0;
+  width: min(320px, 85vw);
+  background: var(--azul-osc);
+  z-index: 200;
+  flex-direction: column;
+  padding: 4.5rem 2.5rem 3rem;
+  gap: 0;
+  box-shadow: -8px 0 40px rgba(0,0,0,.3);
+  transform: translateX(100%);
+  transition: transform .4s var(--ease);
     }
     .nav__mob.open{
       display:flex;
@@ -613,9 +639,9 @@
       <ul class="nav__links" role="list">
         <li><a href="#pq">Para quién</a></li>
         <li><a href="#mentoria">Mentoría</a></li>
-        <li><a href="serenza.html">Retiro</a></li>
+        <li><a href="/serenza/">Retiro</a></li>
         <li><a href="#sobre">Sobre mí</a></li>
-        <li><a href="https://calendly.com/jenifertejedor" target="_blank" rel="noopener" class="nav__cta" onclick="trackCal('nav')">Reservar llamada</a></li>
+        <li><a href="https://calendly.com/llamada-de-diagnostico-para-mentoria-1a1" target="_blank" rel="noopener noreferrer" class="nav__cta" onclick="trackCal('nav')">Reservar llamada</a></li>
       </ul>
       <button class="nav__hbg" id="hbg" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -634,12 +660,12 @@
   <a href="#pq" onclick="closeMob()">Para quién</a>
   <a href="#metodo" onclick="closeMob()">El método</a>
   <a href="#mentoria" onclick="closeMob()">Mentoría</a>
-  <a href="serenza.html" onclick="closeMob()">Retiro SERENZA</a>
+  <a href="/serenza/" onclick="closeMob()">Retiro SERENZA</a>
   <a href="#sobre" onclick="closeMob()">Sobre mí</a>
-  <a href="https://calendly.com/jenifertejedor" target="_blank" rel="noopener" class="btn nav__mob-cta" onclick="trackCal('mob');closeMob()">Reservar primera conexión</a>
+  <a href="https://calendly.com/jenifertejedor/llamada-de-diagnostico-para-mentoria-1a1" target="_blank" rel="noopener noreferrer" class="btn nav__mob-cta" onclick="trackCal('mob');closeMob()">Reservar primera conexión</a>
   <div class="nav__mob-social">
-    <a href="https://instagram.com/jenitejedor" target="_blank" rel="noopener">Instagram</a>
-    <a href="https://wa.me/34630121817" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="https://instagram.com/jenitejedor" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <a href="https://wa.me/34630121817" target="_blank" rel="noopener noreferrer">WhatsApp</a>
   </div>
 </div>
 
@@ -663,8 +689,8 @@
         Ahí es donde trabajamos.
       </p>
       <div class="hero__actions">
-        <a href="https://calendly.com/jenifertejedor" target="_blank" rel="noopener" class="btn btn--terra" onclick="trackCal('hero')">Reservar primera conexión</a>
-        <a href="serenza.html" class="btn btn--light" onclick="trackRet()">Ver retiro SERENZA</a>
+        <a href="https://calendly.com/jenifertejedor/llamada-de-diagnostico-para-mentoria-1a1" target="_blank" rel="noopener noreferrer" class="btn btn--terra" onclick="trackCal('hero')">Reservar primera conexión</a>
+        <a href="/serenza/" class="btn btn--light" onclick="trackRet()">Ver retiro SERENZA</a>
       </div>
       <div class="hero__stats">
         <div><span class="hero__sv">+5</span><span class="hero__sl">años de práctica</span></div>
@@ -780,8 +806,8 @@
       <h2 class="cta-band__t">Antes de empezar, veo contigo en qué punto estás.</h2>
       <p class="cta-band__s">Sin estructura de sesión. Sin compromiso. Solo claridad de si esto es para ti.</p>
       <div class="cta-band__a">
-        <a href="https://calendly.com/jenifertejedor" target="_blank" rel="noopener" class="btn btn--light" onclick="trackCal('band')">Reservar primera conexión</a>
-        <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20quiero%20saber%20mas%20sobre%20la%20mentoria" target="_blank" rel="noopener" class="btn btn--wa" onclick="trackWA('band')">Escribir por WhatsApp</a>
+        <a href="https://calendly.com/llamada-de-diagnostico-para-mentoria-1a1" target="_blank" rel="noopener" class="btn btn--light" onclick="trackCal('band')">Reservar primera conexión</a>
+        <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20quiero%20saber%20mas%20sobre%20la%20mentoria" target="_blank" rel="noopener noreferrer" class="btn btn--wa" onclick="trackWA('band')">Escribir por WhatsApp</a>
       </div>
     </div>
   </div>
@@ -815,7 +841,7 @@
             <p class="price__cur">1.200&euro;</p>
             <span class="price__badge">Precio de lanzamiento · Tiempo limitado</span>
             <p class="price__opts">Pago completo o en 2, 3 o 4 cuotas.<br>Primera cuota antes de iniciar. Última antes de finalizar.<br>Con firma de acuerdo de compromiso.</p>
-            <a href="https://calendly.com/jenifertejedor" target="_blank" rel="noopener" class="btn btn--p" style="width:100%;justify-content:center" onclick="trackCal('price')">Reservar primera conexión gratuita</a>
+            <a href="https://calendly.com/jenifertejedor/llamada-de-diagnostico-para-mentoria-1a1" target="_blank" rel="noopener noreferrer" class="btn btn--p" style="width:100%;justify-content:center" onclick="trackCal('price')">Reservar primera conexión gratuita</a>
           </div>
           <div class="faq__list fu" aria-label="Preguntas frecuentes mentoría">
             <div class="faq__item">
@@ -871,7 +897,7 @@
       </div>
       <p class="ret__dates">22–24 Mayo 2026 · Cardedeu, Barcelona</p>
       <h2 id="ret-h" class="ret__h">
-  <img src="logo-serenza.png" alt="SERENZA" width="400" height="106"
+  <img src="logo-serenza.webp" alt="SERENZA" width="400" height="106"
     loading="lazy" decoding="async"
     style="max-width:clamp(200px,40vw,400px);height:auto;" />
 </h2>
@@ -891,10 +917,10 @@
             <li>Círculos de palabra</li>
           </ul>
           <div class="ret__promo-ctas">
-            <a href="serenza.html" class="btn btn--p" onclick="trackRet()">Ver el programa completo</a>
-            <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20retiro%20SERENZA" target="_blank" rel="noopener" class="btn btn--wa" onclick="trackWA('retiro');trackRet()">Reservar plaza</a>
+            <a href="/serenza/" class="btn btn--p" onclick="trackRet()">Ver el programa completo</a>
+            <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20retiro%20SERENZA" target="_blank" rel="noopener noreferrer" class="btn btn--wa" onclick="trackWA('retiro');trackRet()">Reservar plaza</a>
           </div>
-          <p class="ret__promo-note">Sólo <strong>12 plazas</strong> · <a href="serenza.html" onclick="trackRet()">Ver todo el detalle</a></p>
+          <p class="ret__promo-note">Sólo <strong>12 plazas</strong> · <a href="/serenza/" onclick="trackRet()">Ver todo el detalle</a></p>
         </div>
       </div>
     </div>
@@ -906,7 +932,7 @@
       <div class="sobre__grid">
         <div class="sobre__iw fu">
           <div class="sobre__ii">
-            <img src="jenifer-tejedor-3.png" alt="Jenifer Tejedor, acompañante sistémica en Barcelona" loading="lazy" width="700" height="933" />
+            <img src="jenifer-tejedor-3.webp" alt="Jenifer Tejedor, acompañante sistémica en Barcelona" loading="lazy" width="700" height="933" />
             <div class="sobre__badge"><strong>+100</strong><span>mujeres<br>acompañadas</span></div>
           </div>
           <div class="sobre__stats">
@@ -978,9 +1004,9 @@
       <h2 id="cierre-h" class="cierre__t">No es que no sepas qué hacer.<br>Es que tu sistema no está preparado para <em>sostenerlo.</em></h2>
       <p class="cierre__s">Una primera conexión. Sin sesión, sin compromiso. Veo contigo qué está sosteniendo lo que no consigues cambiar.</p>
       <div class="cierre__a">
-        <a href="https://calendly.com/jenifertejedor" target="_blank" rel="noopener" class="btn btn--p" onclick="trackCal('cierre')">Reservar primera conexión</a>
-        <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20me%20gustaria%20saber%20mas%20sobre%20el%20proceso" target="_blank" rel="noopener" class="btn btn--wa" onclick="trackWA('cierre')">Escribir por WhatsApp</a>
-        <a href="serenza.html" class="btn btn--ghost" onclick="trackRet()">Ver retiro SERENZA</a>
+        <a href="https://calendly.com/jenifertejedor/llamada-de-diagnostico-para-mentoria-1a1" target="_blank" rel="noopener" class="btn btn--p" onclick="trackCal('cierre')">Reservar primera conexión</a>
+        <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20me%20gustaria%20saber%20mas%20sobre%20el%20proceso" target="_blank" rel="noopener noreferrer" class="btn btn--wa" onclick="trackWA('cierre')">Escribir por WhatsApp</a>
+        <a href="/serenza/" class="btn btn--ghost" onclick="trackRet()">Ver retiro SERENZA</a>
       </div>
       <div class="cierre__div" aria-hidden="true"></div>
       <p class="cierre__ph">"Cuando esto cambia,<br>todo se reordena."</p>
@@ -1002,16 +1028,16 @@
           <a href="#pq">Para quién</a>
           <a href="#metodo">El método</a>
           <a href="#mentoria">Mentoría 1:1</a>
-          <a href="serenza.html">Retiro SERENZA</a>
+          <a href="/serenza/">Retiro SERENZA</a>
           <a href="#sobre">Sobre mí</a>
         </nav>
       </div>
       <div class="foot__col">
         <h3>Contacto</h3>
         <nav class="foot__links" aria-label="Contacto">
-          <a href="https://calendly.com/jenifertejedor" target="_blank" rel="noopener" onclick="trackCal('footer')">Reservar llamada</a>
-          <a href="https://wa.me/34630121817" target="_blank" rel="noopener" onclick="trackWA('footer')">WhatsApp</a>
-          <a href="https://instagram.com/jenitejedor" target="_blank" rel="noopener">@jenitejedor</a>
+          <a href="https://calendly.com/jenifertejedor/llamada-de-diagnostico-para-mentoria-1a1" target="_blank" rel="noopener noreferrer" onclick="trackCal('footer')">Reservar llamada</a>
+          <a href="https://wa.me/34630121817" target="_blank" rel="noopener noreferrer" onclick="trackWA('footer')">WhatsApp</a>
+          <a href="https://instagram.com/jenitejedor" target="_blank" rel="noopener noreferrer">@jenitejedor</a>
           <a href="mailto:jenifertejedorrobles@gmail.com">jenifertejedorrobles@gmail.com</a>
         </nav>
       </div>
@@ -1024,35 +1050,27 @@
         <a href="/cookies">Cookies</a>
       </nav>
     </div>
-    <p class="foot__built">Sitio diseñado y desarrollado por <a href="https://cirujanadigital.com" target="_blank" rel="noopener">Cirujana Digital</a></p>
+    <p class="foot__built">Sitio diseñado y desarrollado por <a href="https://cirujanadigital.com" target="_blank" rel="noopener noreferrer">Cirujana Digital</a></p>
   </div>
 </footer>
 
 <!-- WA FLOTANTE -->
-<a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20quiero%20saber%20mas%20sobre%20tu%20trabajo" class="wa-f" target="_blank" rel="noopener" aria-label="Contactar a Jenifer Tejedor por WhatsApp" onclick="trackWA('float')">
+<a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20quiero%20saber%20mas%20sobre%20tu%20trabajo" class="wa-f" target="_blank" rel="noopener noreferrer" aria-label="Contactar a Jenifer Tejedor por WhatsApp" onclick="trackWA('float')">
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
   </svg>
 </a>
 
 <script>
-  /* ============================================================
-     NAV SCROLL — quita hero-dark al pasar del hero
-  ============================================================ */
   const nav = document.getElementById("nav");
   const heroSection = document.getElementById("hero");
-
   window.addEventListener("scroll", () => {
     const scrolled = window.scrollY > 40;
     nav.classList.toggle("scrolled", scrolled);
-    // Mantener colores claros mientras estamos sobre el hero oscuro
     const heroBottom = heroSection.offsetHeight;
     nav.classList.toggle("hero-dark", window.scrollY < heroBottom - 80);
   }, { passive: true });
 
-  /* ============================================================
-     MENÚ HAMBURGUESA — panel lateral con overlay
-  ============================================================ */
   const hbg        = document.getElementById("hbg");
   const mobNav     = document.getElementById("mobNav");
   const mobX       = document.getElementById("mobX");
@@ -1064,7 +1082,6 @@
     hbg.setAttribute("aria-expanded", "true");
     document.body.style.overflow = "hidden";
   }
-
   function closeMob() {
     mobNav.classList.remove("open");
     navOverlay.classList.remove("open");
@@ -1075,25 +1092,18 @@
   hbg.addEventListener("click", openMob);
   mobX.addEventListener("click", closeMob);
   navOverlay.addEventListener("click", closeMob);
-
-  // Cerrar con Escape
   document.addEventListener("keydown", e => {
     if (e.key === "Escape" && mobNav.classList.contains("open")) closeMob();
   });
 
-  /* ============================================================
-     FAQ ACCORDION
-  ============================================================ */
   document.querySelectorAll(".faq__q").forEach(q => {
     q.addEventListener("click", () => {
       const item = q.closest(".faq__item");
       const isOpen = item.classList.contains("open");
-      // Cerrar todos
       document.querySelectorAll(".faq__item").forEach(x => {
         x.classList.remove("open");
         x.querySelector(".faq__q").setAttribute("aria-expanded", "false");
       });
-      // Abrir el clickeado si estaba cerrado
       if (!isOpen) {
         item.classList.add("open");
         q.setAttribute("aria-expanded", "true");
@@ -1104,9 +1114,6 @@
     });
   });
 
-  /* ============================================================
-     SCROLL REVEAL
-  ============================================================ */
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) { e.target.classList.add("vis"); io.unobserve(e.target); }
@@ -1114,9 +1121,6 @@
   }, { threshold: .1 });
   document.querySelectorAll(".fu").forEach(el => io.observe(el));
 
-  /* ============================================================
-     TRACKING STUBS
-  ============================================================ */
   function trackCal(loc) { if (typeof gtag !== "undefined") gtag("event","click_calendly",{location:loc}); }
   function trackWA(loc)  { if (typeof gtag !== "undefined") gtag("event","click_whatsapp",{location:loc}); }
   function trackRet()    { if (typeof gtag !== "undefined") gtag("event","click_retiro",{}); }

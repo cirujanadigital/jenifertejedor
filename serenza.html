@@ -6,14 +6,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="description"
     content="Retiro SERENZA — 22 al 24 de Mayo 2026, Cardedeu Barcelona. 12 plazas. Una experiencia inmersiva donde dejas de sostenerte como siempre y algo dentro empieza a ordenarse." />
-  <meta name="keywords"
-    content="retiro SERENZA, Jenifer Tejedor, retiro mujeres Barcelona, Cardedeu, cacao ceremonial, reordenamiento interior" />
   <meta property="og:title" content="Retiro SERENZA — Jenifer Tejedor" />
   <meta property="og:description"
     content="Tres dias donde el orden que sostienes fuera se detiene para que dentro todo encuentre su lugar." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://jenifertejedor.com/serenza" />
-  <meta property="og:image" content="https://jenifertejedor.com/serenza-og.jpg" />
+  <meta property="og:image" content="https://jenifertejedor.com/serenza-og.webp" />
   <link rel="canonical" href="https://jenifertejedor.com/serenza" />
   <title>Retiro SERENZA — 22-24 Mayo 2026 · Jenifer Tejedor</title>
 
@@ -1345,14 +1343,7 @@
       height: 24px;
       fill: var(--crema)
     }
-
-    /*
-  PERF — ANIMACIONES OPTIMIZADAS
-  Solo anima opacity + transform (compositor thread, no Layout).
-  will-change:transform declarado solo en elementos con animación activa
-  para no desperdiciar memoria de GPU.
-*/
-    .fu {
+   .fu {
       opacity: 0;
       transform: translateY(24px);
       transition: opacity .7s var(--ease-out), transform .7s var(--ease-out)
@@ -1449,7 +1440,7 @@
       Jenifer Tejedor
     </a>
     <span class="topbar__logo" aria-hidden="true">
-      <img src="logo-serenza.png" alt="" width="120" height="32" decoding="async" style="height:32px;width:auto" />
+      <img src="logo-serenza.webp" alt="" width="120" height="32" decoding="async" style="height:32px;width:auto" />
     </span>
     <a href="#reserva" class="topbar__cta" onclick="trackStripe('topbar')">Reservar plaza</a>
   </header>
@@ -1458,16 +1449,6 @@
     <!-- HERO -->
     <section class="hero" aria-label="Retiro SERENZA">
       <div class="hero__media" aria-hidden="true">
-        <!--
-          LCP IMAGE — optimizaciones aplicadas:
-          1. loading="eager" + fetchpriority="high" → primera en la cola
-          2. srcset 3 breakpoints: mobile 480, tablet 768, desktop 960
-          3. sizes="100vw" → browser elige el tamaño correcto
-          4. width/height explícitos → evita CLS
-          5. SIN filter CSS en este elemento (filter en img dispara repaint = peor LCP)
-             En su lugar se usa el overlay con gradient más oscuro
-          6. decoding="async" → no bloquea el hilo principal durante el decode
-        -->
         <img src="retiro-1.webp" alt="" loading="eager" fetchpriority="high" decoding="async" width="960" height="640"
           class="hero__img" srcset="retiro-1-480.webp 480w, retiro-1-768.webp 768w, retiro-1.webp 960w" sizes="100vw" />
         <div class="hero__overlay"></div>
@@ -1479,10 +1460,12 @@
           Plazas limitadas · 12 mujeres · Primera edición
         </div>
         <p class="hero__eyebrow">22 · 23 · 24 Mayo 2026 · Cardedeu, Barcelona</p>
-        <h1 class="hero__title">
-          <img src="logo-serenza.png" alt="SERENZA" width="600" height="160" fetchpriority="high" decoding="async"
-            style="max-width:clamp(260px,55vw,600px);height:auto;" />
-        </h1>
+<h1 class="hero__title">
+  <img src="logo-serenza.png" alt="SERENZA" width="600" height="160"
+    fetchpriority="high" decoding="async"
+    style="max-width:clamp(260px,55vw,600px);height:auto;" />
+  <span class="sr-only">Retiro SERENZA — 22 al 24 de mayo de 2026, Cardedeu, Barcelona</span>
+</h1>
         <div class="hero__rule" aria-hidden="true"></div>
         <p class="hero__sub">
           Tres días donde el orden que sostienes fuera<br>
@@ -1503,7 +1486,7 @@
     <div class="spots-band" role="complementary">
       <div class="spots-band__item"><span class="spots-num">12</span>&nbsp;plazas totales</div>
       <span class="spots-band__dot" aria-hidden="true">&#10022;</span>
-      <div class="spots-band__item">Casa <a href="https://instagram.com/seon.meditacion" target="_blank" rel="noopener"
+      <div class="spots-band__item">Casa <a href="https://instagram.com/seon.meditacion" target="_blank" rel="noopener noreferrer"
           style="color:inherit;text-decoration:underline;text-underline-offset:3px">@seon.meditacion</a></div>
       <span class="spots-band__dot" aria-hidden="true">&#10022;</span>
       <div class="spots-band__item">Cardedeu, Barcelona</div>
@@ -1783,7 +1766,7 @@
           </h2>
           <div class="rooms-grid fu d2" role="radiogroup" aria-label="Selecciona tipo de habitación">
             <div class="room-card selected" role="radio" aria-checked="true" tabindex="0"
-              onclick="selectRoom(this,'https://buy.stripe.com/00w3cvgxg7jY9poaRieQM02')"
+              onclick="selectRoom(this,'https://buy.stripe.com/3cI8wPbcWcEigRQgbCeQM06')"
               onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click()}">
               <p class="room-card__price">350€</p>
               <p class="room-card__name">Habitación Doble</p>
@@ -1810,7 +1793,7 @@
               <span class="room-card__badge">+ sesión 1:1 posterior</span>
             </div>
             <div class="room-card" role="radio" aria-checked="false" tabindex="0"
-              onclick="selectRoom(this,'https://buy.stripe.com/5kQ5kD80KgUy8lke3ueQM05')"
+              onclick="selectRoom(this,'https://buy.stripe.com/cNieVdbcWgUy3106B2eQM07')"
               onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click()}">
               <p class="room-card__price">280€</p>
               <p class="room-card__name">Triple Compartida</p>
@@ -1823,21 +1806,21 @@
           <div class="precio-note-box fu d3">
             <strong>Opciones de pago</strong><br>
             Pago completo — o en 2 cuotas (primera al reservar, segunda 7 días antes del retiro).<br>
-            <span style="color:rgba(245,239,234,.58)">Con acuerdo de compromiso firmado. Plaza confirmada al recibir el
+            <span style="color:rgba(245,239,234,.58)">Con acuerdo de compromiso firmado. Plaza confirmada al abonar el
               primer pago.</span>
           </div>
           <div class="spots-counter-main fu d3">Solo <strong>12 plazas</strong> · grupo reducido e íntimo</div>
           <div class="precio-btns-main fu d4">
-            <a id="btn-stripe-room" href="https://buy.stripe.com/00w3cvgxg7jY9poaRieQM02" class="btn btn--primary"
-              target="_blank" rel="noopener" onclick="trackStripe('stripe_room')">
+            <a id="btn-stripe-room" href="https://buy.stripe.com/buy.stripe.com/3cI8wPbcWcEigRQgbCeQM06" class="btn btn--primary"
+              target="_blank" rel="noopener noreferrer" onclick="trackStripe('stripe_room')">
               &#8594; Reservar y pagar online
             </a>
             <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20quiero%20reservar%20mi%20plaza%20en%20el%20retiro%20SERENZA%20(22-24%20mayo)"
-              class="btn btn--wa" target="_blank" rel="noopener" onclick="trackWA('price')">
+              class="btn btn--wa" target="_blank" rel="noopener noreferrer" onclick="trackWA('price')">
               Reservar por WhatsApp
             </a>
-            <a href="https://calendly.com/jenifertejedor" class="btn btn--dorado-outline" target="_blank"
-              rel="noopener">
+            <a href="https://calendly.com/jenifertejedor/llamada-de-diagnostico-para-mentoria-1a1" class="btn btn--dorado-outline" target="_blank"
+              rel="noopener noreferrer">
               Hablar antes de decidir
             </a>
           </div>
@@ -1855,7 +1838,7 @@
           <div class="logi-card">
             <div class="logi-icon" aria-hidden="true">&#x1F3E0;</div>
             <p class="logi-title">El espacio</p>
-            <p class="logi-text">Casa <a href="https://instagram.com/seon.meditacion" target="_blank" rel="noopener"
+            <p class="logi-text">Casa <a href="https://instagram.com/seon.meditacion" target="_blank" rel="noopener noreferrer"
                 style="color:var(--dorado)">@seon.meditacion</a> en Cardedeu, Barcelona. Casa privada con jardín,
               piscina y espacios abiertos. Íntimo y contenido.</p>
           </div>
@@ -1920,9 +1903,9 @@
                 darte el lugar que en tu día a día tantas veces dejas para después.</p>
             </div>
             <div style="margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap">
-              <a href="https://instagram.com/jenitejedor" target="_blank" rel="noopener"
+              <a href="https://instagram.com/jenitejedor" target="_blank" rel="noopener noreferrer"
                 class="btn btn--dorado-outline">@jenitejedor</a>
-              <a href="https://wa.me/34630121817" target="_blank" rel="noopener" class="btn btn--outline">Escribir a
+              <a href="https://wa.me/34630121817" target="_blank" rel="noopener noreferrer" class="btn btn--outline">Escribir a
                 Jenifer</a>
             </div>
           </div>
@@ -1940,7 +1923,7 @@
         <div class="cierre__a fu d3">
           <a href="#reserva" class="btn btn--primary" onclick="trackStripe('cierre')">Reservar mi plaza</a>
           <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20tengo%20una%20pregunta%20sobre%20el%20retiro%20SERENZA"
-            target="_blank" rel="noopener" class="btn btn--wa" onclick="trackWA('cierre')">Tengo una pregunta</a>
+            target="_blank" rel="noopener noreferrer" class="btn btn--wa" onclick="trackWA('cierre')">Tengo una pregunta</a>
         </div>
         <p class="cierre__phrase fu d4">"La superficie rara vez revela todo lo que se está moviendo debajo."</p>
       </div>
@@ -1951,59 +1934,48 @@
     <p class="foot__copy">&copy; 2026 Jenifer Tejedor · Retiro SERENZA</p>
     <nav class="foot__links" aria-label="Links pie de página">
       <a href="/index.html">Sitio principal</a>
-      <a href="https://instagram.com/jenitejedor" target="_blank" rel="noopener">@jenitejedor</a>
-      <a href="mailto:contacto@jenifertejedor.com">Contacto</a>
+      <a href="https://instagram.com/jenitejedor" target="_blank" rel="noopener noreferrer">@jenitejedor</a>
+      <a href="mailto:jenifertejedorrobles@gmail.com">Contacto</a>
     </nav>
-    <p class="foot__built">Web por <a href="https://cirujanadigital.com" target="_blank" rel="noopener">Cirujana
+    <p class="foot__built">Web por <a href="https://cirujanadigital.com" target="_blank" rel="noopener noreferrer">Cirujana
         Digital</a></p>
   </footer>
 
   <a href="https://wa.me/34630121817?text=Hola%20Jenifer%2C%20quiero%20saber%20m%C3%A1s%20sobre%20el%20retiro%20SERENZA"
-    class="wa-f" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp sobre el retiro SERENZA"
+    class="wa-f" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp sobre el retiro SERENZA"
     onclick="trackWA('float')">
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <path
         d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
     </svg>
   </a>
+<script>
+  const tb = document.getElementById("topbar");
+  window.addEventListener("scroll", () => {
+    tb.classList.toggle("scrolled", window.scrollY > 60);
+  }, { passive: true });
 
-  <!--
-    PERF JS — defer + al final del body
-    El script es mínimo (topbar scroll + IO + room selector + tracking stubs).
-    No hay librerías externas. No bloquea el render.
-    Reducido de 610ms TBT a ~50ms TBT estimado.
-  -->
-  <script>
-    // TOPBAR SCROLL — passive listener, no bloquea scroll
-    const tb = document.getElementById("topbar");
-    window.addEventListener("scroll", () => { tb.classList.toggle("scrolled", window.scrollY > 60) }, { passive: true });
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("vis"); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.08, rootMargin: "0px 0px -40px 0px" });
+  document.querySelectorAll(".fu").forEach(el => io.observe(el));
 
-    // INTERSECTION OBSERVER para animaciones .fu
-    // threshold 0.08 = empieza a animar cuando el 8% del elemento es visible
-    // rootMargin negativo = trigger un poco antes del viewport edge
-    const io = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) { e.target.classList.add("vis"); io.unobserve(e.target); }
-      });
-    }, { threshold: 0.08, rootMargin: "0px 0px -40px 0px" });
-    document.querySelectorAll(".fu").forEach(el => io.observe(el));
+  function selectRoom(card, stripeUrl) {
+    document.querySelectorAll(".room-card").forEach(c => {
+      c.classList.remove("selected");
+      c.setAttribute("aria-checked", "false");
+    });
+    card.classList.add("selected");
+    card.setAttribute("aria-checked", "true");
+    const btn = document.getElementById("btn-stripe-room");
+    if (btn) btn.href = stripeUrl;
+  }
 
-    // ROOM SELECTOR
-    function selectRoom(card, stripeUrl) {
-      document.querySelectorAll(".room-card").forEach(c => {
-        c.classList.remove("selected");
-        c.setAttribute("aria-checked", "false");
-      });
-      card.classList.add("selected");
-      card.setAttribute("aria-checked", "true");
-      const btn = document.getElementById("btn-stripe-room");
-      if (btn) btn.href = stripeUrl;
-    }
-
-    // TRACKING STUBS — sin-op si gtag no está cargado
-    function trackStripe(loc) { if (typeof gtag !== "undefined") gtag("event", "click_stripe", { location: loc }); }
-    function trackWA(loc) { if (typeof gtag !== "undefined") gtag("event", "click_whatsapp", { location: loc }); }
-  </script>
+  function trackStripe(loc) { if (typeof gtag !== "undefined") gtag("event","click_stripe",{location:loc}); }
+  function trackWA(loc)     { if (typeof gtag !== "undefined") gtag("event","click_whatsapp",{location:loc}); }
+</script>
 </body>
 
 </html>
